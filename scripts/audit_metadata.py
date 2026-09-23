@@ -66,6 +66,13 @@ def main():
         writer = csv.DictWriter(f, fieldnames=list(coverage[0]), lineterminator='\n')
         writer.writeheader(); writer.writerows(coverage)
     failed = [r['cycle'] for r in coverage if r['adult_current_coverage_verdict'] != 'pass']
+    sha = hashlib.sha256(source.read_bytes()).hexdigest()
+    existing_file=source.parent/'metadata_review.json'
+    existing=json.loads(existing_file.read_text()) if existing_file.exists() else {}
+    retain_approval=(existing.get('approved_plan')=='v0.3' and
+                     existing.get('primary_download_verdict')=='pass' and
+                     existing.get('dictionary_sha256')==sha and
+                     failed==['1999-2000'])
     review = dict(
         primary_download_verdict='revise' if failed else 'needs evidence',
         approved_plan='v0.2',
@@ -73,8 +80,10 @@ def main():
         failed_cycles=failed,
         weak_point='Coverage is not full semantic review, clinical validity, sample-size or novelty validation.',
         next_move='Resolve and approve documented scope amendment before participant-data acquisition.',
-        dictionary_sha256=hashlib.sha256(source.read_bytes()).hexdigest(),
+        dictionary_sha256=sha,
         automatic_gate_can_authorize_download=False)
+    if retain_approval:
+        review=existing
     (source.parent/'metadata_review.json').write_text(json.dumps(review,ensure_ascii=False,indent=2)+'\n')
     print(json.dumps(review, ensure_ascii=False, indent=2))
 

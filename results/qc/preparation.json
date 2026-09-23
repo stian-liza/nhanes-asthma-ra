@@ -1,0 +1,7 @@
+{
+  "records": 101316,
+  "frequency_checks": 766,
+  "all_frequency_checks_pass": true,
+  "derived_sha256": "aee8bb9d00bb1ce7889e07d40cd54284d08c7012fbe32748f4fc91adeae869be",
+  "person_data_location": "external_volume/NHANES/derived/v03/persons.csv"
+}

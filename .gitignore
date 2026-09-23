@@ -10,6 +10,7 @@ renv/library/
 renv/staging/
 __pycache__/
 .venv/
+.Rlib/
 data/
 # Only public codebook metadata belongs in this documentation directory.
 !docs/data/

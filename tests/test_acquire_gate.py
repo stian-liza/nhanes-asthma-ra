@@ -11,10 +11,12 @@ spec.loader.exec_module(module)
 
 
 class DownloadGateTests(unittest.TestCase):
-    def test_current_review_blocks_participant_download(self):
-        with self.assertRaisesRegex(RuntimeError, 'not passed'):
-            module.require_download_gate(ROOT/'docs/data/metadata_review.json',
-                                         ROOT/'docs/data/variable_dictionary.csv')
+    def test_revise_blocks_participant_download(self):
+        with tempfile.TemporaryDirectory() as directory:
+            gate=Path(directory)/'gate.json'
+            gate.write_text(json.dumps({'primary_download_verdict':'revise'}))
+            with self.assertRaisesRegex(RuntimeError, 'not passed'):
+                module.require_download_gate(gate,ROOT/'docs/data/variable_dictionary.csv')
 
     def test_changed_dictionary_invalidates_pass(self):
         with tempfile.TemporaryDirectory() as directory:

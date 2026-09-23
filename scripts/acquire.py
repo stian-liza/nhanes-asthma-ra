@@ -146,6 +146,14 @@ def main():
         require_download_gate(gate, REPO/'docs/data/variable_dictionary.csv')
         with ThreadPoolExecutor(max_workers=3) as ex:
             manifests=list(ex.map(lambda item:one_data(item,root,args.reuse),items))
+        previous=REPO/'manifests/downloads.csv'
+        if previous.exists():
+            old={r['file']:r for r in csv.DictReader(previous.open())}
+            for row in manifests:
+                before=old.get(row['file'])
+                if before and before['sha256']==row['sha256']:
+                    row['retrieved_utc']=before['retrieved_utc']
+                    row['reused_existing']=before['reused_existing']
         write_csv(REPO/'manifests/downloads.csv',manifests)
 
 if __name__=='__main__':

@@ -1,0 +1,10 @@
+{
+  "age_knots": [36, 53],
+  "age_boundary": [20, 80],
+  "seed": 20260923,
+  "imputations": 30,
+  "iterations": 10,
+  "primary": "2001-2018 current asthma",
+  "supplementary": "1999-2018 ever asthma",
+  "design_df": 139
+}

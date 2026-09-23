@@ -1,12 +1,16 @@
 {
-  "primary_download_verdict": "revise",
-  "approved_plan": "v0.2",
-  "checked": "30 official codebooks; required fields, age-20 coverage, arthritis value labels",
+  "primary_download_verdict": "pass",
+  "approved_plan": "v0.3",
+  "checked": "User approved scope A; official age eligibility, labels and skip rules reviewed for both branches",
   "failed_cycles": [
     "1999-2000"
   ],
   "weak_point": "Coverage is not full semantic review, clinical validity, sample-size or novelty validation.",
-  "next_move": "Resolve and approve documented scope amendment before participant-data acquisition.",
+  "next_move": "Acquire 30 DEMO/MCQ/SMQ files to external volume; verify official marginal counts before analysis",
   "dictionary_sha256": "cf9181d5da24a8bbab718083279ce13dabd65248eb763307b3bad54263176cea",
-  "automatic_gate_can_authorize_download": false
+  "automatic_gate_can_authorize_download": false,
+  "approved_scope": {
+    "primary": "2001-2018 current asthma",
+    "supplementary": "1999-2018 ever asthma"
+  }
 }
