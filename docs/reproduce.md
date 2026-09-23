@@ -37,6 +37,7 @@ bash scripts/run_R.sh R/review_imputation.R /Volumes/Elements/NHANES
 ```sh
 bash scripts/run_R.sh R/analysis.R /Volumes/Elements/NHANES > reports/logs/analysis.log 2>&1
 bash scripts/run_R.sh R/replay_primary.R /Volumes/Elements/NHANES
+bash scripts/run_R.sh R/figures.R
 .venv/bin/python scripts/report.py
 ```
 
@@ -47,5 +48,7 @@ bash scripts/run_R.sh R/replay_primary.R /Volumes/Elements/NHANES
 发作/急诊分支未获新增价值gate，不运行。BMI、用药、医疗可及性扩展也不在最小分析范围。运行状态以`reports/run_status.json`和产物校验为准，不能仅依据README的完成表述。
 
 独立R进程回放只验证保存的插补对象可重现主模型；不代表已在另一台机器重新下载、重做插补，或完成干净环境全链复跑。后者仍须实际验证，不能由锁文件存在推定成功。
+
+2026-09-24隔离恢复检查：新临时项目目录成功恢复12个包，复用64个版本匹配的系统包，76个锁定版本全部核对一致；合成测试和主模型回放通过。实际加载路径见`reports/restored_package_versions.csv`。该检查没有重新插补或更换机器，不等于完全隔离的全链复跑。
 
 `run_R.sh`在Mac可用时按进程加载Apple Accelerate，并限制单线程，以避免参考BLAS的慢速矩阵运算；其他系统回退Rscript。`.Rruntime`只存本地动态库链接，不入Git；全局R安装不会改变。算法、包版本与随机种子相同，但不同线性代数后端仍可能存在浮点差异，应比较容差内结果而非假设逐位相同。

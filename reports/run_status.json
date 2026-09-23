@@ -1,0 +1,20 @@
+{
+  "status": "reviewed",
+  "imputations": 30,
+  "iterations": 10,
+  "secondary": "not_started_novelty_gate",
+  "primary_mc_error_over_se": 0.0035,
+  "review_date": "2026-09-24",
+  "delivery": "first_real_data_analysis",
+  "primary": "2001-2018 current asthma",
+  "supplementary": "1999-2018 ever asthma",
+  "scientific_scope": "self-reported cross-sectional associations only",
+  "remaining": [
+    "systematic novelty assessment",
+    "clinical measurement validity",
+    "full clean-environment rerun including imputation"
+  ],
+  "fresh_process_replay": "pass",
+  "isolated_project_restore_replay": "pass_with_system_library_reuse",
+  "full_research_plan_acceptance": "needs_evidence"
+}

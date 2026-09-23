@@ -1,0 +1,16 @@
+{
+  "verdict": "pass",
+  "imputation_md5": "30d88d51880fc62fcd2a8440cabc4cb0",
+  "imputation_sha256": "417652ce8328d07a71a939dd8eb3923b3af303b854e26f46c3fc74ce0c2bd21d",
+  "checked": [
+    "30 completed imputations, 10 iterations",
+    "zero logged events",
+    "visual trace review: no boundary switching or directional drift",
+    "range and category checks passed",
+    "maximum summary Rhat below 1.1"
+  ],
+  "max_summary_rhat": 1.01662055642763,
+  "weak_point": "Ten-iteration diagnostics are finite; MAR is untestable and income MNAR remains possible.",
+  "next_move": "Fit survey models and assess Monte Carlo error; retain complete-case sensitivity.",
+  "rejected_previous_object": "imputations_failed_v1.rds"
+}

@@ -1,0 +1,7 @@
+{
+  "verdict": "pass",
+  "check": "fresh_R_process_primary_M2_replay",
+  "max_absolute_error": 7.1054e-14,
+  "imputations": 30,
+  "limitation": "Same locked environment and saved imputation checkpoint; not an independent machine or fresh imputation rerun."
+}

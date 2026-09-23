@@ -1,0 +1,13 @@
+Warning message:
+package ‘mice’ was built under R version 4.5.2 
+null device 
+          1 
+           variable summary_rhat first_half_mean last_half_mean within_chain_sd
+education education     1.005967        2.900310       2.894961      0.11500791
+pir             pir     1.004652        2.359594       2.355372      0.01980106
+smoke         smoke     1.016621        1.689686       1.704151      0.11065191
+NULL
+Event count 
+Unique event descriptions:
+NULL
+PASS: imputed domains and categories

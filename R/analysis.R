@@ -122,7 +122,7 @@ run_set<-function(label,years,outcome='current',restriction='all',MI=TRUE,levels
 }
 
 # Survey descriptions use the disease-known domain before covariate deletion/imputation.
-descriptive<-list();four<-list();characteristics<-list();design_audit<-list()
+descriptive<-list();four<-list();characteristics<-list();design_audit<-list();point_checks<-list()
 for(branch in c('primary','ever20')) {
   years<-seq(if(branch=='primary')2001 else 1999,2017,2)
   outcome<-if(branch=='primary')'current' else 'ever'
@@ -136,7 +136,12 @@ for(branch in c('primary','ever20')) {
       gd<-subset(cy_des,ra==g)
       p<-svyciprop(~y,gd,method='logit',df=degf(gd)); ci<-confint(p)
       check<-weighted.mean(gd$variables$y,weights(gd))
-      stopifnot(abs(as.numeric(p)-check)<1e-9)
+      point_checks[[paste(branch,cy,g)]]<-data.frame(analysis=branch,cycle=cy,ra=g,
+               model_proportion=as.numeric(p),direct_proportion=check,error=abs(as.numeric(p)-check))
+      # Iterative logit fitting may differ from the direct ratio at about 1e-9.
+      if(abs(as.numeric(p)-check)>=1e-7)
+        stop(sprintf('Descriptive point check: %s cycle=%s RA=%s model=%.12g direct=%.12g difference=%.12g',
+                     branch,cy,g,as.numeric(p),check,as.numeric(p)-check))
       descriptive[[paste(branch,cy,g)]]<-data.frame(analysis=branch,cycle=if(cy==0)'all' else cy,
           ra=g,n=nrow(gd),asthma_n=sum(gd$variables$y),prevalence=as.numeric(p),lower=ci[1],upper=ci[2])
     }
@@ -163,6 +168,7 @@ for(branch in c('primary','ever20')) {
   }
 }
 write.csv(do.call(rbind,design_audit),'results/qc/design_audit.csv',row.names=FALSE)
+write.csv(do.call(rbind,point_checks),'results/qc/descriptive_checks.csv',row.names=FALSE)
 write.csv(do.call(rbind,descriptive),'results/tables/asthma_by_ra_cycle.csv',row.names=FALSE)
 write.csv(do.call(rbind,four),'results/tables/coexistence_cells.csv',row.names=FALSE)
 write.csv(do.call(rbind,characteristics),'results/tables/characteristics.csv',row.names=FALSE)

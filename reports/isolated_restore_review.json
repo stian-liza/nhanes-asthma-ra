@@ -1,0 +1,11 @@
+{
+  "verdict": "pass",
+  "check": "isolated_project_library_restore_and_primary_replay",
+  "max_absolute_error": 7.1054e-14,
+  "imputations": 30,
+  "limitation": "Same machine and R installation; 64 matching system packages and saved imputations reused. Not a fresh full-chain or independent-machine reproduction.",
+  "locked_packages_version_matched": 76,
+  "new_project_packages_installed": 12,
+  "matching_system_packages_reused": 64,
+  "synthetic_test": "pass"
+}

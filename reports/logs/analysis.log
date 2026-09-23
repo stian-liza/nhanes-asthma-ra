@@ -1,0 +1,32 @@
+Warning messages:
+1: package ‘survey’ was built under R version 4.5.2 
+2: package ‘survival’ was built under R version 4.5.2 
+3: package ‘mice’ was built under R version 4.5.2 
+4: package ‘ggplot2’ was built under R version 4.5.2 
+MODEL primary_MI M0 2026-09-24 00:21:50 
+MODEL primary_MI M1 2026-09-24 00:22:04 
+MODEL primary_MI M2 2026-09-24 00:22:20 
+MODEL primary_CC M0 2026-09-24 00:22:46 
+MODEL primary_CC M1 2026-09-24 00:22:46 
+MODEL primary_CC M2 2026-09-24 00:22:47 
+MODEL ever20_MI M0 2026-09-24 00:22:47 
+MODEL ever20_MI M1 2026-09-24 00:23:01 
+MODEL ever20_MI M2 2026-09-24 00:23:17 
+MODEL ever20_CC M2 2026-09-24 00:23:45 
+MODEL no_arthritis_MI M2 2026-09-24 00:23:46 
+MODEL current_never_MI M2 2026-09-24 00:24:00 
+MODEL ever18_MI M2 2026-09-24 00:24:15 
+MODEL from2003_MI M2 2026-09-24 00:24:30 
+MODEL linear_age_MI M2 2026-09-24 00:24:44 
+MODEL omit_2001_MI M2 2026-09-24 00:24:59 
+MODEL omit_2003_MI M2 2026-09-24 00:25:13 
+MODEL omit_2005_MI M2 2026-09-24 00:25:27 
+MODEL omit_2007_MI M2 2026-09-24 00:25:41 
+MODEL omit_2009_MI M2 2026-09-24 00:25:55 
+MODEL omit_2011_MI M2 2026-09-24 00:26:08 
+MODEL omit_2013_MI M2 2026-09-24 00:26:22 
+MODEL omit_2015_MI M2 2026-09-24 00:26:36 
+MODEL omit_2017_MI M2 2026-09-24 00:26:49 
+MODEL unknown_type_as_nonRA_CC M2 2026-09-24 00:27:03 
+MODEL unknown_type_as_RA_CC M2 2026-09-24 00:27:04 
+ANALYSIS_END 2026-09-24 00:27:04 
