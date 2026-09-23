@@ -22,18 +22,25 @@ b <- d[ix,]
 aux <- ifelse(b$ever==0,'never',ifelse(is.na(b$current),'ever_current_unknown',
                                    ifelse(b$current==1,'current','former')))
 age_basis <- ns(b$age,knots=knots,Boundary.knots=c(20,80))
+design_terms<-data.frame(cycle=factor(b$cycle),stratum=factor(b$SDMVSTRA),psu=factor(b$SDMVPSU))
+design_matrix<-model.matrix(~cycle+stratum+psu,design_terms)
+decomp<-qr(design_matrix,tol=1e-8)
+keep<-sort(decomp$pivot[seq_len(decomp$rank)])
+write.csv(data.frame(term=colnames(design_matrix),retained=seq_len(ncol(design_matrix))%in%keep),
+          'results/qc/imputation_design_basis.csv',row.names=FALSE)
+reduced<-design_matrix[,setdiff(keep,which(colnames(design_matrix)=='(Intercept)')),drop=FALSE]
+stopifnot(qr(cbind(1,reduced))$rank==ncol(reduced)+1)
 mi <- data.frame(ra=b$ra,asthma_aux=factor(aux),age1=age_basis[,1],age2=age_basis[,2],
                  age3=age_basis[,3],sex=factor(b$sex),race=factor(b$race),
                  education=factor(b$education,levels=1:5),pir=b$pir,
-                 smoke=factor(b$smoke,levels=0:2),cycle=factor(b$cycle),
-                 stratum=factor(b$SDMVSTRA),psu=factor(b$SDMVPSU),logweight=log(b$w_ever20))
+                 smoke=factor(b$smoke,levels=0:2),logweight=log(b$w_ever20),reduced)
 method <- setNames(rep('',ncol(mi)),names(mi)); method[c('education','pir','smoke')]<-'pmm'
 pred <- make.predictorMatrix(mi);pred[!names(method)%in%c('education','pir','smoke'),]<-0
 write.csv(pred,'results/qc/imputation_predictors.csv')
-# All cycles and all strata are included; ridge/QR handles nested dummy coding.
+# Full-rank basis spans the same cycle/stratum/PSU design space; no scientific covariate is dropped.
 cat('IMPUTE_START',format(Sys.time()),'n',nrow(mi),'\n');flush.console()
 imp <- mice(mi,m=30,maxit=10,method=method,predictorMatrix=pred,seed=20260923,
-            printFlag=TRUE,donors=5,remove.collinear=FALSE,remove.constant=FALSE)
+            printFlag=TRUE,donors=5,eps=0,remove.collinear=FALSE,remove.constant=FALSE)
 saveRDS(list(imp=imp,index=ix,age_knots=knots),file.path(out,'imputations.rds'))
 events <- imp$loggedEvents
 if(is.null(events)) events<-data.frame(note='none')

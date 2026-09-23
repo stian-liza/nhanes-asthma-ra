@@ -1,0 +1,15 @@
+.libPaths(c(normalizePath('.Rlib'),.libPaths()))
+suppressPackageStartupMessages(library(mice))
+args<-commandArgs(trailingOnly=TRUE)
+d<-readRDS(file.path(args[1],'derived/v03/imputations_failed_v1.rds'))$imp$data
+d<-d[complete.cases(d),]
+x<-model.matrix(~.-pir,d);y<-d$pir
+q<-qr(x);x<-x[,sort(q$pivot[seq_len(q$rank)]),drop=FALSE]
+a_time<-system.time(a<-mice:::estimice(x,y,ls.meth='qr'))[['elapsed']]
+b_time<-system.time(b<-mice:::estimice(x,y,ls.meth='ridge',ridge=0))[['elapsed']]
+error<-max(abs(a$c-b$c));variance_error<-max(abs(a$v-b$v))
+stopifnot(error<1e-7,variance_error<1e-7)
+result<-data.frame(n=nrow(x),parameters=ncol(x),qr_seconds=a_time,normal_equation_seconds=b_time,
+                  coefficient_max_error=error,covariance_max_error=variance_error)
+write.csv(result,'results/qc/imputation_solver_equivalence.csv',row.names=FALSE)
+print(result)

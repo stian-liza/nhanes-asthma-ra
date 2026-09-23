@@ -1,4 +1,5 @@
 # Versions used for metadata extraction and acquisition-gate verification.
+numpy==2.4.4
 lxml==6.1.0
 pandas==2.3.3
 requests==2.33.1

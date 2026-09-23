@@ -11,6 +11,7 @@ renv/staging/
 __pycache__/
 .venv/
 .Rlib/
+.Rruntime/
 data/
 # Only public codebook metadata belongs in this documentation directory.
 !docs/data/
