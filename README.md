@@ -12,6 +12,8 @@
 
 入口：[中文结果报告](reports/results.zh.md) · [完整模型表](results/tables/association_models.csv) · [主要关联图](results/figures/key_associations.png) · [复现说明](docs/reproduce.md) · [阶段验收](docs/research_execution/2026-09-24-results-review.md)。运行状态与产物以报告、日志和校验清单为准。
 
+**三图四表导师评阅报告（9页）：** [PDF](reports/manuscript/nhanes_asthma_ra_report_3fig4table_v03.pdf) · [可编辑Word](reports/manuscript/nhanes_asthma_ra_report_3fig4table_v03.docx) · [在线正文](reports/manuscript/nhanes_asthma_ra_report_3fig4table_v03.md)。参考Baljet等2023年文章的图表规模，使用本项目已有结果，不含尚未开展的年龄分层或加重分析。
+
 - 主要问题：20 岁及以上成人中，自报类风湿关节炎者是否更常报告当前哮喘？在考虑年龄、性别、吸烟等差异后，关联有多大？
 - 有条件的次要问题：当前哮喘成人中，类风湿关节炎是否与过去一年哮喘发作和哮喘相关急诊就诊有关？
 - 设计：多周期合并的横断面观察性研究；不推断因果或新发疾病风险。

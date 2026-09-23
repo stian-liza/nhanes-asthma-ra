@@ -1,0 +1,18 @@
+{
+  "verdict": "pass",
+  "date": "2026-09-24",
+  "pages": 9,
+  "figures": 3,
+  "tables": 4,
+  "checked": [
+    "All nine pages visually inspected; final rendered page hashes identical to inspected version",
+    "Chinese text selectable and correctly rendered; no replacement glyphs",
+    "Four DOCX tables match generated CSV cells exactly",
+    "All report table values selected and formatted from reviewed aggregate CSVs",
+    "No new statistical models; no age-stratum or exacerbation findings invented",
+    "Three report plots inspected; counts, point estimates and CI values checked"
+  ],
+  "corrected_issue": "Initial rendering lacked CJK font discovery. Explicit per-process fontconfig and CJK run fonts resolved it.",
+  "weak_point": "Clinical phenotype validity, systematic novelty assessment and clean full-chain analysis reproduction remain unresolved.",
+  "next_move": "Supervisor review of scientific interpretation and incremental value; any new analysis requires a formal scope update."
+}

@@ -52,3 +52,9 @@ bash scripts/run_R.sh R/figures.R
 2026-09-24隔离恢复检查：新临时项目目录成功恢复12个包，复用64个版本匹配的系统包，76个锁定版本全部核对一致；合成测试和主模型回放通过。实际加载路径见`reports/restored_package_versions.csv`。该检查没有重新插补或更换机器，不等于完全隔离的全链复跑。
 
 `run_R.sh`在Mac可用时按进程加载Apple Accelerate，并限制单线程，以避免参考BLAS的慢速矩阵运算；其他系统回退Rscript。`.Rruntime`只存本地动态库链接，不入Git；全局R安装不会改变。算法、包版本与随机种子相同，但不同线性代数后端仍可能存在浮点差异，应比较容差内结果而非假设逐位相同。
+
+## 三图四表中文报告
+
+在正式汇总结果已经审核后，执行`bash scripts/run_R.sh R/report_figures.R`生成三张中文图，再用具备`python-docx`的文档运行时执行`python scripts/build_manuscript.py`。该脚本只读取汇总CSV，输出Word、Markdown和四张格式化表，不拟合新模型。中文图使用Mac的Heiti SC字体；其他平台须选择覆盖简体中文的等效字体并重新视觉检查。
+
+PDF通过`python scripts/render_manuscript.py --renderer /path/to/render_docx.py --qa-dir /path/to/temporary/rendered-pages`生成，`render_docx.py`来自本次文档技能。包装脚本在Mac为渲染进程声明中文字体目录，不改全局字体配置。必须检查所有渲染页后才能交付；仅能打开PDF不算通过。绘图、文档和PDF转换属于报告表达，不改变原始科学模型。
