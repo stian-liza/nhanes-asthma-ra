@@ -1,0 +1,12 @@
+{
+  "primary_download_verdict": "revise",
+  "approved_plan": "v0.2",
+  "checked": "30 official codebooks; required fields, age-20 coverage, arthritis value labels",
+  "failed_cycles": [
+    "1999-2000"
+  ],
+  "weak_point": "Coverage is not full semantic review, clinical validity, sample-size or novelty validation.",
+  "next_move": "Resolve and approve documented scope amendment before participant-data acquisition.",
+  "dictionary_sha256": "cf9181d5da24a8bbab718083279ce13dabd65248eb763307b3bad54263176cea",
+  "automatic_gate_can_authorize_download": false
+}

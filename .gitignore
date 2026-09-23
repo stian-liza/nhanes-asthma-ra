@@ -11,6 +11,14 @@ renv/staging/
 __pycache__/
 .venv/
 data/
+# Only public codebook metadata belongs in this documentation directory.
+!docs/data/
+docs/data/*
+!docs/data/variable_dictionary.csv
+!docs/data/codebook_values.json
+!docs/data/cycle_coverage.csv
+!docs/data/metadata_review.json
+!docs/data/README.md
 *.xpt
 *.XPT
 *.rds

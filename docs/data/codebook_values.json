@@ -1,0 +1,7046 @@
+[
+  {
+    "cycle": "1999-2000",
+    "module": "DEMO",
+    "file": "DEMO",
+    "variable": "SEQN",
+    "values": []
+  },
+  {
+    "cycle": "1999-2000",
+    "module": "DEMO",
+    "file": "DEMO",
+    "variable": "SDDSRVYR",
+    "values": [
+      {
+        "code": "1",
+        "label": "NHANES 1999-2000 Public Release",
+        "count": 9965,
+        "cumulative": "9965",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9965",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "1999-2000",
+    "module": "DEMO",
+    "file": "DEMO",
+    "variable": "RIAGENDR",
+    "values": [
+      {
+        "code": "1",
+        "label": "Male",
+        "count": 4883,
+        "cumulative": "4883",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "Female",
+        "count": 5082,
+        "cumulative": "9965",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9965",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "1999-2000",
+    "module": "DEMO",
+    "file": "DEMO",
+    "variable": "RIDAGEYR",
+    "values": [
+      {
+        "code": "0 to 84",
+        "label": "Range of Values",
+        "count": 9792,
+        "cumulative": "9792",
+        "skip": ""
+      },
+      {
+        "code": "85",
+        "label": ">= 85 years of age",
+        "count": 173,
+        "cumulative": "9965",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9965",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "1999-2000",
+    "module": "DEMO",
+    "file": "DEMO",
+    "variable": "RIDRETH1",
+    "values": [
+      {
+        "code": "1",
+        "label": "Mexican American",
+        "count": 3393,
+        "cumulative": "3393",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "Other Hispanic",
+        "count": 589,
+        "cumulative": "3982",
+        "skip": ""
+      },
+      {
+        "code": "3",
+        "label": "Non-Hispanic White",
+        "count": 3367,
+        "cumulative": "7349",
+        "skip": ""
+      },
+      {
+        "code": "4",
+        "label": "Non-Hispanic Black",
+        "count": 2228,
+        "cumulative": "9577",
+        "skip": ""
+      },
+      {
+        "code": "5",
+        "label": "Other Race - Including Multi-Racial",
+        "count": 388,
+        "cumulative": "9965",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9965",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "1999-2000",
+    "module": "DEMO",
+    "file": "DEMO",
+    "variable": "DMDEDUC2",
+    "values": [
+      {
+        "code": "1",
+        "label": "Less Than 9th Grade",
+        "count": 932,
+        "cumulative": "932",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "9-11th Grade (Includes 12th grade with no diploma)",
+        "count": 964,
+        "cumulative": "1896",
+        "skip": ""
+      },
+      {
+        "code": "3",
+        "label": "High School Grad/GED or Equivalent",
+        "count": 1097,
+        "cumulative": "2993",
+        "skip": ""
+      },
+      {
+        "code": "4",
+        "label": "Some College or AA degree",
+        "count": 1070,
+        "cumulative": "4063",
+        "skip": ""
+      },
+      {
+        "code": "5",
+        "label": "College Graduate or above",
+        "count": 793,
+        "cumulative": "4856",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 8,
+        "cumulative": "4864",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't Know",
+        "count": 14,
+        "cumulative": "4878",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 5087,
+        "cumulative": "9965",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "1999-2000",
+    "module": "DEMO",
+    "file": "DEMO",
+    "variable": "INDFMPIR",
+    "values": [
+      {
+        "code": "0 to 4.99",
+        "label": "Range of Values",
+        "count": 7466,
+        "cumulative": "7466",
+        "skip": ""
+      },
+      {
+        "code": "5",
+        "label": "PIR value greater than or equal to 5.00",
+        "count": 1016,
+        "cumulative": "8482",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 1483,
+        "cumulative": "9965",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "1999-2000",
+    "module": "DEMO",
+    "file": "DEMO",
+    "variable": "WTINT2YR",
+    "values": [
+      {
+        "code": "974.66525161 to 236864.13597",
+        "label": "Range of Values",
+        "count": 9965,
+        "cumulative": "9965",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9965",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "1999-2000",
+    "module": "DEMO",
+    "file": "DEMO",
+    "variable": "WTINT4YR",
+    "values": [
+      {
+        "code": "620.682382 to 100652.32964",
+        "label": "Range of Values",
+        "count": 9965,
+        "cumulative": "9965",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9965",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "1999-2000",
+    "module": "DEMO",
+    "file": "DEMO",
+    "variable": "WTMEC2YR",
+    "values": [
+      {
+        "code": "0 to 261361.33834",
+        "label": "Range of Values",
+        "count": 9965,
+        "cumulative": "9965",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9965",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "1999-2000",
+    "module": "DEMO",
+    "file": "DEMO",
+    "variable": "WTMEC4YR",
+    "values": [
+      {
+        "code": "0 to 103831.17105",
+        "label": "Range of Values",
+        "count": 9965,
+        "cumulative": "9965",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9965",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "1999-2000",
+    "module": "DEMO",
+    "file": "DEMO",
+    "variable": "SDMVPSU",
+    "values": [
+      {
+        "code": "1 to 3",
+        "label": "Range of Values",
+        "count": 9965,
+        "cumulative": "9965",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9965",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "1999-2000",
+    "module": "DEMO",
+    "file": "DEMO",
+    "variable": "SDMVSTRA",
+    "values": [
+      {
+        "code": "1 to 13",
+        "label": "Range of Values",
+        "count": 9965,
+        "cumulative": "9965",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9965",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "1999-2000",
+    "module": "MCQ",
+    "file": "MCQ",
+    "variable": "SEQN",
+    "values": []
+  },
+  {
+    "cycle": "1999-2000",
+    "module": "MCQ",
+    "file": "MCQ",
+    "variable": "MCQ010",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 1170,
+        "cumulative": "1170",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 8314,
+        "cumulative": "9484",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "9484",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 9,
+        "cumulative": "9493",
+        "skip": "MCQ053"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9493",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "1999-2000",
+    "module": "MCQ",
+    "file": "MCQ",
+    "variable": "MCQ030",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 415,
+        "cumulative": "415",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 230,
+        "cumulative": "645",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "645",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 10,
+        "cumulative": "655",
+        "skip": "MCQ053"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 8838,
+        "cumulative": "9493",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "1999-2000",
+    "module": "MCQ",
+    "file": "MCQ",
+    "variable": "MCQ040",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 410,
+        "cumulative": "410",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 520,
+        "cumulative": "930",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "930",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 0,
+        "cumulative": "930",
+        "skip": "MCQ053"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 8563,
+        "cumulative": "9493",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "1999-2000",
+    "module": "MCQ",
+    "file": "MCQ",
+    "variable": "MCQ050",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 145,
+        "cumulative": "145",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 265,
+        "cumulative": "410",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "410",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 0,
+        "cumulative": "410",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 9083,
+        "cumulative": "9493",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "1999-2000",
+    "module": "MCQ",
+    "file": "MCQ",
+    "variable": "MCQ160A",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 1239,
+        "cumulative": "1239",
+        "skip": "MCQ180A"
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 3634,
+        "cumulative": "4873",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "4873",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 7,
+        "cumulative": "4880",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 4613,
+        "cumulative": "9493",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "1999-2000",
+    "module": "MCQ",
+    "file": "MCQ",
+    "variable": "MCQ190",
+    "values": [
+      {
+        "code": "1",
+        "label": "Rheumatoid arthritis",
+        "count": 367,
+        "cumulative": "367",
+        "skip": "MCQ160B"
+      },
+      {
+        "code": "2",
+        "label": "Osteoarthritis",
+        "count": 322,
+        "cumulative": "689",
+        "skip": "MCQ160B"
+      },
+      {
+        "code": "3",
+        "label": "Other",
+        "count": 32,
+        "cumulative": "721",
+        "skip": "MCQ160B"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 1,
+        "cumulative": "722",
+        "skip": "MCQ160B"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 517,
+        "cumulative": "1239",
+        "skip": "MCQ160B"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 8254,
+        "cumulative": "9493",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "1999-2000",
+    "module": "SMQ",
+    "file": "SMQ",
+    "variable": "SEQN",
+    "values": []
+  },
+  {
+    "cycle": "1999-2000",
+    "module": "SMQ",
+    "file": "SMQ",
+    "variable": "SMQ020",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 2299,
+        "cumulative": "2299",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 2566,
+        "cumulative": "4865",
+        "skip": "SMQ120"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 4,
+        "cumulative": "4869",
+        "skip": "SMQ120"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 8,
+        "cumulative": "4877",
+        "skip": "SMQ120"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 3,
+        "cumulative": "4880",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "1999-2000",
+    "module": "SMQ",
+    "file": "SMQ",
+    "variable": "SMQ040",
+    "values": [
+      {
+        "code": "1",
+        "label": "Every day,",
+        "count": 823,
+        "cumulative": "823",
+        "skip": "SMD070"
+      },
+      {
+        "code": "2",
+        "label": "Some days, or",
+        "count": 176,
+        "cumulative": "999",
+        "skip": "SMD080"
+      },
+      {
+        "code": "3",
+        "label": "Not at all?",
+        "count": 1300,
+        "cumulative": "2299",
+        "skip": "SMQ050Q"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "2299",
+        "skip": "SMQ120"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 0,
+        "cumulative": "2299",
+        "skip": "SMQ120"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 2581,
+        "cumulative": "4880",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2001-2002",
+    "module": "DEMO",
+    "file": "DEMO_B",
+    "variable": "SEQN",
+    "values": []
+  },
+  {
+    "cycle": "2001-2002",
+    "module": "DEMO",
+    "file": "DEMO_B",
+    "variable": "SDDSRVYR",
+    "values": [
+      {
+        "code": "2",
+        "label": "NHANES 2001-2002 Public Release",
+        "count": 11039,
+        "cumulative": "11039",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "11039",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2001-2002",
+    "module": "DEMO",
+    "file": "DEMO_B",
+    "variable": "RIAGENDR",
+    "values": [
+      {
+        "code": "1",
+        "label": "Male",
+        "count": 5331,
+        "cumulative": "5331",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "Female",
+        "count": 5708,
+        "cumulative": "11039",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "11039",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2001-2002",
+    "module": "DEMO",
+    "file": "DEMO_B",
+    "variable": "RIDAGEYR",
+    "values": [
+      {
+        "code": "0 to 84",
+        "label": "Range of Values",
+        "count": 10803,
+        "cumulative": "10803",
+        "skip": ""
+      },
+      {
+        "code": "85",
+        "label": ">= 85 years of age",
+        "count": 236,
+        "cumulative": "11039",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "11039",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2001-2002",
+    "module": "DEMO",
+    "file": "DEMO_B",
+    "variable": "RIDRETH1",
+    "values": [
+      {
+        "code": "1",
+        "label": "Mexican American",
+        "count": 2776,
+        "cumulative": "2776",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "Other Hispanic",
+        "count": 517,
+        "cumulative": "3293",
+        "skip": ""
+      },
+      {
+        "code": "3",
+        "label": "Non-Hispanic White",
+        "count": 4606,
+        "cumulative": "7899",
+        "skip": ""
+      },
+      {
+        "code": "4",
+        "label": "Non-Hispanic Black",
+        "count": 2681,
+        "cumulative": "10580",
+        "skip": ""
+      },
+      {
+        "code": "5",
+        "label": "Other Race - Including Multi-Racial",
+        "count": 459,
+        "cumulative": "11039",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "11039",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2001-2002",
+    "module": "DEMO",
+    "file": "DEMO_B",
+    "variable": "DMDEDUC2",
+    "values": [
+      {
+        "code": "1",
+        "label": "Less Than 9th Grade",
+        "count": 797,
+        "cumulative": "797",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "9-11th Grade (Includes 12th grade with no diploma)",
+        "count": 870,
+        "cumulative": "1667",
+        "skip": ""
+      },
+      {
+        "code": "3",
+        "label": "High School Grad/GED or Equivalent",
+        "count": 1265,
+        "cumulative": "2932",
+        "skip": ""
+      },
+      {
+        "code": "4",
+        "label": "Some College or AA degree",
+        "count": 1379,
+        "cumulative": "4311",
+        "skip": ""
+      },
+      {
+        "code": "5",
+        "label": "College Graduate or above",
+        "count": 1079,
+        "cumulative": "5390",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 5,
+        "cumulative": "5395",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't Know",
+        "count": 12,
+        "cumulative": "5407",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 5632,
+        "cumulative": "11039",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2001-2002",
+    "module": "DEMO",
+    "file": "DEMO_B",
+    "variable": "INDFMPIR",
+    "values": [
+      {
+        "code": "0 to 4.99",
+        "label": "Range of Values",
+        "count": 8763,
+        "cumulative": "8763",
+        "skip": ""
+      },
+      {
+        "code": "5",
+        "label": "PIR value greater than or equal to 5.00",
+        "count": 1482,
+        "cumulative": "10245",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 794,
+        "cumulative": "11039",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2001-2002",
+    "module": "DEMO",
+    "file": "DEMO_B",
+    "variable": "WTINT2YR",
+    "values": [
+      {
+        "code": "1492.093618 to 201188.12151",
+        "label": "Range of Values",
+        "count": 11039,
+        "cumulative": "11039",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "11039",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2001-2002",
+    "module": "DEMO",
+    "file": "DEMO_B",
+    "variable": "WTINT4YR",
+    "values": [
+      {
+        "code": "683.456211 to 94900.896398",
+        "label": "Range of Values",
+        "count": 11039,
+        "cumulative": "11039",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "11039",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2001-2002",
+    "module": "DEMO",
+    "file": "DEMO_B",
+    "variable": "WTMEC2YR",
+    "values": [
+      {
+        "code": "0 to 211850.66405",
+        "label": "Range of Values",
+        "count": 11039,
+        "cumulative": "11039",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "11039",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2001-2002",
+    "module": "DEMO",
+    "file": "DEMO_B",
+    "variable": "WTMEC4YR",
+    "values": [
+      {
+        "code": "0 to 103831.17105",
+        "label": "Range of Values",
+        "count": 11039,
+        "cumulative": "11039",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "11039",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2001-2002",
+    "module": "DEMO",
+    "file": "DEMO_B",
+    "variable": "SDMVPSU",
+    "values": [
+      {
+        "code": "1 to 2",
+        "label": "Range of Values",
+        "count": 11039,
+        "cumulative": "11039",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "11039",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2001-2002",
+    "module": "DEMO",
+    "file": "DEMO_B",
+    "variable": "SDMVSTRA",
+    "values": [
+      {
+        "code": "14 to 28",
+        "label": "Range of Values",
+        "count": 11039,
+        "cumulative": "11039",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "11039",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2001-2002",
+    "module": "MCQ",
+    "file": "MCQ_B",
+    "variable": "SEQN",
+    "values": []
+  },
+  {
+    "cycle": "2001-2002",
+    "module": "MCQ",
+    "file": "MCQ_B",
+    "variable": "MCQ010",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 1288,
+        "cumulative": "1288",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 9172,
+        "cumulative": "10460",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "10460",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 9,
+        "cumulative": "10469",
+        "skip": "MCQ053"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 1,
+        "cumulative": "10470",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2001-2002",
+    "module": "MCQ",
+    "file": "MCQ_B",
+    "variable": "MCQ035",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 793,
+        "cumulative": "793",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 474,
+        "cumulative": "1267",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "1267",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 21,
+        "cumulative": "1288",
+        "skip": "MCQ053"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 9182,
+        "cumulative": "10470",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2001-2002",
+    "module": "MCQ",
+    "file": "MCQ_B",
+    "variable": "MCQ040",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 436,
+        "cumulative": "436",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 355,
+        "cumulative": "791",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "791",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 2,
+        "cumulative": "793",
+        "skip": "MCQ053"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 9677,
+        "cumulative": "10470",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2001-2002",
+    "module": "MCQ",
+    "file": "MCQ_B",
+    "variable": "MCQ050",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 153,
+        "cumulative": "153",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 282,
+        "cumulative": "435",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "435",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 1,
+        "cumulative": "436",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 10034,
+        "cumulative": "10470",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2001-2002",
+    "module": "MCQ",
+    "file": "MCQ_B",
+    "variable": "MCQ160A",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 1331,
+        "cumulative": "1331",
+        "skip": "MCQ180A"
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 4074,
+        "cumulative": "5405",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "5405",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 6,
+        "cumulative": "5411",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 5059,
+        "cumulative": "10470",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2001-2002",
+    "module": "MCQ",
+    "file": "MCQ_B",
+    "variable": "MCQ190",
+    "values": [
+      {
+        "code": "1",
+        "label": "Rheumatoid arthritis",
+        "count": 282,
+        "cumulative": "282",
+        "skip": "MCQ160B"
+      },
+      {
+        "code": "2",
+        "label": "Osteoarthritis",
+        "count": 392,
+        "cumulative": "674",
+        "skip": "MCQ160B"
+      },
+      {
+        "code": "3",
+        "label": "Other",
+        "count": 142,
+        "cumulative": "816",
+        "skip": "MCQ160B"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 5,
+        "cumulative": "821",
+        "skip": "MCQ160B"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 509,
+        "cumulative": "1330",
+        "skip": "MCQ160B"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 9140,
+        "cumulative": "10470",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2001-2002",
+    "module": "SMQ",
+    "file": "SMQ_B",
+    "variable": "SEQN",
+    "values": []
+  },
+  {
+    "cycle": "2001-2002",
+    "module": "SMQ",
+    "file": "SMQ_B",
+    "variable": "SMQ020",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 2596,
+        "cumulative": "2596",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 2801,
+        "cumulative": "5397",
+        "skip": "SMQ120"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 4,
+        "cumulative": "5401",
+        "skip": "SMQ120"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 6,
+        "cumulative": "5407",
+        "skip": "SMQ120"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 4,
+        "cumulative": "5411",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2001-2002",
+    "module": "SMQ",
+    "file": "SMQ_B",
+    "variable": "SMQ040",
+    "values": [
+      {
+        "code": "1",
+        "label": "Every day,",
+        "count": 951,
+        "cumulative": "951",
+        "skip": "SMD070"
+      },
+      {
+        "code": "2",
+        "label": "Some days, or",
+        "count": 220,
+        "cumulative": "1171",
+        "skip": "SMD080"
+      },
+      {
+        "code": "3",
+        "label": "Not at all?",
+        "count": 1424,
+        "cumulative": "2595",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "2595",
+        "skip": "SMQ120"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 1,
+        "cumulative": "2596",
+        "skip": "SMQ120"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 2815,
+        "cumulative": "5411",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2003-2004",
+    "module": "DEMO",
+    "file": "DEMO_C",
+    "variable": "SEQN",
+    "values": []
+  },
+  {
+    "cycle": "2003-2004",
+    "module": "DEMO",
+    "file": "DEMO_C",
+    "variable": "SDDSRVYR",
+    "values": [
+      {
+        "code": "3",
+        "label": "NHANES 2003-2004 Public Release",
+        "count": 10122,
+        "cumulative": "10122",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10122",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2003-2004",
+    "module": "DEMO",
+    "file": "DEMO_C",
+    "variable": "RIAGENDR",
+    "values": [
+      {
+        "code": "1",
+        "label": "Male",
+        "count": 4970,
+        "cumulative": "4970",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "Female",
+        "count": 5152,
+        "cumulative": "10122",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10122",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2003-2004",
+    "module": "DEMO",
+    "file": "DEMO_C",
+    "variable": "RIDAGEYR",
+    "values": [
+      {
+        "code": "0 to 84",
+        "label": "Range of Values",
+        "count": 9899,
+        "cumulative": "9899",
+        "skip": ""
+      },
+      {
+        "code": "85",
+        "label": ">= 85 years of age",
+        "count": 223,
+        "cumulative": "10122",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10122",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2003-2004",
+    "module": "DEMO",
+    "file": "DEMO_C",
+    "variable": "RIDRETH1",
+    "values": [
+      {
+        "code": "1",
+        "label": "Mexican American",
+        "count": 2519,
+        "cumulative": "2519",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "Other Hispanic",
+        "count": 341,
+        "cumulative": "2860",
+        "skip": ""
+      },
+      {
+        "code": "3",
+        "label": "Non-Hispanic White",
+        "count": 4133,
+        "cumulative": "6993",
+        "skip": ""
+      },
+      {
+        "code": "4",
+        "label": "Non-Hispanic Black",
+        "count": 2663,
+        "cumulative": "9656",
+        "skip": ""
+      },
+      {
+        "code": "5",
+        "label": "Other Race - Including Multi-Racial",
+        "count": 466,
+        "cumulative": "10122",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10122",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2003-2004",
+    "module": "DEMO",
+    "file": "DEMO_C",
+    "variable": "DMDEDUC2",
+    "values": [
+      {
+        "code": "1",
+        "label": "Less Than 9th Grade",
+        "count": 727,
+        "cumulative": "727",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "9-11th Grade (Includes 12th grade with no diploma)",
+        "count": 760,
+        "cumulative": "1487",
+        "skip": ""
+      },
+      {
+        "code": "3",
+        "label": "High School Grad/GED or Equivalent",
+        "count": 1269,
+        "cumulative": "2756",
+        "skip": ""
+      },
+      {
+        "code": "4",
+        "label": "Some College or AA degree",
+        "count": 1356,
+        "cumulative": "4112",
+        "skip": ""
+      },
+      {
+        "code": "5",
+        "label": "College Graduate or above",
+        "count": 915,
+        "cumulative": "5027",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 5,
+        "cumulative": "5032",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't Know",
+        "count": 9,
+        "cumulative": "5041",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 5081,
+        "cumulative": "10122",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2003-2004",
+    "module": "DEMO",
+    "file": "DEMO_C",
+    "variable": "INDFMPIR",
+    "values": [
+      {
+        "code": "0 to 4.99",
+        "label": "Range of Values",
+        "count": 8360,
+        "cumulative": "8360",
+        "skip": ""
+      },
+      {
+        "code": "5",
+        "label": "PIR value greater than or equal to 5.00",
+        "count": 1175,
+        "cumulative": "9535",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 587,
+        "cumulative": "10122",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2003-2004",
+    "module": "DEMO",
+    "file": "DEMO_C",
+    "variable": "WTINT2YR",
+    "values": [
+      {
+        "code": "1498.994197 to 156319.65778",
+        "label": "Range of Values",
+        "count": 10122,
+        "cumulative": "10122",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10122",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2003-2004",
+    "module": "DEMO",
+    "file": "DEMO_C",
+    "variable": "WTMEC2YR",
+    "values": [
+      {
+        "code": "0 to 159302.77518",
+        "label": "Range of Values",
+        "count": 10122,
+        "cumulative": "10122",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10122",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2003-2004",
+    "module": "DEMO",
+    "file": "DEMO_C",
+    "variable": "SDMVPSU",
+    "values": [
+      {
+        "code": "1 to 2",
+        "label": "Range of Values",
+        "count": 10122,
+        "cumulative": "10122",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10122",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2003-2004",
+    "module": "DEMO",
+    "file": "DEMO_C",
+    "variable": "SDMVSTRA",
+    "values": [
+      {
+        "code": "29 to 43",
+        "label": "Range of Values",
+        "count": 10122,
+        "cumulative": "10122",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10122",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2003-2004",
+    "module": "MCQ",
+    "file": "MCQ_C",
+    "variable": "SEQN",
+    "values": []
+  },
+  {
+    "cycle": "2003-2004",
+    "module": "MCQ",
+    "file": "MCQ_C",
+    "variable": "MCQ010",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 1336,
+        "cumulative": "1336",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 8290,
+        "cumulative": "9626",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "9626",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 19,
+        "cumulative": "9645",
+        "skip": "MCQ053"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9645",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2003-2004",
+    "module": "MCQ",
+    "file": "MCQ_C",
+    "variable": "MCQ035",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 845,
+        "cumulative": "845",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 459,
+        "cumulative": "1304",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "1304",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 32,
+        "cumulative": "1336",
+        "skip": "MCQ053"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 8309,
+        "cumulative": "9645",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2003-2004",
+    "module": "MCQ",
+    "file": "MCQ_C",
+    "variable": "MCQ040",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 436,
+        "cumulative": "436",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 407,
+        "cumulative": "843",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "843",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 2,
+        "cumulative": "845",
+        "skip": "MCQ053"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 8800,
+        "cumulative": "9645",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2003-2004",
+    "module": "MCQ",
+    "file": "MCQ_C",
+    "variable": "MCQ050",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 147,
+        "cumulative": "147",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 289,
+        "cumulative": "436",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "436",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 0,
+        "cumulative": "436",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 9209,
+        "cumulative": "9645",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2003-2004",
+    "module": "MCQ",
+    "file": "MCQ_C",
+    "variable": "MCQ160A",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 1408,
+        "cumulative": "1408",
+        "skip": "MCQ180A"
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 3619,
+        "cumulative": "5027",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "5027",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 13,
+        "cumulative": "5040",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 4605,
+        "cumulative": "9645",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2003-2004",
+    "module": "MCQ",
+    "file": "MCQ_C",
+    "variable": "MCQ190",
+    "values": [
+      {
+        "code": "1",
+        "label": "Rheumatoid arthritis",
+        "count": 271,
+        "cumulative": "271",
+        "skip": "MCQ160B"
+      },
+      {
+        "code": "2",
+        "label": "Osteoarthritis",
+        "count": 498,
+        "cumulative": "769",
+        "skip": "MCQ160B"
+      },
+      {
+        "code": "3",
+        "label": "Other",
+        "count": 161,
+        "cumulative": "930",
+        "skip": "MCQ160B"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "930",
+        "skip": "MCQ160B"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 478,
+        "cumulative": "1408",
+        "skip": "MCQ160B"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 8237,
+        "cumulative": "9645",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2003-2004",
+    "module": "SMQ",
+    "file": "SMQ_C",
+    "variable": "SEQN",
+    "values": []
+  },
+  {
+    "cycle": "2003-2004",
+    "module": "SMQ",
+    "file": "SMQ_C",
+    "variable": "SMQ020",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 2497,
+        "cumulative": "2497",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 2538,
+        "cumulative": "5035",
+        "skip": "SMQ120"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 1,
+        "cumulative": "5036",
+        "skip": "SMQ120"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 4,
+        "cumulative": "5040",
+        "skip": "SMQ120"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 1,
+        "cumulative": "5041",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2003-2004",
+    "module": "SMQ",
+    "file": "SMQ_C",
+    "variable": "SMQ040",
+    "values": [
+      {
+        "code": "1",
+        "label": "Every day",
+        "count": 934,
+        "cumulative": "934",
+        "skip": "SMD070"
+      },
+      {
+        "code": "2",
+        "label": "Some days",
+        "count": 197,
+        "cumulative": "1131",
+        "skip": "SMD641"
+      },
+      {
+        "code": "3",
+        "label": "Not at all",
+        "count": 1365,
+        "cumulative": "2496",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "2496",
+        "skip": "SMQ120"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 0,
+        "cumulative": "2496",
+        "skip": "SMQ120"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 2545,
+        "cumulative": "5041",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2005-2006",
+    "module": "DEMO",
+    "file": "DEMO_D",
+    "variable": "SEQN",
+    "values": []
+  },
+  {
+    "cycle": "2005-2006",
+    "module": "DEMO",
+    "file": "DEMO_D",
+    "variable": "SDDSRVYR",
+    "values": [
+      {
+        "code": "4",
+        "label": "NHANES 2005-2006 Public Release",
+        "count": 10348,
+        "cumulative": "10348",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10348",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2005-2006",
+    "module": "DEMO",
+    "file": "DEMO_D",
+    "variable": "RIAGENDR",
+    "values": [
+      {
+        "code": "1",
+        "label": "Male",
+        "count": 5080,
+        "cumulative": "5080",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "Female",
+        "count": 5268,
+        "cumulative": "10348",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10348",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2005-2006",
+    "module": "DEMO",
+    "file": "DEMO_D",
+    "variable": "RIDAGEYR",
+    "values": [
+      {
+        "code": "0 to 84",
+        "label": "Range of Values",
+        "count": 10178,
+        "cumulative": "10178",
+        "skip": ""
+      },
+      {
+        "code": "85",
+        "label": ">= 85 years of age",
+        "count": 170,
+        "cumulative": "10348",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10348",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2005-2006",
+    "module": "DEMO",
+    "file": "DEMO_D",
+    "variable": "RIDRETH1",
+    "values": [
+      {
+        "code": "1",
+        "label": "Mexican American",
+        "count": 2847,
+        "cumulative": "2847",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "Other Hispanic",
+        "count": 349,
+        "cumulative": "3196",
+        "skip": ""
+      },
+      {
+        "code": "3",
+        "label": "Non-Hispanic White",
+        "count": 3928,
+        "cumulative": "7124",
+        "skip": ""
+      },
+      {
+        "code": "4",
+        "label": "Non-Hispanic Black",
+        "count": 2710,
+        "cumulative": "9834",
+        "skip": ""
+      },
+      {
+        "code": "5",
+        "label": "Other Race - Including Multi-Racial",
+        "count": 514,
+        "cumulative": "10348",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10348",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2005-2006",
+    "module": "DEMO",
+    "file": "DEMO_D",
+    "variable": "DMDEDUC2",
+    "values": [
+      {
+        "code": "1",
+        "label": "Less Than 9th Grade",
+        "count": 628,
+        "cumulative": "628",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "9-11th Grade (Includes 12th grade with no diploma)",
+        "count": 766,
+        "cumulative": "1394",
+        "skip": ""
+      },
+      {
+        "code": "3",
+        "label": "High School Grad/GED or Equivalent",
+        "count": 1181,
+        "cumulative": "2575",
+        "skip": ""
+      },
+      {
+        "code": "4",
+        "label": "Some College or AA degree",
+        "count": 1417,
+        "cumulative": "3992",
+        "skip": ""
+      },
+      {
+        "code": "5",
+        "label": "College Graduate or above",
+        "count": 978,
+        "cumulative": "4970",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 6,
+        "cumulative": "4976",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't Know",
+        "count": 3,
+        "cumulative": "4979",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 5369,
+        "cumulative": "10348",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2005-2006",
+    "module": "DEMO",
+    "file": "DEMO_D",
+    "variable": "INDFMPIR",
+    "values": [
+      {
+        "code": "0 to 4.99",
+        "label": "Range of Values",
+        "count": 8409,
+        "cumulative": "8409",
+        "skip": ""
+      },
+      {
+        "code": "5",
+        "label": "PIR value greater than or equal to 5.00",
+        "count": 1405,
+        "cumulative": "9814",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 534,
+        "cumulative": "10348",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2005-2006",
+    "module": "DEMO",
+    "file": "DEMO_D",
+    "variable": "WTINT2YR",
+    "values": [
+      {
+        "code": "1224.968032 to 152162.42158",
+        "label": "Range of Values",
+        "count": 10348,
+        "cumulative": "10348",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10348",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2005-2006",
+    "module": "DEMO",
+    "file": "DEMO_D",
+    "variable": "WTMEC2YR",
+    "values": [
+      {
+        "code": "0 to 156152.18069",
+        "label": "Range of Values",
+        "count": 10348,
+        "cumulative": "10348",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10348",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2005-2006",
+    "module": "DEMO",
+    "file": "DEMO_D",
+    "variable": "SDMVPSU",
+    "values": [
+      {
+        "code": "1 to 2",
+        "label": "Range of Values",
+        "count": 10348,
+        "cumulative": "10348",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10348",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2005-2006",
+    "module": "DEMO",
+    "file": "DEMO_D",
+    "variable": "SDMVSTRA",
+    "values": [
+      {
+        "code": "44 to 58",
+        "label": "Range of Values",
+        "count": 10348,
+        "cumulative": "10348",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10348",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2005-2006",
+    "module": "MCQ",
+    "file": "MCQ_D",
+    "variable": "SEQN",
+    "values": []
+  },
+  {
+    "cycle": "2005-2006",
+    "module": "MCQ",
+    "file": "MCQ_D",
+    "variable": "MCQ010",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 1389,
+        "cumulative": "1389",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 8420,
+        "cumulative": "9809",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "9809",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 13,
+        "cumulative": "9822",
+        "skip": "MCQ053"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9822",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2005-2006",
+    "module": "MCQ",
+    "file": "MCQ_D",
+    "variable": "MCQ035",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 873,
+        "cumulative": "873",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 492,
+        "cumulative": "1365",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "1365",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 24,
+        "cumulative": "1389",
+        "skip": "MCQ053"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 8433,
+        "cumulative": "9822",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2005-2006",
+    "module": "MCQ",
+    "file": "MCQ_D",
+    "variable": "MCQ040",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 476,
+        "cumulative": "476",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 397,
+        "cumulative": "873",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "873",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 0,
+        "cumulative": "873",
+        "skip": "MCQ053"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 8949,
+        "cumulative": "9822",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2005-2006",
+    "module": "MCQ",
+    "file": "MCQ_D",
+    "variable": "MCQ050",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 162,
+        "cumulative": "162",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 314,
+        "cumulative": "476",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "476",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 0,
+        "cumulative": "476",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 9346,
+        "cumulative": "9822",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2005-2006",
+    "module": "MCQ",
+    "file": "MCQ_D",
+    "variable": "MCQ160A",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 1247,
+        "cumulative": "1247",
+        "skip": "MCQ180A"
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 3722,
+        "cumulative": "4969",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "4969",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 10,
+        "cumulative": "4979",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 4843,
+        "cumulative": "9822",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2005-2006",
+    "module": "MCQ",
+    "file": "MCQ_D",
+    "variable": "MCQ190",
+    "values": [
+      {
+        "code": "1",
+        "label": "Rheumatoid arthritis",
+        "count": 238,
+        "cumulative": "238",
+        "skip": "MCQ160B"
+      },
+      {
+        "code": "2",
+        "label": "Osteoarthritis",
+        "count": 379,
+        "cumulative": "617",
+        "skip": "MCQ160B"
+      },
+      {
+        "code": "3",
+        "label": "Other",
+        "count": 167,
+        "cumulative": "784",
+        "skip": "MCQ160B"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "784",
+        "skip": "MCQ160B"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 463,
+        "cumulative": "1247",
+        "skip": "MCQ160B"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 8575,
+        "cumulative": "9822",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2005-2006",
+    "module": "SMQ",
+    "file": "SMQ_D",
+    "variable": "SEQN",
+    "values": []
+  },
+  {
+    "cycle": "2005-2006",
+    "module": "SMQ",
+    "file": "SMQ_D",
+    "variable": "SMQ020",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 2348,
+        "cumulative": "2348",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 2625,
+        "cumulative": "4973",
+        "skip": "SMAQUEX2"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 3,
+        "cumulative": "4976",
+        "skip": "SMAQUEX2"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 3,
+        "cumulative": "4979",
+        "skip": "SMAQUEX2"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 2207,
+        "cumulative": "7186",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2005-2006",
+    "module": "SMQ",
+    "file": "SMQ_D",
+    "variable": "SMQ040",
+    "values": [
+      {
+        "code": "1",
+        "label": "Every day",
+        "count": 910,
+        "cumulative": "910",
+        "skip": "SMD070"
+      },
+      {
+        "code": "2",
+        "label": "Some days",
+        "count": 179,
+        "cumulative": "1089",
+        "skip": "SMD641"
+      },
+      {
+        "code": "3",
+        "label": "Not at all",
+        "count": 1259,
+        "cumulative": "2348",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "2348",
+        "skip": "SMAQUEX2"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 0,
+        "cumulative": "2348",
+        "skip": "SMAQUEX2"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 4838,
+        "cumulative": "7186",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2007-2008",
+    "module": "DEMO",
+    "file": "DEMO_E",
+    "variable": "SEQN",
+    "values": []
+  },
+  {
+    "cycle": "2007-2008",
+    "module": "DEMO",
+    "file": "DEMO_E",
+    "variable": "SDDSRVYR",
+    "values": [
+      {
+        "code": "5",
+        "label": "NHANES 2007-2008 Public Release",
+        "count": 10149,
+        "cumulative": "10149",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10149",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2007-2008",
+    "module": "DEMO",
+    "file": "DEMO_E",
+    "variable": "RIAGENDR",
+    "values": [
+      {
+        "code": "1",
+        "label": "Male",
+        "count": 5096,
+        "cumulative": "5096",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "Female",
+        "count": 5053,
+        "cumulative": "10149",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10149",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2007-2008",
+    "module": "DEMO",
+    "file": "DEMO_E",
+    "variable": "RIDAGEYR",
+    "values": [
+      {
+        "code": "0 to 79",
+        "label": "Range of Values",
+        "count": 9710,
+        "cumulative": "9710",
+        "skip": ""
+      },
+      {
+        "code": "80",
+        "label": ">= 80 years of age",
+        "count": 439,
+        "cumulative": "10149",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10149",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2007-2008",
+    "module": "DEMO",
+    "file": "DEMO_E",
+    "variable": "RIDRETH1",
+    "values": [
+      {
+        "code": "1",
+        "label": "Mexican American",
+        "count": 2157,
+        "cumulative": "2157",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "Other Hispanic",
+        "count": 1201,
+        "cumulative": "3358",
+        "skip": ""
+      },
+      {
+        "code": "3",
+        "label": "Non-Hispanic White",
+        "count": 4115,
+        "cumulative": "7473",
+        "skip": ""
+      },
+      {
+        "code": "4",
+        "label": "Non-Hispanic Black",
+        "count": 2211,
+        "cumulative": "9684",
+        "skip": ""
+      },
+      {
+        "code": "5",
+        "label": "Other Race - Including Multi-Racial",
+        "count": 465,
+        "cumulative": "10149",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10149",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2007-2008",
+    "module": "DEMO",
+    "file": "DEMO_E",
+    "variable": "DMDEDUC2",
+    "values": [
+      {
+        "code": "1",
+        "label": "Less Than 9th Grade",
+        "count": 811,
+        "cumulative": "811",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "9-11th Grade (Includes 12th grade with no diploma)",
+        "count": 1050,
+        "cumulative": "1861",
+        "skip": ""
+      },
+      {
+        "code": "3",
+        "label": "High School Grad/GED or Equivalent",
+        "count": 1462,
+        "cumulative": "3323",
+        "skip": ""
+      },
+      {
+        "code": "4",
+        "label": "Some College or AA degree",
+        "count": 1505,
+        "cumulative": "4828",
+        "skip": ""
+      },
+      {
+        "code": "5",
+        "label": "College Graduate or above",
+        "count": 1100,
+        "cumulative": "5928",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 2,
+        "cumulative": "5930",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't Know",
+        "count": 5,
+        "cumulative": "5935",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 4214,
+        "cumulative": "10149",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2007-2008",
+    "module": "DEMO",
+    "file": "DEMO_E",
+    "variable": "INDFMPIR",
+    "values": [
+      {
+        "code": "0 to 4.99",
+        "label": "Range of Values",
+        "count": 7977,
+        "cumulative": "7977",
+        "skip": ""
+      },
+      {
+        "code": "5",
+        "label": "Value greater than or equal to 5.00",
+        "count": 1278,
+        "cumulative": "9255",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 894,
+        "cumulative": "10149",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2007-2008",
+    "module": "DEMO",
+    "file": "DEMO_E",
+    "variable": "WTINT2YR",
+    "values": [
+      {
+        "code": "2359.373828 to 186295.50665",
+        "label": "Range of Values",
+        "count": 10149,
+        "cumulative": "10149",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10149",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2007-2008",
+    "module": "DEMO",
+    "file": "DEMO_E",
+    "variable": "WTMEC2YR",
+    "values": [
+      {
+        "code": "0 to 192770.73006",
+        "label": "Range of Values",
+        "count": 10149,
+        "cumulative": "10149",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10149",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2007-2008",
+    "module": "DEMO",
+    "file": "DEMO_E",
+    "variable": "SDMVPSU",
+    "values": [
+      {
+        "code": "1 to 2",
+        "label": "Range of Values",
+        "count": 10149,
+        "cumulative": "10149",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10149",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2007-2008",
+    "module": "DEMO",
+    "file": "DEMO_E",
+    "variable": "SDMVSTRA",
+    "values": [
+      {
+        "code": "59 to 74",
+        "label": "Range of Values",
+        "count": 10149,
+        "cumulative": "10149",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10149",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2007-2008",
+    "module": "MCQ",
+    "file": "MCQ_E",
+    "variable": "SEQN",
+    "values": []
+  },
+  {
+    "cycle": "2007-2008",
+    "module": "MCQ",
+    "file": "MCQ_E",
+    "variable": "MCQ010",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 1385,
+        "cumulative": "1385",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 8274,
+        "cumulative": "9659",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 1,
+        "cumulative": "9660",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 6,
+        "cumulative": "9666",
+        "skip": "MCQ053"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9666",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2007-2008",
+    "module": "MCQ",
+    "file": "MCQ_E",
+    "variable": "MCQ035",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 835,
+        "cumulative": "835",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 523,
+        "cumulative": "1358",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "1358",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 27,
+        "cumulative": "1385",
+        "skip": "MCQ053"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 8281,
+        "cumulative": "9666",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2007-2008",
+    "module": "MCQ",
+    "file": "MCQ_E",
+    "variable": "MCQ040",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 440,
+        "cumulative": "440",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 394,
+        "cumulative": "834",
+        "skip": "MCQ051"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "834",
+        "skip": "MCQ051"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 1,
+        "cumulative": "835",
+        "skip": "MCQ051"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 8831,
+        "cumulative": "9666",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2007-2008",
+    "module": "MCQ",
+    "file": "MCQ_E",
+    "variable": "MCQ050",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 147,
+        "cumulative": "147",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 293,
+        "cumulative": "440",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "440",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 0,
+        "cumulative": "440",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 9226,
+        "cumulative": "9666",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2007-2008",
+    "module": "MCQ",
+    "file": "MCQ_E",
+    "variable": "MCQ160A",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 1755,
+        "cumulative": "1755",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 4170,
+        "cumulative": "5925",
+        "skip": "MCQ160N"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "5925",
+        "skip": "MCQ160N"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 10,
+        "cumulative": "5935",
+        "skip": "MCQ160N"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 3731,
+        "cumulative": "9666",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2007-2008",
+    "module": "MCQ",
+    "file": "MCQ_E",
+    "variable": "MCQ190",
+    "values": [
+      {
+        "code": "1",
+        "label": "Rheumatoid arthritis",
+        "count": 346,
+        "cumulative": "346",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "Osteoarthritis",
+        "count": 531,
+        "cumulative": "877",
+        "skip": ""
+      },
+      {
+        "code": "3",
+        "label": "Other",
+        "count": 219,
+        "cumulative": "1096",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 1,
+        "cumulative": "1097",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 658,
+        "cumulative": "1755",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 7911,
+        "cumulative": "9666",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2007-2008",
+    "module": "SMQ",
+    "file": "SMQ_E",
+    "variable": "SEQN",
+    "values": []
+  },
+  {
+    "cycle": "2007-2008",
+    "module": "SMQ",
+    "file": "SMQ_E",
+    "variable": "SMQ020",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 2802,
+        "cumulative": "2802",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 3127,
+        "cumulative": "5929",
+        "skip": "SMAQUEX2"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 2,
+        "cumulative": "5931",
+        "skip": "SMAQUEX2"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 4,
+        "cumulative": "5935",
+        "skip": "SMAQUEX2"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 1210,
+        "cumulative": "7145",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2007-2008",
+    "module": "SMQ",
+    "file": "SMQ_E",
+    "variable": "SMQ040",
+    "values": [
+      {
+        "code": "1",
+        "label": "Every day",
+        "count": 1105,
+        "cumulative": "1105",
+        "skip": "SMQ077"
+      },
+      {
+        "code": "2",
+        "label": "Some days",
+        "count": 214,
+        "cumulative": "1319",
+        "skip": "SMD641"
+      },
+      {
+        "code": "3",
+        "label": "Not at all",
+        "count": 1482,
+        "cumulative": "2801",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 1,
+        "cumulative": "2802",
+        "skip": "SMAQUEX2"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 0,
+        "cumulative": "2802",
+        "skip": "SMAQUEX2"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 4343,
+        "cumulative": "7145",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2009-2010",
+    "module": "DEMO",
+    "file": "DEMO_F",
+    "variable": "SEQN",
+    "values": []
+  },
+  {
+    "cycle": "2009-2010",
+    "module": "DEMO",
+    "file": "DEMO_F",
+    "variable": "SDDSRVYR",
+    "values": [
+      {
+        "code": "6",
+        "label": "NHANES 2009-2010 Public Release",
+        "count": 10537,
+        "cumulative": "10537",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10537",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2009-2010",
+    "module": "DEMO",
+    "file": "DEMO_F",
+    "variable": "RIAGENDR",
+    "values": [
+      {
+        "code": "1",
+        "label": "Male",
+        "count": 5225,
+        "cumulative": "5225",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "Female",
+        "count": 5312,
+        "cumulative": "10537",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10537",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2009-2010",
+    "module": "DEMO",
+    "file": "DEMO_F",
+    "variable": "RIDAGEYR",
+    "values": [
+      {
+        "code": "0 to 79",
+        "label": "Range of Values",
+        "count": 10112,
+        "cumulative": "10112",
+        "skip": ""
+      },
+      {
+        "code": "80",
+        "label": ">= 80 years of age",
+        "count": 425,
+        "cumulative": "10537",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10537",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2009-2010",
+    "module": "DEMO",
+    "file": "DEMO_F",
+    "variable": "RIDRETH1",
+    "values": [
+      {
+        "code": "1",
+        "label": "Mexican American",
+        "count": 2384,
+        "cumulative": "2384",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "Other Hispanic",
+        "count": 1133,
+        "cumulative": "3517",
+        "skip": ""
+      },
+      {
+        "code": "3",
+        "label": "Non-Hispanic White",
+        "count": 4420,
+        "cumulative": "7937",
+        "skip": ""
+      },
+      {
+        "code": "4",
+        "label": "Non-Hispanic Black",
+        "count": 1957,
+        "cumulative": "9894",
+        "skip": ""
+      },
+      {
+        "code": "5",
+        "label": "Other Race - Including Multi-Racial",
+        "count": 643,
+        "cumulative": "10537",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10537",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2009-2010",
+    "module": "DEMO",
+    "file": "DEMO_F",
+    "variable": "DMDEDUC2",
+    "values": [
+      {
+        "code": "1",
+        "label": "Less Than 9th Grade",
+        "count": 771,
+        "cumulative": "771",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "9-11th Grade (Includes 12th grade with no diploma)",
+        "count": 1005,
+        "cumulative": "1776",
+        "skip": ""
+      },
+      {
+        "code": "3",
+        "label": "High School Grad/GED or Equivalent",
+        "count": 1426,
+        "cumulative": "3202",
+        "skip": ""
+      },
+      {
+        "code": "4",
+        "label": "Some College or AA degree",
+        "count": 1742,
+        "cumulative": "4944",
+        "skip": ""
+      },
+      {
+        "code": "5",
+        "label": "College Graduate or above",
+        "count": 1259,
+        "cumulative": "6203",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 5,
+        "cumulative": "6208",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't Know",
+        "count": 10,
+        "cumulative": "6218",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 4319,
+        "cumulative": "10537",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2009-2010",
+    "module": "DEMO",
+    "file": "DEMO_F",
+    "variable": "INDFMPIR",
+    "values": [
+      {
+        "code": "0 to 4.99",
+        "label": "Range of Values",
+        "count": 8230,
+        "cumulative": "8230",
+        "skip": ""
+      },
+      {
+        "code": "5",
+        "label": "Value greater than or equal to 5.00",
+        "count": 1311,
+        "cumulative": "9541",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 996,
+        "cumulative": "10537",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2009-2010",
+    "module": "DEMO",
+    "file": "DEMO_F",
+    "variable": "WTINT2YR",
+    "values": [
+      {
+        "code": "3279.931789 to 153810.25883",
+        "label": "Range of Values",
+        "count": 10537,
+        "cumulative": "10537",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10537",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2009-2010",
+    "module": "DEMO",
+    "file": "DEMO_F",
+    "variable": "WTMEC2YR",
+    "values": [
+      {
+        "code": "0 to 158146.91752",
+        "label": "Range of Values",
+        "count": 10537,
+        "cumulative": "10537",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10537",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2009-2010",
+    "module": "DEMO",
+    "file": "DEMO_F",
+    "variable": "SDMVPSU",
+    "values": [
+      {
+        "code": "1 to 3",
+        "label": "Range of Values",
+        "count": 10537,
+        "cumulative": "10537",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10537",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2009-2010",
+    "module": "DEMO",
+    "file": "DEMO_F",
+    "variable": "SDMVSTRA",
+    "values": [
+      {
+        "code": "75 to 89",
+        "label": "Range of Values",
+        "count": 10537,
+        "cumulative": "10537",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10537",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2009-2010",
+    "module": "MCQ",
+    "file": "MCQ_F",
+    "variable": "SEQN",
+    "values": []
+  },
+  {
+    "cycle": "2009-2010",
+    "module": "MCQ",
+    "file": "MCQ_F",
+    "variable": "MCQ010",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 1451,
+        "cumulative": "1451",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 8641,
+        "cumulative": "10092",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 1,
+        "cumulative": "10093",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 16,
+        "cumulative": "10109",
+        "skip": "MCQ053"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10109",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2009-2010",
+    "module": "MCQ",
+    "file": "MCQ_F",
+    "variable": "MCQ035",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 873,
+        "cumulative": "873",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 548,
+        "cumulative": "1421",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "1421",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 30,
+        "cumulative": "1451",
+        "skip": "MCQ053"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 8658,
+        "cumulative": "10109",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2009-2010",
+    "module": "MCQ",
+    "file": "MCQ_F",
+    "variable": "MCQ040",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 435,
+        "cumulative": "435",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 436,
+        "cumulative": "871",
+        "skip": "MCQ051"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "871",
+        "skip": "MCQ051"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 2,
+        "cumulative": "873",
+        "skip": "MCQ051"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 9236,
+        "cumulative": "10109",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2009-2010",
+    "module": "MCQ",
+    "file": "MCQ_F",
+    "variable": "MCQ050",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 160,
+        "cumulative": "160",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 275,
+        "cumulative": "435",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "435",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 0,
+        "cumulative": "435",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 9674,
+        "cumulative": "10109",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2009-2010",
+    "module": "MCQ",
+    "file": "MCQ_F",
+    "variable": "MCQ160A",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 1674,
+        "cumulative": "1674",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 4527,
+        "cumulative": "6201",
+        "skip": "MCQ160N"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "6201",
+        "skip": "MCQ160N"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 17,
+        "cumulative": "6218",
+        "skip": "MCQ160N"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 3891,
+        "cumulative": "10109",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2009-2010",
+    "module": "MCQ",
+    "file": "MCQ_F",
+    "variable": "MCQ191",
+    "values": [
+      {
+        "code": "1",
+        "label": "Rheumatoid arthritis",
+        "count": 316,
+        "cumulative": "316",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "Osteoarthritis",
+        "count": 514,
+        "cumulative": "830",
+        "skip": ""
+      },
+      {
+        "code": "3",
+        "label": "Psoriatic arthritis",
+        "count": 8,
+        "cumulative": "838",
+        "skip": ""
+      },
+      {
+        "code": "4",
+        "label": "Other",
+        "count": 226,
+        "cumulative": "1064",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 5,
+        "cumulative": "1069",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 605,
+        "cumulative": "1674",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 8435,
+        "cumulative": "10109",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2009-2010",
+    "module": "SMQ",
+    "file": "SMQ_F",
+    "variable": "SEQN",
+    "values": []
+  },
+  {
+    "cycle": "2009-2010",
+    "module": "SMQ",
+    "file": "SMQ_F",
+    "variable": "SMQ020",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 2866,
+        "cumulative": "2866",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 3352,
+        "cumulative": "6218",
+        "skip": "SMAQUEX2"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "6218",
+        "skip": "SMAQUEX2"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 0,
+        "cumulative": "6218",
+        "skip": "SMAQUEX2"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 1310,
+        "cumulative": "7528",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2009-2010",
+    "module": "SMQ",
+    "file": "SMQ_F",
+    "variable": "SMQ040",
+    "values": [
+      {
+        "code": "1",
+        "label": "Every day",
+        "count": 1103,
+        "cumulative": "1103",
+        "skip": "SMQ077"
+      },
+      {
+        "code": "2",
+        "label": "Some days",
+        "count": 243,
+        "cumulative": "1346",
+        "skip": "SMD641"
+      },
+      {
+        "code": "3",
+        "label": "Not at all",
+        "count": 1520,
+        "cumulative": "2866",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "2866",
+        "skip": "SMAQUEX2"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 0,
+        "cumulative": "2866",
+        "skip": "SMAQUEX2"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 4662,
+        "cumulative": "7528",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2011-2012",
+    "module": "DEMO",
+    "file": "DEMO_G",
+    "variable": "SEQN",
+    "values": []
+  },
+  {
+    "cycle": "2011-2012",
+    "module": "DEMO",
+    "file": "DEMO_G",
+    "variable": "SDDSRVYR",
+    "values": [
+      {
+        "code": "7",
+        "label": "NHANES 2011-2012 public release",
+        "count": 9756,
+        "cumulative": "9756",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9756",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2011-2012",
+    "module": "DEMO",
+    "file": "DEMO_G",
+    "variable": "RIAGENDR",
+    "values": [
+      {
+        "code": "1",
+        "label": "Male",
+        "count": 4856,
+        "cumulative": "4856",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "Female",
+        "count": 4900,
+        "cumulative": "9756",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9756",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2011-2012",
+    "module": "DEMO",
+    "file": "DEMO_G",
+    "variable": "RIDAGEYR",
+    "values": [
+      {
+        "code": "0 to 79",
+        "label": "Range of Values",
+        "count": 9393,
+        "cumulative": "9393",
+        "skip": ""
+      },
+      {
+        "code": "80",
+        "label": "80 years of age and over",
+        "count": 363,
+        "cumulative": "9756",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9756",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2011-2012",
+    "module": "DEMO",
+    "file": "DEMO_G",
+    "variable": "RIDRETH1",
+    "values": [
+      {
+        "code": "1",
+        "label": "Mexican American",
+        "count": 1355,
+        "cumulative": "1355",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "Other Hispanic",
+        "count": 1076,
+        "cumulative": "2431",
+        "skip": ""
+      },
+      {
+        "code": "3",
+        "label": "Non-Hispanic White",
+        "count": 2973,
+        "cumulative": "5404",
+        "skip": ""
+      },
+      {
+        "code": "4",
+        "label": "Non-Hispanic Black",
+        "count": 2683,
+        "cumulative": "8087",
+        "skip": ""
+      },
+      {
+        "code": "5",
+        "label": "Other Race - Including Multi-Racial",
+        "count": 1669,
+        "cumulative": "9756",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9756",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2011-2012",
+    "module": "DEMO",
+    "file": "DEMO_G",
+    "variable": "DMDEDUC2",
+    "values": [
+      {
+        "code": "1",
+        "label": "Less than 9th grade",
+        "count": 550,
+        "cumulative": "550",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "9-11th grade (Includes 12th grade with no diploma)",
+        "count": 782,
+        "cumulative": "1332",
+        "skip": ""
+      },
+      {
+        "code": "3",
+        "label": "High school graduate/GED or equivalent",
+        "count": 1169,
+        "cumulative": "2501",
+        "skip": ""
+      },
+      {
+        "code": "4",
+        "label": "Some college or AA degree",
+        "count": 1657,
+        "cumulative": "4158",
+        "skip": ""
+      },
+      {
+        "code": "5",
+        "label": "College graduate or above",
+        "count": 1397,
+        "cumulative": "5555",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 2,
+        "cumulative": "5557",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't Know",
+        "count": 3,
+        "cumulative": "5560",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 4196,
+        "cumulative": "9756",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2011-2012",
+    "module": "DEMO",
+    "file": "DEMO_G",
+    "variable": "WTINT2YR",
+    "values": [
+      {
+        "code": "3320.8855 to 220233.3152",
+        "label": "Range of Values",
+        "count": 9756,
+        "cumulative": "9756",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9756",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2011-2012",
+    "module": "DEMO",
+    "file": "DEMO_G",
+    "variable": "WTMEC2YR",
+    "values": [
+      {
+        "code": "0 to 222579.78343",
+        "label": "Range of Values",
+        "count": 9756,
+        "cumulative": "9756",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9756",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2011-2012",
+    "module": "DEMO",
+    "file": "DEMO_G",
+    "variable": "SDMVPSU",
+    "values": [
+      {
+        "code": "1 to 3",
+        "label": "Range of Values",
+        "count": 9756,
+        "cumulative": "9756",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9756",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2011-2012",
+    "module": "DEMO",
+    "file": "DEMO_G",
+    "variable": "SDMVSTRA",
+    "values": [
+      {
+        "code": "90 to 103",
+        "label": "Range of Values",
+        "count": 9756,
+        "cumulative": "9756",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9756",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2011-2012",
+    "module": "DEMO",
+    "file": "DEMO_G",
+    "variable": "INDFMPIR",
+    "values": [
+      {
+        "code": "0 to 4.99",
+        "label": "Range of Values",
+        "count": 7656,
+        "cumulative": "7656",
+        "skip": ""
+      },
+      {
+        "code": "5",
+        "label": "Value greater than or equal to 5.00",
+        "count": 1260,
+        "cumulative": "8916",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 840,
+        "cumulative": "9756",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2011-2012",
+    "module": "MCQ",
+    "file": "MCQ_G",
+    "variable": "SEQN",
+    "values": []
+  },
+  {
+    "cycle": "2011-2012",
+    "module": "MCQ",
+    "file": "MCQ_G",
+    "variable": "MCQ010",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 1448,
+        "cumulative": "1448",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 7906,
+        "cumulative": "9354",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 1,
+        "cumulative": "9355",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 8,
+        "cumulative": "9363",
+        "skip": "MCQ053"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 1,
+        "cumulative": "9364",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2011-2012",
+    "module": "MCQ",
+    "file": "MCQ_G",
+    "variable": "MCQ035",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 882,
+        "cumulative": "882",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 546,
+        "cumulative": "1428",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "1428",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 20,
+        "cumulative": "1448",
+        "skip": "MCQ053"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 7916,
+        "cumulative": "9364",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2011-2012",
+    "module": "MCQ",
+    "file": "MCQ_G",
+    "variable": "MCQ040",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 454,
+        "cumulative": "454",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 426,
+        "cumulative": "880",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "880",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 2,
+        "cumulative": "882",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 8482,
+        "cumulative": "9364",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2011-2012",
+    "module": "MCQ",
+    "file": "MCQ_G",
+    "variable": "MCQ050",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 187,
+        "cumulative": "187",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 695,
+        "cumulative": "882",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "882",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 0,
+        "cumulative": "882",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 8482,
+        "cumulative": "9364",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2011-2012",
+    "module": "MCQ",
+    "file": "MCQ_G",
+    "variable": "MCQ160a",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 1365,
+        "cumulative": "1365",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 4185,
+        "cumulative": "5550",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 1,
+        "cumulative": "5551",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 7,
+        "cumulative": "5558",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 3806,
+        "cumulative": "9364",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2011-2012",
+    "module": "MCQ",
+    "file": "MCQ_G",
+    "variable": "MCQ195",
+    "values": [
+      {
+        "code": "1",
+        "label": "Osteoarthritis or degenerative arthritis",
+        "count": 576,
+        "cumulative": "576",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "Rheumatoid arthritis",
+        "count": 249,
+        "cumulative": "825",
+        "skip": ""
+      },
+      {
+        "code": "3",
+        "label": "Psoriatic arthritis",
+        "count": 17,
+        "cumulative": "842",
+        "skip": ""
+      },
+      {
+        "code": "4",
+        "label": "Other",
+        "count": 104,
+        "cumulative": "946",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "946",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 419,
+        "cumulative": "1365",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 7999,
+        "cumulative": "9364",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2011-2012",
+    "module": "SMQ",
+    "file": "SMQ_G",
+    "variable": "SEQN",
+    "values": []
+  },
+  {
+    "cycle": "2011-2012",
+    "module": "SMQ",
+    "file": "SMQ_G",
+    "variable": "SMQ020",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 2369,
+        "cumulative": "2369",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 3184,
+        "cumulative": "5553",
+        "skip": "SMAQUEX2"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 2,
+        "cumulative": "5555",
+        "skip": "SMAQUEX2"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 4,
+        "cumulative": "5559",
+        "skip": "SMAQUEX2"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 1231,
+        "cumulative": "6790",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2011-2012",
+    "module": "SMQ",
+    "file": "SMQ_G",
+    "variable": "SMQ040",
+    "values": [
+      {
+        "code": "1",
+        "label": "Every day",
+        "count": 912,
+        "cumulative": "912",
+        "skip": "SMQ077"
+      },
+      {
+        "code": "2",
+        "label": "Some days",
+        "count": 196,
+        "cumulative": "1108",
+        "skip": "SMD641"
+      },
+      {
+        "code": "3",
+        "label": "Not at all",
+        "count": 1259,
+        "cumulative": "2367",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 2,
+        "cumulative": "2369",
+        "skip": "SMAQUEX2"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 0,
+        "cumulative": "2369",
+        "skip": "SMAQUEX2"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 4421,
+        "cumulative": "6790",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2013-2014",
+    "module": "DEMO",
+    "file": "DEMO_H",
+    "variable": "SEQN",
+    "values": []
+  },
+  {
+    "cycle": "2013-2014",
+    "module": "DEMO",
+    "file": "DEMO_H",
+    "variable": "SDDSRVYR",
+    "values": [
+      {
+        "code": "8",
+        "label": "NHANES 2013-2014 public release",
+        "count": 10175,
+        "cumulative": "10175",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10175",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2013-2014",
+    "module": "DEMO",
+    "file": "DEMO_H",
+    "variable": "RIAGENDR",
+    "values": [
+      {
+        "code": "1",
+        "label": "Male",
+        "count": 5003,
+        "cumulative": "5003",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "Female",
+        "count": 5172,
+        "cumulative": "10175",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10175",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2013-2014",
+    "module": "DEMO",
+    "file": "DEMO_H",
+    "variable": "RIDAGEYR",
+    "values": [
+      {
+        "code": "0 to 79",
+        "label": "Range of Values",
+        "count": 9823,
+        "cumulative": "9823",
+        "skip": ""
+      },
+      {
+        "code": "80",
+        "label": "80 years of age and over",
+        "count": 352,
+        "cumulative": "10175",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10175",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2013-2014",
+    "module": "DEMO",
+    "file": "DEMO_H",
+    "variable": "RIDRETH1",
+    "values": [
+      {
+        "code": "1",
+        "label": "Mexican American",
+        "count": 1730,
+        "cumulative": "1730",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "Other Hispanic",
+        "count": 960,
+        "cumulative": "2690",
+        "skip": ""
+      },
+      {
+        "code": "3",
+        "label": "Non-Hispanic White",
+        "count": 3674,
+        "cumulative": "6364",
+        "skip": ""
+      },
+      {
+        "code": "4",
+        "label": "Non-Hispanic Black",
+        "count": 2267,
+        "cumulative": "8631",
+        "skip": ""
+      },
+      {
+        "code": "5",
+        "label": "Other Race - Including Multi-Racial",
+        "count": 1544,
+        "cumulative": "10175",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10175",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2013-2014",
+    "module": "DEMO",
+    "file": "DEMO_H",
+    "variable": "DMDEDUC2",
+    "values": [
+      {
+        "code": "1",
+        "label": "Less than 9th grade",
+        "count": 455,
+        "cumulative": "455",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "9-11th grade (Includes 12th grade with no diploma)",
+        "count": 791,
+        "cumulative": "1246",
+        "skip": ""
+      },
+      {
+        "code": "3",
+        "label": "High school graduate/GED or equivalent",
+        "count": 1303,
+        "cumulative": "2549",
+        "skip": ""
+      },
+      {
+        "code": "4",
+        "label": "Some college or AA degree",
+        "count": 1770,
+        "cumulative": "4319",
+        "skip": ""
+      },
+      {
+        "code": "5",
+        "label": "College graduate or above",
+        "count": 1443,
+        "cumulative": "5762",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 2,
+        "cumulative": "5764",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't Know",
+        "count": 5,
+        "cumulative": "5769",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 4406,
+        "cumulative": "10175",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2013-2014",
+    "module": "DEMO",
+    "file": "DEMO_H",
+    "variable": "WTINT2YR",
+    "values": [
+      {
+        "code": "3697.772098 to 167884.54371",
+        "label": "Range of Values",
+        "count": 10175,
+        "cumulative": "10175",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10175",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2013-2014",
+    "module": "DEMO",
+    "file": "DEMO_H",
+    "variable": "WTMEC2YR",
+    "values": [
+      {
+        "code": "3748.417657 to 171395.2649",
+        "label": "Range of Values",
+        "count": 9813,
+        "cumulative": "9813",
+        "skip": ""
+      },
+      {
+        "code": "0",
+        "label": "Not MEC Examined",
+        "count": 362,
+        "cumulative": "10175",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10175",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2013-2014",
+    "module": "DEMO",
+    "file": "DEMO_H",
+    "variable": "SDMVPSU",
+    "values": [
+      {
+        "code": "1 to 2",
+        "label": "Range of Values",
+        "count": 10175,
+        "cumulative": "10175",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10175",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2013-2014",
+    "module": "DEMO",
+    "file": "DEMO_H",
+    "variable": "SDMVSTRA",
+    "values": [
+      {
+        "code": "104 to 118",
+        "label": "Range of Values",
+        "count": 10175,
+        "cumulative": "10175",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "10175",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2013-2014",
+    "module": "DEMO",
+    "file": "DEMO_H",
+    "variable": "INDFMPIR",
+    "values": [
+      {
+        "code": "0 to 4.99",
+        "label": "Range of Values",
+        "count": 7974,
+        "cumulative": "7974",
+        "skip": ""
+      },
+      {
+        "code": "5",
+        "label": "Value greater than or equal to 5.00",
+        "count": 1416,
+        "cumulative": "9390",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 785,
+        "cumulative": "10175",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2013-2014",
+    "module": "MCQ",
+    "file": "MCQ_H",
+    "variable": "SEQN",
+    "values": []
+  },
+  {
+    "cycle": "2013-2014",
+    "module": "MCQ",
+    "file": "MCQ_H",
+    "variable": "MCQ010",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 1538,
+        "cumulative": "1538",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 8222,
+        "cumulative": "9760",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 1,
+        "cumulative": "9761",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 8,
+        "cumulative": "9769",
+        "skip": "MCQ053"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 1,
+        "cumulative": "9770",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2013-2014",
+    "module": "MCQ",
+    "file": "MCQ_H",
+    "variable": "MCQ035",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 939,
+        "cumulative": "939",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 582,
+        "cumulative": "1521",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "1521",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 17,
+        "cumulative": "1538",
+        "skip": "MCQ053"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 8232,
+        "cumulative": "9770",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2013-2014",
+    "module": "MCQ",
+    "file": "MCQ_H",
+    "variable": "MCQ040",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 464,
+        "cumulative": "464",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 473,
+        "cumulative": "937",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "937",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 2,
+        "cumulative": "939",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 8831,
+        "cumulative": "9770",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2013-2014",
+    "module": "MCQ",
+    "file": "MCQ_H",
+    "variable": "MCQ050",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 193,
+        "cumulative": "193",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 745,
+        "cumulative": "938",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "938",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 1,
+        "cumulative": "939",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 8831,
+        "cumulative": "9770",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2013-2014",
+    "module": "MCQ",
+    "file": "MCQ_H",
+    "variable": "MCQ160a",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 1508,
+        "cumulative": "1508",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 4248,
+        "cumulative": "5756",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "5756",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 13,
+        "cumulative": "5769",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 4001,
+        "cumulative": "9770",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2013-2014",
+    "module": "MCQ",
+    "file": "MCQ_H",
+    "variable": "MCQ195",
+    "values": [
+      {
+        "code": "1",
+        "label": "Osteoarthritis or degenerative arthritis",
+        "count": 694,
+        "cumulative": "694",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "Rheumatoid arthritis",
+        "count": 254,
+        "cumulative": "948",
+        "skip": ""
+      },
+      {
+        "code": "3",
+        "label": "Psoriatic arthritis",
+        "count": 21,
+        "cumulative": "969",
+        "skip": ""
+      },
+      {
+        "code": "4",
+        "label": "Other",
+        "count": 138,
+        "cumulative": "1107",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 1,
+        "cumulative": "1108",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 400,
+        "cumulative": "1508",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 8262,
+        "cumulative": "9770",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2013-2014",
+    "module": "SMQ",
+    "file": "SMQ_H",
+    "variable": "SEQN",
+    "values": []
+  },
+  {
+    "cycle": "2013-2014",
+    "module": "SMQ",
+    "file": "SMQ_H",
+    "variable": "SMQ020",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 2579,
+        "cumulative": "2579",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 3532,
+        "cumulative": "6111",
+        "skip": "SMAQUEX2"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "6111",
+        "skip": "SMAQUEX2"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 2,
+        "cumulative": "6113",
+        "skip": "SMAQUEX2"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 1055,
+        "cumulative": "7168",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2013-2014",
+    "module": "SMQ",
+    "file": "SMQ_H",
+    "variable": "SMQ040",
+    "values": [
+      {
+        "code": "1",
+        "label": "Every day",
+        "count": 992,
+        "cumulative": "992",
+        "skip": "SMQ078"
+      },
+      {
+        "code": "2",
+        "label": "Some days",
+        "count": 240,
+        "cumulative": "1232",
+        "skip": "SMD641"
+      },
+      {
+        "code": "3",
+        "label": "Not at all",
+        "count": 1347,
+        "cumulative": "2579",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "2579",
+        "skip": "SMAQUEX2"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 0,
+        "cumulative": "2579",
+        "skip": "SMAQUEX2"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 4589,
+        "cumulative": "7168",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2015-2016",
+    "module": "DEMO",
+    "file": "DEMO_I",
+    "variable": "SEQN",
+    "values": []
+  },
+  {
+    "cycle": "2015-2016",
+    "module": "DEMO",
+    "file": "DEMO_I",
+    "variable": "SDDSRVYR",
+    "values": [
+      {
+        "code": "9",
+        "label": "NHANES 2015-2016 public release",
+        "count": 9971,
+        "cumulative": "9971",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9971",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2015-2016",
+    "module": "DEMO",
+    "file": "DEMO_I",
+    "variable": "RIAGENDR",
+    "values": [
+      {
+        "code": "1",
+        "label": "Male",
+        "count": 4892,
+        "cumulative": "4892",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "Female",
+        "count": 5079,
+        "cumulative": "9971",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9971",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2015-2016",
+    "module": "DEMO",
+    "file": "DEMO_I",
+    "variable": "RIDAGEYR",
+    "values": [
+      {
+        "code": "0 to 79",
+        "label": "Range of Values",
+        "count": 9595,
+        "cumulative": "9595",
+        "skip": ""
+      },
+      {
+        "code": "80",
+        "label": "80 years of age and over",
+        "count": 376,
+        "cumulative": "9971",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9971",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2015-2016",
+    "module": "DEMO",
+    "file": "DEMO_I",
+    "variable": "RIDRETH1",
+    "values": [
+      {
+        "code": "1",
+        "label": "Mexican American",
+        "count": 1921,
+        "cumulative": "1921",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "Other Hispanic",
+        "count": 1308,
+        "cumulative": "3229",
+        "skip": ""
+      },
+      {
+        "code": "3",
+        "label": "Non-Hispanic White",
+        "count": 3066,
+        "cumulative": "6295",
+        "skip": ""
+      },
+      {
+        "code": "4",
+        "label": "Non-Hispanic Black",
+        "count": 2129,
+        "cumulative": "8424",
+        "skip": ""
+      },
+      {
+        "code": "5",
+        "label": "Other Race - Including Multi-Racial",
+        "count": 1547,
+        "cumulative": "9971",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9971",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2015-2016",
+    "module": "DEMO",
+    "file": "DEMO_I",
+    "variable": "DMDEDUC2",
+    "values": [
+      {
+        "code": "1",
+        "label": "Less than 9th grade",
+        "count": 688,
+        "cumulative": "688",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "9-11th grade (Includes 12th grade with no diploma)",
+        "count": 676,
+        "cumulative": "1364",
+        "skip": ""
+      },
+      {
+        "code": "3",
+        "label": "High school graduate/GED or equivalent",
+        "count": 1236,
+        "cumulative": "2600",
+        "skip": ""
+      },
+      {
+        "code": "4",
+        "label": "Some college or AA degree",
+        "count": 1692,
+        "cumulative": "4292",
+        "skip": ""
+      },
+      {
+        "code": "5",
+        "label": "College graduate or above",
+        "count": 1422,
+        "cumulative": "5714",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "5714",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't Know",
+        "count": 5,
+        "cumulative": "5719",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 4252,
+        "cumulative": "9971",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2015-2016",
+    "module": "DEMO",
+    "file": "DEMO_I",
+    "variable": "WTINT2YR",
+    "values": [
+      {
+        "code": "3293.928267 to 233755.84185",
+        "label": "Range of Values",
+        "count": 9971,
+        "cumulative": "9971",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9971",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2015-2016",
+    "module": "DEMO",
+    "file": "DEMO_I",
+    "variable": "WTMEC2YR",
+    "values": [
+      {
+        "code": "3419.259085 to 242386.66077",
+        "label": "Range of Values",
+        "count": 9544,
+        "cumulative": "9544",
+        "skip": ""
+      },
+      {
+        "code": "0",
+        "label": "Not MEC Examined",
+        "count": 427,
+        "cumulative": "9971",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9971",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2015-2016",
+    "module": "DEMO",
+    "file": "DEMO_I",
+    "variable": "SDMVPSU",
+    "values": [
+      {
+        "code": "1 to 2",
+        "label": "Range of Values",
+        "count": 9971,
+        "cumulative": "9971",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9971",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2015-2016",
+    "module": "DEMO",
+    "file": "DEMO_I",
+    "variable": "SDMVSTRA",
+    "values": [
+      {
+        "code": "119 to 133",
+        "label": "Range of Values",
+        "count": 9971,
+        "cumulative": "9971",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9971",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2015-2016",
+    "module": "DEMO",
+    "file": "DEMO_I",
+    "variable": "INDFMPIR",
+    "values": [
+      {
+        "code": "0 to 4.99",
+        "label": "Range of Values",
+        "count": 7699,
+        "cumulative": "7699",
+        "skip": ""
+      },
+      {
+        "code": "5",
+        "label": "Value greater than or equal to 5.00",
+        "count": 1220,
+        "cumulative": "8919",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 1052,
+        "cumulative": "9971",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2015-2016",
+    "module": "MCQ",
+    "file": "MCQ_I",
+    "variable": "SEQN",
+    "values": []
+  },
+  {
+    "cycle": "2015-2016",
+    "module": "MCQ",
+    "file": "MCQ_I",
+    "variable": "MCQ010",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 1443,
+        "cumulative": "1443",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 8121,
+        "cumulative": "9564",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 1,
+        "cumulative": "9565",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 10,
+        "cumulative": "9575",
+        "skip": "MCQ053"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9575",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2015-2016",
+    "module": "MCQ",
+    "file": "MCQ_I",
+    "variable": "MCQ035",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 877,
+        "cumulative": "877",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 546,
+        "cumulative": "1423",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "1423",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 20,
+        "cumulative": "1443",
+        "skip": "MCQ053"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 8132,
+        "cumulative": "9575",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2015-2016",
+    "module": "MCQ",
+    "file": "MCQ_I",
+    "variable": "MCQ040",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 422,
+        "cumulative": "422",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 454,
+        "cumulative": "876",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "876",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 1,
+        "cumulative": "877",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 8698,
+        "cumulative": "9575",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2015-2016",
+    "module": "MCQ",
+    "file": "MCQ_I",
+    "variable": "MCQ050",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 170,
+        "cumulative": "170",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 707,
+        "cumulative": "877",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "877",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 0,
+        "cumulative": "877",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 8698,
+        "cumulative": "9575",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2015-2016",
+    "module": "MCQ",
+    "file": "MCQ_I",
+    "variable": "MCQ160a",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 1470,
+        "cumulative": "1470",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 4238,
+        "cumulative": "5708",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "5708",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 11,
+        "cumulative": "5719",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 3856,
+        "cumulative": "9575",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2015-2016",
+    "module": "MCQ",
+    "file": "MCQ_I",
+    "variable": "MCQ195",
+    "values": [
+      {
+        "code": "1",
+        "label": "Osteoarthritis or degenerative arthritis",
+        "count": 616,
+        "cumulative": "616",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "Rheumatoid arthritis",
+        "count": 292,
+        "cumulative": "908",
+        "skip": ""
+      },
+      {
+        "code": "3",
+        "label": "Psoriatic arthritis",
+        "count": 18,
+        "cumulative": "926",
+        "skip": ""
+      },
+      {
+        "code": "4",
+        "label": "Other",
+        "count": 142,
+        "cumulative": "1068",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "1068",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 402,
+        "cumulative": "1470",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 8105,
+        "cumulative": "9575",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2015-2016",
+    "module": "SMQ",
+    "file": "SMQ_I",
+    "variable": "SEQN",
+    "values": []
+  },
+  {
+    "cycle": "2015-2016",
+    "module": "SMQ",
+    "file": "SMQ_I",
+    "variable": "SMQ020",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 2422,
+        "cumulative": "2422",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 3559,
+        "cumulative": "5981",
+        "skip": "SMQ925"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 2,
+        "cumulative": "5983",
+        "skip": "SMQ925"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 9,
+        "cumulative": "5992",
+        "skip": "SMQ925"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 1009,
+        "cumulative": "7001",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2015-2016",
+    "module": "SMQ",
+    "file": "SMQ_I",
+    "variable": "SMQ040",
+    "values": [
+      {
+        "code": "1",
+        "label": "Every day",
+        "count": 832,
+        "cumulative": "832",
+        "skip": "SMQ078"
+      },
+      {
+        "code": "2",
+        "label": "Some days",
+        "count": 268,
+        "cumulative": "1100",
+        "skip": "SMD641"
+      },
+      {
+        "code": "3",
+        "label": "Not at all",
+        "count": 1322,
+        "cumulative": "2422",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "2422",
+        "skip": "SMAQUEX2"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 0,
+        "cumulative": "2422",
+        "skip": "SMAQUEX2"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 4579,
+        "cumulative": "7001",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2017-2018",
+    "module": "DEMO",
+    "file": "DEMO_J",
+    "variable": "SEQN",
+    "values": []
+  },
+  {
+    "cycle": "2017-2018",
+    "module": "DEMO",
+    "file": "DEMO_J",
+    "variable": "SDDSRVYR",
+    "values": [
+      {
+        "code": "10",
+        "label": "NHANES 2017-2018 public release",
+        "count": 9254,
+        "cumulative": "9254",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9254",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2017-2018",
+    "module": "DEMO",
+    "file": "DEMO_J",
+    "variable": "RIAGENDR",
+    "values": [
+      {
+        "code": "1",
+        "label": "Male",
+        "count": 4557,
+        "cumulative": "4557",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "Female",
+        "count": 4697,
+        "cumulative": "9254",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9254",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2017-2018",
+    "module": "DEMO",
+    "file": "DEMO_J",
+    "variable": "RIDAGEYR",
+    "values": [
+      {
+        "code": "0 to 79",
+        "label": "Range of Values",
+        "count": 8827,
+        "cumulative": "8827",
+        "skip": ""
+      },
+      {
+        "code": "80",
+        "label": "80 years of age and over",
+        "count": 427,
+        "cumulative": "9254",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9254",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2017-2018",
+    "module": "DEMO",
+    "file": "DEMO_J",
+    "variable": "RIDRETH1",
+    "values": [
+      {
+        "code": "1",
+        "label": "Mexican American",
+        "count": 1367,
+        "cumulative": "1367",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "Other Hispanic",
+        "count": 820,
+        "cumulative": "2187",
+        "skip": ""
+      },
+      {
+        "code": "3",
+        "label": "Non-Hispanic White",
+        "count": 3150,
+        "cumulative": "5337",
+        "skip": ""
+      },
+      {
+        "code": "4",
+        "label": "Non-Hispanic Black",
+        "count": 2115,
+        "cumulative": "7452",
+        "skip": ""
+      },
+      {
+        "code": "5",
+        "label": "Other Race - Including Multi-Racial",
+        "count": 1802,
+        "cumulative": "9254",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9254",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2017-2018",
+    "module": "DEMO",
+    "file": "DEMO_J",
+    "variable": "DMDEDUC2",
+    "values": [
+      {
+        "code": "1",
+        "label": "Less than 9th grade",
+        "count": 479,
+        "cumulative": "479",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "9-11th grade (Includes 12th grade with no diploma)",
+        "count": 638,
+        "cumulative": "1117",
+        "skip": ""
+      },
+      {
+        "code": "3",
+        "label": "High school graduate/GED or equivalent",
+        "count": 1325,
+        "cumulative": "2442",
+        "skip": ""
+      },
+      {
+        "code": "4",
+        "label": "Some college or AA degree",
+        "count": 1778,
+        "cumulative": "4220",
+        "skip": ""
+      },
+      {
+        "code": "5",
+        "label": "College graduate or above",
+        "count": 1336,
+        "cumulative": "5556",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 2,
+        "cumulative": "5558",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 11,
+        "cumulative": "5569",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 3685,
+        "cumulative": "9254",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2017-2018",
+    "module": "DEMO",
+    "file": "DEMO_J",
+    "variable": "WTINT2YR",
+    "values": [
+      {
+        "code": "2571.0687123 to 433085.00526",
+        "label": "Range of Values",
+        "count": 9254,
+        "cumulative": "9254",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9254",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2017-2018",
+    "module": "DEMO",
+    "file": "DEMO_J",
+    "variable": "WTMEC2YR",
+    "values": [
+      {
+        "code": "2566.1838545 to 419762.83649",
+        "label": "Range of Values",
+        "count": 8704,
+        "cumulative": "8704",
+        "skip": ""
+      },
+      {
+        "code": "0",
+        "label": "Not MEC Examined",
+        "count": 550,
+        "cumulative": "9254",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9254",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2017-2018",
+    "module": "DEMO",
+    "file": "DEMO_J",
+    "variable": "SDMVPSU",
+    "values": [
+      {
+        "code": "1 to 2",
+        "label": "Range of Values",
+        "count": 9254,
+        "cumulative": "9254",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9254",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2017-2018",
+    "module": "DEMO",
+    "file": "DEMO_J",
+    "variable": "SDMVSTRA",
+    "values": [
+      {
+        "code": "134 to 148",
+        "label": "Range of Values",
+        "count": 9254,
+        "cumulative": "9254",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "9254",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2017-2018",
+    "module": "DEMO",
+    "file": "DEMO_J",
+    "variable": "INDFMPIR",
+    "values": [
+      {
+        "code": "0 to 4.98",
+        "label": "Range of Values",
+        "count": 6815,
+        "cumulative": "6815",
+        "skip": ""
+      },
+      {
+        "code": "5",
+        "label": "Value greater than or equal to 5.00",
+        "count": 1208,
+        "cumulative": "8023",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 1231,
+        "cumulative": "9254",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2017-2018",
+    "module": "MCQ",
+    "file": "MCQ_J",
+    "variable": "SEQN",
+    "values": []
+  },
+  {
+    "cycle": "2017-2018",
+    "module": "MCQ",
+    "file": "MCQ_J",
+    "variable": "MCQ010",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 1325,
+        "cumulative": "1325",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 7563,
+        "cumulative": "8888",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "8888",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 9,
+        "cumulative": "8897",
+        "skip": "MCQ053"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 0,
+        "cumulative": "8897",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2017-2018",
+    "module": "MCQ",
+    "file": "MCQ_J",
+    "variable": "MCQ035",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 825,
+        "cumulative": "825",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 471,
+        "cumulative": "1296",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 1,
+        "cumulative": "1297",
+        "skip": "MCQ053"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 28,
+        "cumulative": "1325",
+        "skip": "MCQ053"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 7572,
+        "cumulative": "8897",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2017-2018",
+    "module": "MCQ",
+    "file": "MCQ_J",
+    "variable": "MCQ040",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 359,
+        "cumulative": "359",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 463,
+        "cumulative": "822",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 1,
+        "cumulative": "823",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 2,
+        "cumulative": "825",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 8072,
+        "cumulative": "8897",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2017-2018",
+    "module": "MCQ",
+    "file": "MCQ_J",
+    "variable": "MCQ050",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 167,
+        "cumulative": "167",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 658,
+        "cumulative": "825",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "825",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 0,
+        "cumulative": "825",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 8072,
+        "cumulative": "8897",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2017-2018",
+    "module": "MCQ",
+    "file": "MCQ_J",
+    "variable": "MCQ160a",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 1695,
+        "cumulative": "1695",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 3857,
+        "cumulative": "5552",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "5552",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 17,
+        "cumulative": "5569",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 3328,
+        "cumulative": "8897",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2017-2018",
+    "module": "MCQ",
+    "file": "MCQ_J",
+    "variable": "MCQ195",
+    "values": [
+      {
+        "code": "1",
+        "label": "Osteoarthritis or degenerative arthritis",
+        "count": 711,
+        "cumulative": "711",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "Rheumatoid arthritis",
+        "count": 337,
+        "cumulative": "1048",
+        "skip": ""
+      },
+      {
+        "code": "3",
+        "label": "Psoriatic arthritis",
+        "count": 26,
+        "cumulative": "1074",
+        "skip": ""
+      },
+      {
+        "code": "4",
+        "label": "Other",
+        "count": 175,
+        "cumulative": "1249",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 3,
+        "cumulative": "1252",
+        "skip": ""
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 443,
+        "cumulative": "1695",
+        "skip": ""
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 7202,
+        "cumulative": "8897",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2017-2018",
+    "module": "SMQ",
+    "file": "SMQ_J",
+    "variable": "SEQN",
+    "values": []
+  },
+  {
+    "cycle": "2017-2018",
+    "module": "SMQ",
+    "file": "SMQ_J",
+    "variable": "SMQ020",
+    "values": [
+      {
+        "code": "1",
+        "label": "Yes",
+        "count": 2359,
+        "cumulative": "2359",
+        "skip": ""
+      },
+      {
+        "code": "2",
+        "label": "No",
+        "count": 3497,
+        "cumulative": "5856",
+        "skip": "SMQ890"
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "5856",
+        "skip": "SMQ890"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 0,
+        "cumulative": "5856",
+        "skip": "SMQ890"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 868,
+        "cumulative": "6724",
+        "skip": ""
+      }
+    ]
+  },
+  {
+    "cycle": "2017-2018",
+    "module": "SMQ",
+    "file": "SMQ_J",
+    "variable": "SMQ040",
+    "values": [
+      {
+        "code": "1",
+        "label": "Every day",
+        "count": 805,
+        "cumulative": "805",
+        "skip": "SMQ078"
+      },
+      {
+        "code": "2",
+        "label": "Some days",
+        "count": 216,
+        "cumulative": "1021",
+        "skip": "SMD641"
+      },
+      {
+        "code": "3",
+        "label": "Not at all",
+        "count": 1338,
+        "cumulative": "2359",
+        "skip": ""
+      },
+      {
+        "code": "7",
+        "label": "Refused",
+        "count": 0,
+        "cumulative": "2359",
+        "skip": "SMAQUEX2"
+      },
+      {
+        "code": "9",
+        "label": "Don't know",
+        "count": 0,
+        "cumulative": "2359",
+        "skip": "SMAQUEX2"
+      },
+      {
+        "code": ".",
+        "label": "Missing",
+        "count": 4365,
+        "cumulative": "6724",
+        "skip": ""
+      }
+    ]
+  }
+]
