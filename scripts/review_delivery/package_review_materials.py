@@ -8,7 +8,7 @@ def sha(p):return hashlib.sha256(p.read_bytes()).hexdigest()
 source=list(csv.DictReader((r/'original_delivery_manifest.csv').open(encoding='utf-8-sig')))
 files={root/x['path'] for x in source}
 files.update([root/'README.md',root/'docs/research_runs/2026-10-08-github-review-delivery.md'])
-for directory in [r,root/'scripts/review_delivery']:
+for directory in [r,root/'scripts/review_delivery',root/'assets/fonts/source-han-sans-cn']:
  files.update(p for p in directory.rglob('*') if p.is_file() and p.name!='publication_manifest.csv' and '__pycache__' not in p.parts and not p.name.startswith('.'))
 # Include standalone plot revisions in future review bundles.
 for directory in sorted((root/'outputs').glob('figure_revision_*')):

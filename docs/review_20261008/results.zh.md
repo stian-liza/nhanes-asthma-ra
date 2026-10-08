@@ -33,7 +33,7 @@ M0 未调整；M1 加年龄、性别、种族/族裔；M2 再加教育、PIR；M
 
 ### 疫情前：样本筛选
 
-![疫情前样本筛选](../../outputs/figure_revision_20261008_v02/prepandemic/sample_flow.png)
+![疫情前样本筛选](../../outputs/figure_revision_20261008_v03/prepandemic/sample_flow.png)
 
 [逐步排除人数 CSV](../../outputs/year_extension_20261008_v01/prepandemic/sample_flow.csv)
 
@@ -52,9 +52,9 @@ M0 未调整；M1 加年龄、性别、种族/族裔；M2 再加教育、PIR；M
 | RA × 年龄组 | 0.057 |
 | RA × 性别 | 0.614 |
 
-![疫情前年龄亚组](../../outputs/figure_revision_20261008_v02/prepandemic/age_subgroups.png)
+![疫情前年龄亚组](../../outputs/figure_revision_20261008_v03/prepandemic/age_subgroups.png)
 
-![疫情前性别亚组](../../outputs/figure_revision_20261008_v02/prepandemic/sex_subgroups.png)
+![疫情前性别亚组](../../outputs/figure_revision_20261008_v03/prepandemic/sex_subgroups.png)
 
 亚组间差异依据交互检验判断，不能比较各组是否显著。
 
@@ -93,7 +93,7 @@ M0 未调整；M1 加年龄、性别、种族/族裔；M2 再加教育、PIR；M
 
 ### 2021—2023年：样本筛选
 
-![2021—2023年样本筛选](../../outputs/figure_revision_20261008_v02/latest/sample_flow.png)
+![2021—2023年样本筛选](../../outputs/figure_revision_20261008_v03/latest/sample_flow.png)
 
 [逐步排除人数 CSV](../../outputs/year_extension_20261008_v01/latest/sample_flow.csv)
 
@@ -112,9 +112,9 @@ M0 未调整；M1 加年龄、性别、种族/族裔；M2 再加教育、PIR；M
 | RA × 年龄组 | 0.252 |
 | RA × 性别 | 0.455 |
 
-![2021—2023年年龄亚组](../../outputs/figure_revision_20261008_v02/latest/age_subgroups.png)
+![2021—2023年年龄亚组](../../outputs/figure_revision_20261008_v03/latest/age_subgroups.png)
 
-![2021—2023年性别亚组](../../outputs/figure_revision_20261008_v02/latest/sex_subgroups.png)
+![2021—2023年性别亚组](../../outputs/figure_revision_20261008_v03/latest/sex_subgroups.png)
 
 亚组间差异依据交互检验判断，不能比较各组是否显著。
 
