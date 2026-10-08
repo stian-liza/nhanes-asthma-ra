@@ -1,0 +1,16 @@
+[
+  {
+    "file": "nhanes-public-inputs-20261008.zip",
+    "bytes": 26043750,
+    "sha256": "b70b10bd27d6f2f0eb09bb517a48b5442307f35b2f79dd5900a39d07862b3a33",
+    "files": 241,
+    "verified_zip_contents": true
+  },
+  {
+    "file": "nhanes-analysis-frames-20261008.zip",
+    "bytes": 32102581,
+    "sha256": "7e5e853f7e998b0681e1457a15beefb2a330ed4c58c2f43214c1ddbeab8bec01",
+    "files": 12,
+    "verified_zip_contents": true
+  }
+]

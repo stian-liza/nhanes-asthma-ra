@@ -1,0 +1,5 @@
+"model","n","events","rank","parameters","converged","lp_status","lp_objective","condition_number","df","status","warnings"
+"P1",40690,5296,26,26,TRUE,0,0,4.77537954447828,178,"estimable",""
+"P2",40690,5296,28,28,TRUE,0,0,7.18443616395654,178,"estimable",""
+"I1",40690,5296,27,27,TRUE,0,0,4.77799793599114,178,"estimable",""
+"I2",40690,5296,29,29,TRUE,0,0,7.19129140104618,178,"estimable",""

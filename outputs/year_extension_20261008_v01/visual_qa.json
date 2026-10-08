@@ -1,0 +1,39 @@
+{
+  "verdict": "pass",
+  "pages": 23,
+  "visual_review": "All 23 pages inspected; final changed pages 20-22 inspected again; all other page pixels unchanged by final layout fix.",
+  "checked": [
+    "Chinese glyphs",
+    "text clipping",
+    "table split and header repetition",
+    "all four figures",
+    "footnotes and page numbers"
+  ],
+  "images": {
+    "page-15.png": "2b96f6d7933ebb5efcea8fd6d84f623ebb20d68494017dcb1775569a7bc38456",
+    "page-14.png": "4029739ae04cf0cc09782a6bcd0d55141b4b3fd825188cec65be277eda5e611a",
+    "page-16.png": "9d47e7b6a6df9bc743bcbeaa32f3ce24fb833fe0b49901fa35928ce7b3b19429",
+    "page-17.png": "53fd88ee0e4d270bee9d20c8c7b3255c2848de207a82d0a4fa7591dbc2550035",
+    "page-13.png": "3ccbbab499ac9b3201a17aea9aa6b7043022373af88042991ee0054bd441ab7d",
+    "page-12.png": "a0e9a406c534f33921c8c484e315757f34570bf24f454107801e2b8d05b71626",
+    "page-10.png": "2af39cbe720dd50f8d0c42073b598ab82a8ea7a2809a48c92dbf8067e2c30cf1",
+    "page-11.png": "1d87174ffcd664461f32f35b41db41154aa41d0bec097e5242d783a587efbcdc",
+    "page-1.png": "2455029a7243c739c725490170037929dec98404824087ab6dcf6aaa161c2bb1",
+    "page-3.png": "756a65766640fa154ba66530873869182f501d14259f1345d52bf86ee7eaf137",
+    "page-2.png": "fd9691c313655b8a09bdd6b2af5b8511d12c30cdfb11219d56bf0a9db3ebdc97",
+    "page-6.png": "dea3d75f6e6c41414812b3dcbeb147a2ad8777f7a6916bd4263d02993c887a64",
+    "page-7.png": "4e6da9471eb9ea551a4e59defac484443e382256d67171c2e8cc5737dd412bfb",
+    "page-5.png": "6e6443c7568f15bd2ae9861fc4bc66b66d52a766c087c5c0c90d37c2d4cc77ea",
+    "page-4.png": "3a7a6c22f654cba555c218ae3f1390b7d1173405e832b37e1c9b4ad2ae934384",
+    "page-9.png": "5056e83f978e6d724ffcdadadd882260c3fe09f2d9d916b2d600ddcd8264fd86",
+    "page-8.png": "c6b7c3834c24c808c6e0c06058907cc5bcd786e8617bc74526ddb79e85e3f9c8",
+    "page-20.png": "88e73680054c4eefbb263a66de41727827d94b416166e972b5a258f3730f7107",
+    "page-21.png": "e5dff3b68a226702a2a7d34c6640f98a20bc4456c7cab22754a1c6264f6aa605",
+    "page-23.png": "509bfbaadc9ac11d4d11e29ac60c33e4e7d31d9a0924212ece807e8d7d4a59e3",
+    "page-22.png": "34a56416d36ec346810e2d1a97e9d3bc7c411deb91d988fc7cefdcbfa5ebdf51",
+    "page-19.png": "313b5385cfaef98cfdc95bf22dfb03cb6cc48314d0cda841528a1e7519f420e5",
+    "page-18.png": "b7e33399dd19cb50b5684b78ac006b4b2180a337e6d7496cbbc9b4c94792883e"
+  },
+  "pdf_sha256": "884f2d98e0186ccd4b85265404a53124bd822fb468e4ace0cd5c32b2787e61ae",
+  "docx_sha256": "4483b0979609c715a8eb0264c0b1e67a09bfb5439a86e6aed7e63b6a37f86b23"
+}

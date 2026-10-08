@@ -1,0 +1,13 @@
+{
+  "prepandemic/regression.csv": "421fce8db665edf6f02b47726096a957d61c33be4fd71f065beb26562805fbb3",
+  "latest/regression.csv": "86383b2353db423b794eee0f28006ab7b90f23888c433315ab3a491c30ca9906",
+  "pooled/pooling_models.csv": "b0814ebcf325cb05bf746a076db97ee46ae72ea0eef65aeee18a771e62273201",
+  "prepandemic/asthma_prevalence.csv": "792aadb956ef3af44c0119107d253b0899faa1cfbbc5ee20ad86711990e1ce9e",
+  "prepandemic/subgroups.csv": "3175c4324ef4568e37fe1262f31aa6483d143c2f0691e70a63f41d0dbde8b34a",
+  "prepandemic/interaction_tests.csv": "e6c00fff475ca6afe2873be0fef40a3b6f2ca64c3227afe016354afb6d63db68",
+  "prepandemic/supplement/regression.csv": "8312044f305aa480f8da301aea90648bf1c06b8ba4b38696a5e6d4b26b36c4cb",
+  "latest/asthma_prevalence.csv": "f49139ab217c6914e4d13a79009e0bcd10f8b147e25bfe78189544f5480e7aef",
+  "latest/subgroups.csv": "f013ba455b1a22b5ea867b74aa341410c035ffdeb9da152ffd4e8a6e094cb84a",
+  "latest/interaction_tests.csv": "e70ebf43c2fb3aa4ca2babd46505041a43a571db78aee624211026e471aa94c6",
+  "latest/supplement/regression.csv": "414089dc65a7c1d32b0ac4a5a5dc517e769502760673d4bd57e53fa28392b1e3"
+}

@@ -1,0 +1,3 @@
+"domain","n","strata","psu","df","strata_with_one_domain_psu","weight_sum","min_weight","max_weight"
+"broad_MEC",102362,157,320,163,0,300397977.91407,116.609447735849,55480.1121477736
+"complete_case",37127,157,320,163,0,153124264.550495,131.065732641509,55480.1121477736

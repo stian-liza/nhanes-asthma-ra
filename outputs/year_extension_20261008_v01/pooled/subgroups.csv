@@ -1,0 +1,6 @@
+"model","term","n","events","beta","se","OR","lower","upper","p","df","status","formula","subgroup_variable","subgroup"
+"agegroup_20_39","ra",17603,2700,0.854341172402163,0.184701479888247,2.34982574043958,1.632079227954,3.38321872851386,7.1673647051633e-06,178,"estimable","asthma ~ ra + age + sex + race + education + pir + bmi + smoking","agegroup","20-39"
+"agegroup_40_59","ra",13934,1654,0.870147015865464,0.114497449506731,2.3872617930854,1.90446272984204,2.992454921498,1.63184795662881e-12,178,"estimable","asthma ~ ra + age + sex + race + education + pir + bmi + smoking","agegroup","40-59"
+"agegroup_60_79","ra",9153,942,0.59830622771844,0.116897156685147,1.81903515830366,1.44429832124095,2.29100100615071,7.94444250620233e-07,178,"estimable","asthma ~ ra + age + sex + race + education + pir + bmi + smoking","agegroup","60-79"
+"sex_Male","ra",20192,2322,0.868158109831345,0.125031061196673,2.38251847227342,1.86157741927317,3.04923889383034,6.89704859840964e-11,178,"estimable","asthma ~ ra + age + race + education + pir + bmi + smoking","sex","Male"
+"sex_Female","ra",20498,2974,0.758515973551256,0.0902474320863586,2.1351053154663,1.78679482782114,2.55131402730295,1.33298949953406e-14,178,"estimable","asthma ~ ra + age + race + education + pir + bmi + smoking","sex","Female"

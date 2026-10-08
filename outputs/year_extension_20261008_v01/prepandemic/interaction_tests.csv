@@ -1,0 +1,3 @@
+"variable","n","F","df1","df2","p","method"
+"agegroup",37127,2.92261220691241,2,163,0.0566179388519919,"joint design Wald F; denominator=domain design df"
+"sex",37127,0.255774938832512,1,163,0.613721045860404,"joint design Wald F; denominator=domain design df"

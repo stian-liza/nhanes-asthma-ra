@@ -1,0 +1,359 @@
+expression(.libPaths(c("outputs/original_proposal_20260928_v01/R_library", 
+    ".Rlib", .libPaths())), suppressPackageStartupMessages({
+    library(survey)
+    library(haven)
+    library(jsonlite)
+    library(lpSolve)
+}), options(survey.lonely.psu = "fail", survey.adjust.domain.lonely = FALSE), 
+    scope <- commandArgs(trailingOnly = TRUE)[1], stopifnot(scope %in% 
+        c("prepandemic", "latest")), BASE <- "outputs/year_extension_20261008_v01", 
+    SRC <- file.path(BASE, scope), O <- file.path(SRC, "supplement"), 
+    ROOT <- file.path("/Volumes/Elements/NHANES_asthma_ra_extension_20261008_fresh_v1", 
+        scope), EXT <- file.path(ROOT, "supplement"), stopifnot(fromJSON(file.path(BASE, 
+        "input_integrity.json"))$verdict == "pass"), dir.create(O, 
+        showWarnings = FALSE), dir.create(EXT, showWarnings = FALSE), 
+    wr <- function(x, n) write.csv(x, file.path(O, paste0(n, 
+        ".csv")), row.names = FALSE, na = ""), d <- readRDS(file.path(ROOT, 
+        "derived/analysis_frame.rds")), rcs <- function(x, k) {
+        pos <- function(t) pmax(t, 0)^3
+        (pos(x - k[1]) - (k[3] - k[1])/(k[3] - k[2]) * pos(x - 
+            k[2]) + (k[2] - k[1])/(k[3] - k[2]) * pos(x - k[3]))/(k[3] - 
+            k[1])^2
+    }, kn <- list(), kt <- list(), for (v in c("age", "pir", 
+        "bmi")) {
+        k <- if (scope == "prepandemic") 
+            as.numeric(quantile(d[[v]][d$eligible], c(0.1, 0.5, 
+                0.9), type = 7))
+        else {
+            fixed <- read.csv(file.path(BASE, "prepandemic/supplement/knots.csv"))
+            as.numeric(fixed[fixed$variable == v, c("q10", "q50", 
+                "q90")])
+        }
+        stopifnot(length(unique(k)) == 3)
+        kn[[v]] <- k
+        d[[paste0(v, "_nl")]] <- rcs(d[[v]], k)
+        kt[[v]] <- data.frame(variable = v, q10 = k[1], q50 = k[2], 
+            q90 = k[3])
+        x <- d[[v]][d$eligible]
+        A <- cbind(1, x, rcs(x, k))
+        B <- cbind(1, splines::ns(x, knots = k[2], Boundary.knots = k[c(1, 
+            3)]))
+        stopifnot(max(abs(qr.resid(qr(A), B))) < 1e-07)
+    }, wr(do.call(rbind, kt), "knots"), d$cycle <- factor(d$year), 
+    d$period <- if (scope == "latest") factor(rep("2021-2023", 
+        nrow(d))) else factor(ifelse(d$year <= 2007, "1999-2008", 
+        "2009-March2020")), d$complete <- as.integer(d$eligible), 
+    broad <- d[d$design_valid, ], wide <- svydesign(ids = ~SDMVPSU, 
+        strata = ~SDMVSTRA, weights = ~analysis_weight, data = broad, 
+        nest = TRUE), des <- subset(wide, eligible), pre <- subset(wide, 
+        pre_covariate), z <- des$variables, W <- sum(weights(des)), 
+    nu <- degf(des), stopifnot(nu > 0), parent <- unique(broad[, 
+        c("SDMVSTRA", "SDMVPSU")]), parent$key <- paste(parent$SDMVSTRA, 
+        parent$SDMVPSU, sep = "_"), pcov <- function(contrib, 
+        dat) {
+        contrib <- as.matrix(contrib)
+        V <- matrix(0, ncol(contrib), ncol(contrib))
+        a <- rowsum(contrib, paste(dat$SDMVSTRA, dat$SDMVPSU, 
+            sep = "_"), reorder = FALSE)
+        totals <- matrix(0, nrow(parent), ncol(contrib))
+        totals[match(rownames(a), parent$key), ] <- a
+        for (h in unique(parent$SDMVSTRA)) {
+            q <- totals[parent$SDMVSTRA == h, , drop = FALSE]
+            m <- nrow(q)
+            stopifnot(m > 1)
+            q <- sweep(q, 2, colMeans(q), "-")
+            V <- V + m/(m - 1) * crossprod(q)
+        }
+        V
+    }, sep <- function(X, y) {
+        sc <- pmax(apply(abs(X), 2, max), 1)
+        A <- sweep(X, 2, sc, "/") * (2 * y - 1)
+        p <- ncol(X)
+        f <- lp("max", c(colSums(A), -colSums(A)), rbind(cbind(A, 
+            -A), rep(1, 2 * p)), c(rep(">=", nrow(A)), "<="), 
+            c(rep(0, nrow(A)), 1))
+        list(status = f$status, value = f$objval, separated = f$status == 
+            0 && f$objval > 1e-07)
+    }, fits <- list(), diags <- list(), outrows <- list(), checks <- list(), 
+    tests <- list(), ck <- function(n, v, tol) {
+        checks[[length(checks) + 1]] <<- data.frame(check = n, 
+            error = v, tolerance = tol, pass = is.finite(v) && 
+                v < tol)
+        if (!is.finite(v) || v >= tol) 
+            stop(n, " failed: ", v)
+    }, fitone <- function(name, form, ds) {
+        warn <- character()
+        m <- withCallingHandlers(svyglm(form, ds, family = quasibinomial(), 
+            control = glm.control(maxit = 100)), warning = function(w) {
+            warn <<- c(warn, conditionMessage(w))
+            invokeRestart("muffleWarning")
+        })
+        X <- model.matrix(m)
+        y <- model.response(model.frame(m))
+        ss <- sep(X, y)
+        se <- sqrt(diag(vcov(m)))
+        valid <- m$converged && m$rank == ncol(X) && all(is.finite(se)) && 
+            ss$status == 0 && !ss$separated
+        diags[[name]] <<- data.frame(model = name, n = nrow(X), 
+            events = sum(y), parameters = ncol(X), rank = m$rank, 
+            df = degf(ds), converged = m$converged, lp_status = ss$status, 
+            lp_objective = ss$value, separated = ss$separated, 
+            min_fitted = min(fitted(m)), max_fitted = max(fitted(m)), 
+            max_se = max(se), scaled_condition_number = kappa(scale(X[, 
+                -1, drop = FALSE]), exact = TRUE), status = if (valid) 
+                "estimable"
+            else "unreliable", warnings = paste(unique(warn), 
+                collapse = " | "))
+        fits[[name]] <<- m
+        if ("ra" %in% names(coef(m))) {
+            b <- coef(m)["ra"]
+            s <- se["ra"]
+            df <- degf(ds)
+            outrows[[name]] <<- data.frame(model = name, n = nrow(X), 
+                events = sum(y), ra_n = sum(ds$variables$ra), 
+                beta = b, se = s, OR = exp(b), lower = exp(b - 
+                  qt(0.975, df) * s), upper = exp(b + qt(0.975, 
+                  df) * s), p = 2 * pt(abs(b/s), df, lower.tail = FALSE), 
+                df = df, status = if (valid) 
+                  "estimable"
+                else "unreliable", row.names = NULL)
+        }
+        cat("FIT", name, "n", nrow(X), "status", valid, "\n")
+        stopifnot(valid)
+        m
+    }, wald <- function(m, terms, label) {
+        r <- regTermTest(m, as.formula(paste("~", paste(terms, 
+            collapse = "+"))), df = degf(m$survey.design), method = "Wald")
+        tests[[label]] <<- data.frame(test = label, F = as.numeric(r$Ftest), 
+            df1 = r$df, df2 = r$ddf, p = as.numeric(r$p))
+    }, f0 <- asthma ~ ra + age + sex + race + education + pir + 
+        bmi + smoking, f1 <- update(f0, . ~ . + age_nl + pir_nl), 
+    f2 <- update(f1, . ~ . + bmi_nl), f3 <- update(f1, . ~ . + 
+        cycle), fitone("B0", f0, des), old <- read.csv(file.path(SRC, 
+        "regression.csv")), old <- old[old$model == "M3", ], 
+    ck("baseline_beta", abs(coef(fits$B0)["ra"] - old$beta), 
+        1e-10), ck("baseline_se", abs(sqrt(vcov(fits$B0)["ra", 
+        "ra"]) - old$se), 1e-10), fitone("B1", f1, des), fitone("B2", 
+        f2, des), if (scope == "prepandemic") fitone("B3", f3, 
+        des), wald(fits$B1, c("age_nl", "pir_nl"), "B1_joint_nonlinearity"), 
+    wald(fits$B1, "age_nl", "B1_age_nonlinearity"), wald(fits$B1, 
+        "pir_nl", "B1_pir_nonlinearity"), wald(fits$B2, "bmi_nl", 
+        "B2_bmi_nonlinearity"), for (v in c("agegroup", "sex")) {
+        for (l in levels(z[[v]])) {
+            ds <- des[z[[v]] == l, ]
+            ff <- if (v == "sex") 
+                update(f1, . ~ . - sex)
+            else f1
+            fitone(paste(v, l, sep = "_"), ff, ds)
+        }
+        ff <- if (v == "agegroup") 
+            update(f1, . ~ . + agegroup + ra:agegroup)
+        else update(f1, . ~ . + ra:sex)
+        m <- fitone(paste0("int_", v), ff, des)
+        wald(m, paste0("ra:", v), paste0("B1_interaction_", v))
+    }, if (scope == "prepandemic") {
+        for (p in levels(z$period)) fitone(paste0("period_", 
+            p), f1, des[z$period == p, ])
+        pm <- fitone("int_period", update(f3, . ~ . + ra:period), 
+            des)
+        wald(pm, "ra:period", "B3_interaction_period")
+    }, marg <- list(), covrows <- list(), for (n in intersect(c("B0", 
+        "B1", "B3"), names(fits))) {
+        m <- fits[[n]]
+        X <- model.matrix(m)
+        y <- z$asthma
+        w <- weights(des)
+        mu <- fitted(m)
+        A <- crossprod(X, X * (w * mu * (1 - mu)))/W
+        score <- X * (y - mu)
+        ib <- score %*% solve(A)
+        Vb <- pcov(ib * w/W, z)
+        ck(paste0(n, "_beta_covariance"), max(abs(Vb - vcov(m)))/max(abs(vcov(m))), 
+            2e-05)
+        C <- matrix(0, nrow(z), 2)
+        est <- numeric(2)
+        condG <- matrix(0, ncol(X), 2)
+        for (g in 0:1) {
+            nd <- z
+            nd$ra <- g
+            XX <- model.matrix(delete.response(terms(m)), nd, 
+                contrasts.arg = m$contrasts)
+            XX <- XX[, names(coef(m)), drop = FALSE]
+            pr <- plogis(XX %*% coef(m))
+            theta <- sum(w * pr)/W
+            G <- colSums(XX * as.numeric(w * pr * (1 - pr)))/W
+            est[g + 1] <- theta
+            condG[, g + 1] <- G
+            C[, g + 1] <- as.numeric(pr - theta + ib %*% G)
+            eps <- 1e-05
+            j <- match("ra", names(coef(m)))
+            bp <- bm <- coef(m)
+            bp[j] <- bp[j] + eps
+            bm[j] <- bm[j] - eps
+            fd <- sum(w * (plogis(XX %*% bp) - plogis(XX %*% 
+                bm)))/W/(2 * eps)
+            ck(paste(n, "marginal_gradient", g), abs(fd - G[j]), 
+                1e-08)
+        }
+        ds <- des
+        ds$variables$.l0 <- C[, 1]/W
+        ds$variables$.l1 <- C[, 2]/W
+        V <- vcov(svytotal(~.l0 + .l1, ds))
+        Vind <- pcov(C * w/W, z)
+        ck(paste0(n, "_marginal_PSU_covariance"), max(abs(V - 
+            Vind)), 1e-10)
+        Vcond <- t(condG) %*% vcov(m) %*% condG
+        for (j in 1:2) {
+            s <- sqrt(V[j, j])
+            ql <- qlogis(est[j])
+            dq <- qt(0.975, nu) * s/(est[j] * (1 - est[j]))
+            marg[[length(marg) + 1]] <- data.frame(model = n, 
+                estimand = if (j == 1) 
+                  "No_arthritis"
+                else "RA", estimate = est[j], se = s, lower = plogis(ql - 
+                  dq), upper = plogis(ql + dq), p = NA, coefficient_only_se = sqrt(Vcond[j, 
+                  j]), df = nu)
+        }
+        diff <- est[2] - est[1]
+        se <- sqrt(sum(V * c(1, -1, -1, 1)))
+        marg[[length(marg) + 1]] <- data.frame(model = n, estimand = "difference_RA_minus_control", 
+            estimate = diff, se = se, lower = diff - qt(0.975, 
+                nu) * se, upper = diff + qt(0.975, nu) * se, 
+            p = 2 * pt(abs(diff/se), nu, lower.tail = FALSE), 
+            coefficient_only_se = sqrt(sum(Vcond * c(1, -1, -1, 
+                1))), df = nu)
+        covrows[[n]] <- data.frame(model = n, v00 = V[1, 1], 
+            v01 = V[1, 2], v11 = V[2, 2])
+    }, wr(do.call(rbind, marg), "standardized_prevalence"), wr(do.call(rbind, 
+        covrows), "standardized_covariance"), pz <- pre$variables, 
+    wp <- weights(pre), Wp <- sum(wp), selstats <- list(), patterns <- apply(is.na(pz[, 
+        c("education", "pir", "bmi", "smoking")]), 1, function(r) if (any(r)) paste(c("education", 
+        "pir", "bmi", "smoking")[r], collapse = "+") else "complete"), 
+    pat <- aggregate(cbind(n = rep(1, nrow(pz)), weight = wp), 
+        list(pattern = patterns), sum), pat$weighted_percent <- pat$weight/Wp * 
+        100, wr(pat, "missing_patterns"), for (s in 0:1) {
+        dd <- pre[pz$complete == s, ]
+        q <- dd$variables
+        for (v in c("age", "bmi", "pir", "asthma", "ra")) {
+            ok <- !is.na(q[[v]])
+            ds <- dd[ok, ]
+            m <- svymean(as.formula(paste0("~", v)), ds)
+            selstats[[length(selstats) + 1]] <- data.frame(complete = s, 
+                variable = v, level = "mean", domain_n = nrow(q), 
+                observed_n = sum(ok), missing_n = sum(!ok), n = if (v %in% 
+                  c("asthma", "ra")) 
+                  sum(q[[v]][ok])
+                else sum(ok), estimate = as.numeric(coef(m)), 
+                se = as.numeric(SE(m)))
+        }
+        for (v in c("sex", "race", "education", "smoking", "cycle")) for (l in levels(q[[v]])) {
+            ok <- !is.na(q[[v]])
+            ds <- dd[ok, ]
+            ds$variables$.yes <- as.numeric(ds$variables[[v]] == 
+                l)
+            m <- svymean(~.yes, ds)
+            selstats[[length(selstats) + 1]] <- data.frame(complete = s, 
+                variable = v, level = l, domain_n = nrow(q), 
+                observed_n = sum(ok), missing_n = sum(!ok), n = sum(q[[v]] == 
+                  l, na.rm = TRUE), estimate = as.numeric(coef(m)), 
+                se = as.numeric(SE(m)))
+        }
+    }, wr(do.call(rbind, selstats), "selection_characteristics"), 
+    selection_by <- list(), for (v in c("ra", "asthma", "period")) for (l in unique(pz[[v]])) {
+        ds <- pre[pz[[v]] == l, ]
+        m <- svymean(~complete, ds)
+        selection_by[[length(selection_by) + 1]] <- data.frame(variable = v, 
+            level = as.character(l), n = nrow(ds$variables), 
+            complete_n = sum(ds$variables$complete), probability = as.numeric(coef(m)), 
+            se = as.numeric(SE(m)))
+    }, wr(do.call(rbind, selection_by), "selection_rates"), sf <- complete ~ 
+        ra + asthma + age + age_nl + sex + race + cycle, if (scope == 
+        "latest") sf <- update(sf, . ~ . - cycle), sm <- fitone("selection_model", 
+        sf, pre), pi <- as.numeric(fitted(sm)), stopifnot(all(pi > 
+        0), all(pi < 1)), gamX <- model.matrix(sm), S <- pz$complete, 
+    idx <- which(S == 1), stopifnot(identical(pz$SEQN[idx], z$SEQN)), 
+    ipwdes <- des, ipwdes$prob <- des$prob * pi[idx], fitone("B4", 
+        f1, ipwdes), m <- fits$B4, X <- model.matrix(m), y <- z$asthma, 
+    mu <- fitted(m), gmu <- pi, Ag <- crossprod(gamX, gamX * 
+        (wp * pi * (1 - pi)))/Wp, Ab <- crossprod(X, X * (wp[idx]/pi[idx] * 
+        mu * (1 - mu)))/Wp, Cross <- -crossprod(X, gamX[idx, 
+        , drop = FALSE] * (wp[idx] * (1 - pi[idx])/pi[idx] * 
+        (y - mu)))/Wp, sg <- gamX * (S - pi), sb <- matrix(0, 
+        nrow(pz), ncol(X)), sb[idx, ] <- X * ((y - mu)/pi[idx]), 
+    ig <- sg %*% solve(Ag), ib <- (sb + ig %*% t(Cross)) %*% 
+        solve(Ab), J <- rbind(cbind(Ab, -Cross), cbind(matrix(0, 
+        ncol(gamX), ncol(X)), Ag)), iall <- cbind(sb, sg) %*% 
+        t(solve(J)), ck("selection_stacked_inverse", max(abs(iall[, 
+        seq_len(ncol(X))] - ib)), 1e-07), je <- match("asthma", 
+        colnames(gamX)), eps <- 1e-05, sc <- function(g) {
+        p <- plogis(gamX %*% g)
+        colSums(X * (wp[idx]/p[idx] * (y - mu)))/Wp
+    }, gp <- gm <- coef(sm), gp[je] <- gp[je] + eps, gm[je] <- gm[je] - 
+        eps, ck("selection_cross_derivative", max(abs((sc(gp) - 
+        sc(gm))/(2 * eps) - Cross[, je])), 1e-07), V <- pcov(ib * 
+        wp/Wp, pz), td <- svytotal(ib/Wp, pre), ck("selection_joint_PSU_covariance", 
+        max(abs(V - vcov(td))), 1e-09), j <- match("ra", names(coef(m))), 
+    b <- coef(m)[j], se <- sqrt(V[j, j]), df <- degf(pre), outrows$B4$se <- se, 
+    outrows$B4$lower <- exp(b - qt(0.975, df) * se), outrows$B4$upper <- exp(b + 
+        qt(0.975, df) * se), outrows$B4$p <- 2 * pt(abs(b/se), 
+        df, lower.tail = FALSE), outrows$B4$df <- df, wr(data.frame(min_probability = min(pi), 
+        max_probability = max(pi), p01_probability = quantile(pi, 
+            0.01), max_multiplier = max(1/pi[idx]), p99_multiplier = quantile(1/pi[idx], 
+            0.99), n_probability_below_005 = sum(pi < 0.05), 
+        n_probability_below_01 = sum(pi < 0.1), kish_original = sum(weights(des))^2/sum(weights(des)^2), 
+        kish_selection = sum(weights(ipwdes))^2/sum(weights(ipwdes)^2), 
+        conditional_ra_se = sqrt(vcov(m)[j, j]), joint_ra_se = se), 
+        "selection_weight_diagnostics"), psmod <- fitone("support_model", 
+        ra ~ age + age_nl + pir + pir_nl + bmi + sex + race + 
+            education + smoking, des), e <- fitted(psmod), support <- list(), 
+    for (g in 0:1) {
+        ds <- des[z$ra == g, ]
+        ds$variables$.e <- e[z$ra == g]
+        for (v in c("age", "pir", "bmi", ".e")) {
+            q <- as.numeric(coef(svyquantile(as.formula(paste0("~", 
+                v)), ds, quantiles = c(0.01, 0.05, 0.5, 0.95, 
+                0.99), ci = FALSE, qrule = "math")))
+            support[[length(support) + 1]] <- data.frame(ra = g, 
+                variable = v, n = nrow(ds$variables), min = min(ds$variables[[v]]), 
+                q01 = q[1], q05 = q[2], median = q[3], q95 = q[4], 
+                q99 = q[5], max = max(ds$variables[[v]]))
+        }
+    }, wr(do.call(rbind, support), "covariate_support"), lo <- max(tapply(e, 
+        z$ra, min)), hi <- min(tapply(e, z$ra, max)), wr(data.frame(lower = lo, 
+        upper = hi, unweighted_outside_n = sum(e < lo | e > hi), 
+        weighted_outside_fraction = sum(weights(des)[e < lo | 
+            e > hi])/W), "support_overlap"), cells <- list(), 
+    for (v in c("agegroup", "sex", "race", "education", "smoking", 
+        "bmigroup", "pirgroup")) for (l in levels(z[[v]])) for (g in 0:1) {
+        ix <- z[[v]] == l & z$ra == g
+        cells[[length(cells) + 1]] <- data.frame(variable = v, 
+            level = l, ra = g, n = sum(ix), events = sum(z$asthma[ix]))
+    }, wr(do.call(rbind, cells), "support_cells"), res <- list(), 
+    for (n in c("B0", "B1", "B2")) for (v in c("age", "pir", 
+        "bmi")) {
+        cuts <- unique(quantile(z[[v]], seq(0, 1, length.out = 11)))
+        bin <- cut(z[[v]], cuts, include.lowest = TRUE)
+        for (l in levels(bin)) {
+            ii <- bin == l
+            res[[length(res) + 1]] <- data.frame(model = n, variable = v, 
+                bin = l, n = sum(ii), mean_x = weighted.mean(z[[v]][ii], 
+                  weights(des)[ii]), residual = weighted.mean(z$asthma[ii] - 
+                  fitted(fits[[n]])[ii], weights(des)[ii]))
+        }
+    }, wr(do.call(rbind, res), "binned_residuals"), wr(do.call(rbind, 
+        tests), "tests"), wr(do.call(rbind, diags), "diagnostics"), 
+    wr(do.call(rbind, outrows), "all_estimates"), wr(do.call(rbind, 
+        outrows[intersect(c("B0", "B1", "B2", "B3", "B4"), names(outrows))]), 
+        "regression"), wr(do.call(rbind, checks), "numerical_validation"), 
+    saveRDS(list(models = fits, selection_joint_covariance = V, 
+        knots = kn), file.path(EXT, "models.rds")), writeLines(capture.output(sessionInfo()), 
+        file.path(O, "environment.txt")), write_json(list(verdict = "pass", 
+        n = nrow(z), pre_n = nrow(pz), df = nu, models = length(fits), 
+        all_numeric_checks = all(do.call(rbind, checks)$pass), 
+        source_reconstruction = "see preparation frequency and independent input validation", 
+        no_imputation = TRUE, original_definitions_retained = TRUE), 
+        file.path(O, "analysis_gate.json"), pretty = TRUE, auto_unbox = TRUE), 
+    cat("COMPLETE\n"), print(do.call(rbind, outrows[intersect(c("B0", 
+        "B1", "B2", "B3", "B4"), names(outrows))])), print(do.call(rbind, 
+        tests)), print(do.call(rbind, marg)))
+PARSE PASS

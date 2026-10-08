@@ -1,0 +1,11 @@
+{
+  "verdict": "pass",
+  "n": 37127,
+  "pre_n": 41522,
+  "df": 163,
+  "models": 17,
+  "all_numeric_checks": true,
+  "source_reconstruction": "see preparation frequency and independent input validation",
+  "no_imputation": true,
+  "original_definitions_retained": true
+}

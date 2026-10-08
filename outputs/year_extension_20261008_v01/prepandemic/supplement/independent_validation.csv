@@ -1,0 +1,48 @@
+"check","pass"
+"age_values",TRUE
+"asthma_values",TRUE
+"RA_values",TRUE
+"BMI_values",TRUE
+"PIR_values",TRUE
+"sex_values",TRUE
+"race_values",TRUE
+"education_values",TRUE
+"smoking_values",TRUE
+"natural_spline_RA_coefficient_equivalence",TRUE
+"natural_spline_RA_SE_equivalence",TRUE
+"natural_spline_fitted_equivalence",TRUE
+"older_age_orthogonal_RA_coefficient",TRUE
+"older_age_orthogonal_RA_SE",TRUE
+"older_age_orthogonal_fitted",TRUE
+"agegroup domain_sum",TRUE
+"sex domain_sum",TRUE
+"period domain_sum",TRUE
+"agegroup Wald_F",TRUE
+"agegroup Wald_P",TRUE
+"sex Wald_F",TRUE
+"sex Wald_P",TRUE
+"period Wald_F",TRUE
+"period Wald_P",TRUE
+"B0 0 native_predict",TRUE
+"B0 1 native_predict",TRUE
+"B1 0 native_predict",TRUE
+"B1 1 native_predict",TRUE
+"B3 0 native_predict",TRUE
+"B3 1 native_predict",TRUE
+"B0 OR",TRUE
+"B0 CI",TRUE
+"B0 P",TRUE
+"B1 OR",TRUE
+"B1 CI",TRUE
+"B1 P",TRUE
+"B2 OR",TRUE
+"B2 CI",TRUE
+"B2 P",TRUE
+"B3 OR",TRUE
+"B3 CI",TRUE
+"B3 P",TRUE
+"B4 OR",TRUE
+"B4 CI",TRUE
+"B4 P",TRUE
+"all_model_diagnostics",TRUE
+"all_numerical_checks",TRUE

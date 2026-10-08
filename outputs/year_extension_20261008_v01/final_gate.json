@@ -1,0 +1,17 @@
+{
+  "verdict": "pass",
+  "stage": "completed analysis and draft manuscript delivery",
+  "new_models_run": true,
+  "legacy_participant_data_reused": false,
+  "external_raw_files": 44,
+  "official_frequency_checks": 667,
+  "report_consistency_checks": 182,
+  "pdf_pages": 23,
+  "model_and_independent_validation": "pass",
+  "pooling": "supplement only; not evidence of period equivalence",
+  "unresolved": [
+    "author affiliations, funding, local ethics determination and conflict statements",
+    "period equivalence remains unestablished",
+    "not submitted to journal"
+  ]
+}

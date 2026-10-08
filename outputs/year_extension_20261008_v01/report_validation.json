@@ -1,0 +1,737 @@
+{
+  "verdict": "pass",
+  "checks": 182,
+  "tables": 17,
+  "docx_sha256": "4483b0979609c715a8eb0264c0b1e67a09bfb5439a86e6aed7e63b6a37f86b23",
+  "scope": "source and document consistency, with independently validated new model outputs",
+  "details": [
+    {
+      "check": "source:prepandemic/asthma_prevalence.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:prepandemic/regression.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:prepandemic/interaction_tests.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:prepandemic/subgroups.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:prepandemic/supplement/regression.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:prepandemic/supplement/tests.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:prepandemic/supplement/standardized_prevalence.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:latest/asthma_prevalence.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:latest/regression.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:latest/interaction_tests.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:latest/subgroups.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:latest/supplement/regression.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:latest/supplement/tests.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:latest/supplement/standardized_prevalence.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:pooled/asthma_prevalence.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:pooled/regression.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:pooled/interaction_tests.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:pooled/subgroups.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:pooled/pooling_models.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:prepandemic/supplement/knots.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:prepandemic/sample_flow.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:latest/sample_flow.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:prepandemic/supplement/selection_weight_diagnostics.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:latest/supplement/selection_weight_diagnostics.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:prepandemic/figures/sample_flow.png",
+      "pass_check": true
+    },
+    {
+      "check": "source:latest/figures/sample_flow.png",
+      "pass_check": true
+    },
+    {
+      "check": "source:prepandemic/characteristics.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:latest/characteristics.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:prepandemic/figures/subgroup_forest.png",
+      "pass_check": true
+    },
+    {
+      "check": "source:latest/figures/subgroup_forest.png",
+      "pass_check": true
+    },
+    {
+      "check": "source:prepandemic/covariates_asthma.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:prepandemic/covariates_ra.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:latest/covariates_asthma.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:latest/covariates_ra.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:prepandemic/covariate_tests.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:latest/covariate_tests.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:prepandemic/supplement/all_estimates.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:latest/supplement/all_estimates.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:prepandemic/missingness.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:prepandemic/supplement/support_overlap.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:latest/missingness.csv",
+      "pass_check": true
+    },
+    {
+      "check": "source:latest/supplement/support_overlap.csv",
+      "pass_check": true
+    },
+    {
+      "check": "locked_plan",
+      "pass_check": true
+    },
+    {
+      "check": "table_count",
+      "pass_check": true
+    },
+    {
+      "check": "table:1",
+      "pass_check": true
+    },
+    {
+      "check": "table:2",
+      "pass_check": true
+    },
+    {
+      "check": "table:3",
+      "pass_check": true
+    },
+    {
+      "check": "table:4",
+      "pass_check": true
+    },
+    {
+      "check": "table:5",
+      "pass_check": true
+    },
+    {
+      "check": "table:6",
+      "pass_check": true
+    },
+    {
+      "check": "table:7",
+      "pass_check": true
+    },
+    {
+      "check": "table:8",
+      "pass_check": true
+    },
+    {
+      "check": "table:9",
+      "pass_check": true
+    },
+    {
+      "check": "table:10",
+      "pass_check": true
+    },
+    {
+      "check": "table:11",
+      "pass_check": true
+    },
+    {
+      "check": "table:12",
+      "pass_check": true
+    },
+    {
+      "check": "table:13",
+      "pass_check": true
+    },
+    {
+      "check": "table:14",
+      "pass_check": true
+    },
+    {
+      "check": "table:15",
+      "pass_check": true
+    },
+    {
+      "check": "table:16",
+      "pass_check": true
+    },
+    {
+      "check": "table:17",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:1",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:2",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:3",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:4",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:5",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:6",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:7",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:8",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:9",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:10",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:11",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:12",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:13",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:14",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:15",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:16",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:17",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:18",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:19",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:20",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:21",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:22",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:23",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:24",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:25",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:26",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:27",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:28",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:29",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:30",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:31",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:32",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:33",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:34",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:35",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:36",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:37",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:38",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:39",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:40",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:41",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:42",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:43",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:44",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:45",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:46",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:47",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:48",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:49",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:50",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:51",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:52",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:53",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:54",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:55",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:56",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:57",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:58",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:59",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:60",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:61",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:62",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:63",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:64",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:65",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:66",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:67",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:68",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:69",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:70",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:71",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:72",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:73",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:74",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:75",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:76",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:77",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:78",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:79",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:80",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:81",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:82",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:83",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:84",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:85",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:86",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:87",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:88",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:89",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:90",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:91",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:92",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:93",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:94",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:95",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:96",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:97",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:98",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:99",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:100",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:101",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:102",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:103",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:104",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:105",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:106",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:107",
+      "pass_check": true
+    },
+    {
+      "check": "paragraph:108",
+      "pass_check": true
+    },
+    {
+      "check": "prepandemic:input",
+      "pass_check": true
+    },
+    {
+      "check": "prepandemic:variance",
+      "pass_check": true
+    },
+    {
+      "check": "prepandemic:diagnostics",
+      "pass_check": true
+    },
+    {
+      "check": "latest:input",
+      "pass_check": true
+    },
+    {
+      "check": "latest:variance",
+      "pass_check": true
+    },
+    {
+      "check": "latest:diagnostics",
+      "pass_check": true
+    },
+    {
+      "check": "pooled:input",
+      "pass_check": true
+    },
+    {
+      "check": "pooled:variance",
+      "pass_check": true
+    },
+    {
+      "check": "pooled:diagnostics",
+      "pass_check": true
+    },
+    {
+      "check": "prepandemic:supplement",
+      "pass_check": true
+    },
+    {
+      "check": "latest:supplement",
+      "pass_check": true
+    },
+    {
+      "check": "pooling_variance",
+      "pass_check": true
+    },
+    {
+      "check": "frozen_original",
+      "pass_check": true
+    }
+  ]
+}

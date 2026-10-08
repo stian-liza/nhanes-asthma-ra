@@ -1,0 +1,215 @@
+自报类风湿关节炎与曾患哮喘的关联
+
+NHANES 1999年至2020年3月与2021年至2023年重复横断面研究
+
+［作者姓名、排序、单位、通信作者及基金信息待作者据实补齐］
+
+【目的】分析自报类风湿关节炎（RA）与曾患哮喘的关联，评价其在较新调查时期的表现，并考察跨期合并估计的适用性。
+
+【方法】使用美国国家健康与营养检查调查（NHANES）1999—2020年3月及2021年8月—2023年8月资料。纳入20～79岁、疾病及七项预设协变量完整有效者。结局为自报曾被医生或其他卫生专业人员告知患哮喘；RA要求医生诊断关节炎且类型为RA；对照为明确无关节炎者。采用体检权重、分层和主要抽样单位进行子总体分析。分别建立四个复杂抽样Logistic模型；预先规定跨期合并补充、调查周期调整和时期交互检查，并进行函数形式、标准化比例及完整病例选择敏感性分析。
+
+【结果】疫情前及最新时期分别纳入37,127人和3,563人，其中RA者分别为2,372人和255人。完全调整模型的优势比（OR）及95%置信区间分别为2.27（1.91—2.70）和1.97（1.33—2.92）。合并40,690人并调整调查周期后的OR为2.25（1.92—2.64），加入年龄及贫困收入比非线性调整后为2.22（1.89—2.61）。线性调整的时期交互OR比为0.85（0.56—1.28），P=0.430；其区间仍容许一定幅度的时期差异。
+
+【结论】在规定的完整病例及无关节炎对照口径下，两个观测时期均见RA与曾患哮喘的正向横断面关联。跨期合并可提供补充性的混合人群关联估计，但不能证明时期等效、代表疫情调查空档或判断因果关系。
+
+关键词：类风湿关节炎；哮喘；横断面研究；复杂抽样；美国国家健康与营养检查调查
+
+Repeated Cross Sectional Analyses of NHANES 1999 to March 2020 and August 2021 to August 2023
+
+[Author names and affiliations to be supplied]
+
+Objective To examine the association between self-reported rheumatoid arthritis (RA) and ever-diagnosed asthma across two observed survey periods and assess supplementary pooling across periods.
+
+Methods Adults aged 20–79 years with complete disease information and seven prespecified covariates were selected from NHANES 1999–March 2020 and August 2021–August 2023. RA required self-reported doctor-diagnosed arthritis of the rheumatoid type; comparators explicitly reported no arthritis. Ever-diagnosed asthma was the outcome. Examination weights, strata and primary sampling units were incorporated into survey-domain analyses. Four fixed logistic models were fitted separately by period. Prespecified supplementary analyses addressed pooling, cycle adjustment, period interactions, nonlinear adjustment, standardized proportions and complete-case selection.
+
+Results The two periods included 37,127 and 3,563 participants, including 2,372 and 255 with RA, respectively. Fully adjusted odds ratios (ORs) were 2.27 (95% confidence interval [CI], 1.91–2.70) and 1.97 (95% CI, 1.33–2.92). Among 40,690 pooled participants, the cycle-adjusted OR was 2.25 (95% CI, 1.92–2.64); the OR with nonlinear age and poverty income ratio adjustment was 2.22 (95% CI, 1.89–2.61). The latest-to-prepandemic OR ratio in the linear-adjustment interaction model was 0.85 (95% CI, 0.56–1.28; P=0.430), leaving uncertainty about differences between periods.
+
+Conclusion Positive cross-sectional associations were observed in both periods under the specified complete-case and no-arthritis comparator definitions. Pooling provides a supplementary association for a mixture of observed periods, without establishing equivalence, representing the unobserved pandemic interval, or identifying causality.
+
+Keywords: rheumatoid arthritis; asthma; cross-sectional study; complex survey; NHANES
+
+RA与哮喘的共存可能涉及共同危险因素、诊断机会和治疗等多种解释。既往病历病例对照及全国调查报告过两病关联[1,3]；女性前瞻性研究在控制时间变化因素后，未发现RA与后续新发哮喘的明确关联[2]。曾患哮喘、当前哮喘发作及新发哮喘并非相同结局[4]，研究设计和疾病定义差异应纳入解释。
+
+本研究延续已确认的疾病与对照定义，将疫情前资料扩展至2020年3月，并增加最新公开的2021—2023年资料。NHANES疫情期间暂停调查，CDC一般不建议将最新周期直接与早期周期合并[5]。因此，本研究保留分时期估计，同时将跨期合并作为预先规定的补充，以区分总体关联、时期差异及测量限制。
+
+本研究为公开资料的重复横断面二次分析。使用DEMO、MCQ、SMQ、BMX四模块，全新获取44个官方数据文件，按受访者编号一对一连接。疫情前由1999—2016年九个两年周期和2017—2020年3月特殊发布块组成；后者已包含2017—2018年资料，因此未重复纳入旧2017—2018年文件。最新时期单独使用2021年8月—2023年8月资料[5-7]。不同调查时期不是同一批受访者的随访。
+
+纳入年龄20～79岁、体检权重和设计变量有效、两病状态明确且七项协变量完整者。其他关节炎类型、类型未知、拒答、不知道、疾病或协变量实际缺失分别记录并排除。无关节炎者类型题的合法跳题和从未吸烟者后续题的合法跳题不视为缺失。最终筛选顺序及各步人数见图1、图2及完整筛选表。
+
+原调查具有NHANES伦理审查批准和参与者知情同意[8]。本研究使用去标识化公开资料。［本单位公开数据二次研究的伦理审查或豁免认定、编号待据实补齐］。
+
+曾患哮喘由MCQ010肯定回答界定，不要求当前仍患哮喘。RA要求MCQ160A肯定且关节炎类型为RA；明确否定关节炎总题者作对照。1999—2008年类型字段为MCQ190，2009—2010年为MCQ191，两者RA编码为1；此后采用MCQ195，RA编码为2。未知和其他关节炎类型不编码为对照。逐发布块核对题干、代码本、适用年龄、频数及问卷跳题。
+
+协变量为年龄、性别、种族/族裔、教育、贫困收入比（PIR）、体质指数（BMI）及吸烟。种族采用各期共同的RIDRETH1五类，教育为成人五级。BMI采用官方实测值；PIR为有效0～5值，5保留顶码含义。吸烟按终生100支及当前吸烟题分为从未、既往、当前。最新问卷使用SMQ.022及产品提示卡，发布字段仍为SMQ020；据公开题干保留同一100支分类，提示方式差异记为测量限制。
+
+分类比较年龄分20～39、40～59、60～79岁；成人BMI分＜18.5、18.5～＜25、25～＜30、≥30 kg/m²[9]；PIR分＜1和≥1。主回归三者均连续线性调整。采用完整病例；不实施多重插补或因极端值本身而截尾。
+
+因模型包含实测BMI，采用体检权重。疫情前21.2年分析：1999—2002年使用WTMEC4YR乘4/21.2，2003—2016年使用WTMEC2YR乘2/21.2，2017—2020年3月使用WTMECPRP乘3.2/21.2。最新周期单独采用WTMEC2YR。上述依据CDC四年权重及特殊3.2年发布块规则构建[5,6]。
+
+跨期补充定义为按已观测发布块时长加权的混合人群，总时长23.2年；四年块乘4/23.2，普通两年块及最新周期乘2/23.2，特殊块乘3.2/23.2。该定义不补回2020年4月—2021年7月空档，也不是CDC对跨疫情合并的特别认可。不得把混合样本估计写作2023年当前水平。
+
+纳入官方分层SDMVSTRA和层内抽样单位SDMVPSU，在有效MEC宽样本建立设计，再取目标完整病例及亚组子总体；采用Taylor线性化方差，保留父设计抽样信息，不无依据拼接早期周期分层号[10]。R及survey的实际版本见复现附件。单系数以子总体设计自由度进行t检验及区间推断，联合检验采用设计Wald F方法[11]。
+
+每个分析集合四模型使用同一完整病例：M0未调整；M1增加年龄、性别、种族；M2再增加教育和PIR；M3再增加BMI及吸烟。主结果为M3。分类比较采用Rao–Scott校正F检验。年龄和性别亚组维持预设分组，组内调整其他协变量；交互检验来自总体模型，不能比较各组显著与否。检验为双侧，辅助分析未作多重性校正，解释结合效应大小、区间及预设地位。
+
+补充B0等同M3；B1以三节点限制性立方样条调整年龄与PIR；B2再增加BMI样条；B3在B1增加发布块因子，仅适用于多周期的疫情前样本；B4以原体检权重除以完整病例纳入概率拟合B1，联合方差计入选择概率估计不确定性。选择模型使用两病、年龄及其非线性、性别、种族与可变的调查周期，不验证不可观察缺失机制。
+
+样条节点在本轮拟合前按疫情前完整病例自变量第10、50、90百分位锁定，最新周期和合并分析共用：年龄/岁 24.00, 42.00, 67.00；PIR 0.64, 2.18, 5.00；BMI/（kg·m⁻²） 21.40, 27.61, 37.30。标准化比例以各自时间集合完整病例的加权协变量分布为参考，方差同时包含参数及参考分布抽样波动；不同集合的标准化比例不能直接作共同标准人口下的趋势比较。
+
+跨期合并补充包括M0—M3、P1（M3增加发布块因子）、P2（P1增加年龄和PIR非线性项）。在P1、P2分别加入RA与时期乘积项；时期主效应已由发布块因子覆盖。交互系数指数变换为最新时期与疫情前OR之比。交互模型假定其他协变量效应共同，另保留两时期独立模型。不以交互不显著认定等效，不依据结果选择主分析。
+
+检查唯一编号、官方频数、筛选闭合、单元格、收敛、设计矩阵秩、完全或准完全分离、共线性及精度。独立重建原始字段、资格与权重，独立PSU汇总计算设计方差，并以等价样条基、原生预测及显式Wald公式核验。一次补充方差检查发现默认收敛精度不足后，将求解容差收紧至1×10⁻¹²并重跑，未放宽校验阈值。
+
+1999—2020年3月最终纳入37,127人，其中RA组2,372人、无关节炎组34,755人；曾患哮喘者分别为493人和4,204人，加权比例分别为22.23%和12.77%（表1、表2）。
+
+2021年8月—2023年8月最终纳入3,563人，其中RA组255人、无关节炎组3,308人；曾患哮喘者分别为67人和532人，加权比例分别为23.93%和16.43%（表1、表2）。
+
+疫情前M3的OR为2.27（1.91—2.70），最新时期为1.97（1.33—2.92）（表3）。两者均为正向关联，最新时期区间较宽。两时间集合实际设计自由度分别为163和15；其差异反映抽样设计支持，不能以总人数代替。
+
+1999—2020年3月年龄和性别交互P值分别为0.057和0.614；年龄及PIR非线性调整后年龄交互P=0.065（表4及补充表）。年龄或性别差异均不能仅据单个亚组显著性判断。
+
+2021年8月—2023年8月年龄和性别交互P值分别为0.252和0.455；年龄及PIR非线性调整后年龄交互P=0.254（表4及补充表）。年龄或性别差异均不能仅据单个亚组显著性判断。
+
+两时段合并共40,690人。P1的OR为2.25（1.92—2.64），P2为2.22（1.89—2.61）（表5）。线性及非线性调整下，最新时期相对于疫情前的OR比分别为0.85（0.56—1.28）及0.84（0.55—1.29），交互P值分别为0.430和0.421。这些区间未排除一定幅度的时期差异；合并估计保留补充地位。
+
+1999—2020年3月B1的OR为2.24（1.89—2.66），B4为2.24（1.89—2.66）；B1标准化比例差为11.53个百分点（95%CI 8.49—14.57）。预测完整病例概率范围为0.707—0.974；选择加权结果依赖明确假设，不证明选择偏倚已消除。
+
+2021年8月—2023年8月B1的OR为1.92（1.24—2.96），B4为1.93（1.25—2.98）；B1标准化比例差为10.59个百分点（95%CI 2.47—18.72）。预测完整病例概率范围为0.711—0.907；选择加权结果依赖明确假设，不证明选择偏倚已消除。
+
+模型数值资格及独立核验通过；稀疏类别和较宽区间仍保留。连续变量与各亚组的详细频数、缺失模式、共同支持和模型诊断均在汇总附件中提供。部分老年亚组样条基相关较高，等价正交基验证用于排除数值表示造成的差异，不用于删变量。
+
+更新后两个观测时期均支持自报RA与曾患哮喘的正向关联；主要估计对预设函数形式和选择权重处理相近。这为两病共存提供新的时期资料。它与病例对照及横断面文献方向相容[1,3]，但不能替代前瞻性证据；既往RA与新发哮喘关联不明确的纵向结果仍需纳入考虑[2]。
+
+合并问题需要分别评价技术资格与科学解释。文件、疾病口径、权重及模型检查通过，说明本次预设混合样本参数可以计算。分时期估计方向一致、周期调整前后相近，有助于理解这一补充参数。但时期OR比的区间仍较宽，最新周期抽样自由度较低，不能用交互P值大于0.05证明关联稳定或两时期等效；疫情空档的分布始终未被观测[5,7]。
+
+分析直接支持指定样本中的统计关联（direct evidence）。自报医生诊断是临床疾病的替代测量（proxy evidence），可能受到关节炎类型辨认、回忆及诊断机会影响。共同炎症、药物作用或免疫机制仅为可能解释（speculation），本研究未测定其作用。纵向研究中的不明确结果、时期区间允许的差异及稀疏亚组属于应保留的反向或不确定证据（counterevidence/uncertainty）。
+
+首先，横断面资料无法确定先后顺序，OR不能表述为新发风险比或因果效应。其次，对照仅为明确无关节炎者，排除了其他类型及未知者，不能推广为RA对所有非RA的比较。两种疾病均未通过病历、血清学或肺功能逐例确诊，未测疾病活动度、治疗、就医频率等可造成残余混杂。
+
+再次，完整病例可能具有选择性；选择概率模型只能评价给定可观察信息的一种解释。最新周期访问方式、抽样设计及应答情况改变，吸烟题提示方式与RA帮助说明存在措辞差别，即使字段编码协调，也不能排除测量差异。不同标准人口下的标准化比例差不可直接解释为时期变化。多项辅助检验未经多重性校正，亚组结果应审慎解释。
+
+最后，合并补充代表已观测时段的特定混合人群，不能反映缺失疫情时段或2026年当前水平。结果来自美国成人，不能直接代表中国或宝安区；数据未包含中医证候或中医药干预，不能推断证型或治疗效果。后续应优先加强疾病确认及时间顺序研究，不以添加复杂方法替代这些证据。
+
+在规定的完整病例及明确无关节炎对照口径下，疫情前与2021—2023年均观察到自报RA与曾患哮喘的正向横断面关联。预设合并分析可作为补充，但分时期结果和不确定性应同时报告；目前不能证明时期等效、因果关系或任何治疗获益。
+
+作者贡献、利益冲突、基金、伦理认定及代码公开存档：［待作者据实补齐并确认］。
+
+[1] SHEEN Y H, ROLFES M C, WI C I, et al. Association of asthma with rheumatoid arthritis: a population-based case-control study[J]. J Allergy Clin Immunol Pract, 2018, 6(1): 219-226. DOI: 10.1016/j.jaip.2017.06.022.
+
+[2] SPARKS J A, LIN T C, CAMARGO C A Jr, et al. Rheumatoid arthritis and risk of chronic obstructive pulmonary disease or asthma among women: a marginal structural model analysis in the Nurses’ Health Study[J]. Semin Arthritis Rheum, 2018, 47(5): 639-648. DOI: 10.1016/j.semarthrit.2017.09.005.
+
+[3] KIM J G, KANG J, LEE J H, et al. Association of rheumatoid arthritis with bronchial asthma and asthma-related comorbidities: a population-based national surveillance study[J]. Front Med (Lausanne), 2023, 10: 1006290. DOI: 10.3389/fmed.2023.1006290.
+
+[4] BALJET E, LUIJKS H, VAN DEN BEMT L, et al. Chronic comorbid conditions and asthma exacerbation occurrence in a general population sample[J]. NPJ Prim Care Respir Med, 2023, 33: 29. DOI: 10.1038/s41533-023-00350-x.
+
+[5] CENTERS FOR DISEASE CONTROL AND PREVENTION. NHANES tutorial: weighting[EB/OL]. [2026-10-08]. https://wwwn.cdc.gov/nchs/nhanes/tutorials/weighting.aspx.
+
+[6] CENTERS FOR DISEASE CONTROL AND PREVENTION. NHANES 2017–March 2020 prepandemic data[DB/OL]. [2026-10-08]. https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/default.aspx?Cycle=2017-2020.
+
+[7] CENTERS FOR DISEASE CONTROL AND PREVENTION. Brief overview and analytic guidelines for NHANES August 2021–August 2023[EB/OL]. [2026-10-08]. https://wwwn.cdc.gov/nchs/nhanes/continuousnhanes/overviewbrief.aspx?Cycle=2021-2023.
+
+[8] CENTERS FOR DISEASE CONTROL AND PREVENTION. Ethics review board approval[EB/OL]. (2026-03-24)[2026-09-29]. https://www.cdc.gov/nchs/nhanes/about/erb.html.
+
+[9] CENTERS FOR DISEASE CONTROL AND PREVENTION. Adult BMI categories[EB/OL]. [2026-09-29]. https://www.cdc.gov/bmi/adult-calculator/bmi-categories.html.
+
+[10] CENTERS FOR DISEASE CONTROL AND PREVENTION. NHANES tutorial: variance estimation[EB/OL]. [2026-09-29]. https://wwwn.cdc.gov/nchs/nhanes/tutorials/varianceestimation.aspx.
+
+[11] LUMLEY T. survey: analysis of complex survey samples[CP/OL]. [2026-09-29]. https://cran.r-project.org/web/packages/survey/survey.pdf.
+
+Figure 1 Participant selection in 1999–March 2020
+
+注：顺序排除人数避免重复计数；疾病未知、其他关节炎及各项协变量缺失的细分人数见同名样本筛选CSV。
+
+Figure 2 Participant selection in August 2021–August 2023
+
+注：顺序排除人数避免重复计数；疾病未知、其他关节炎及各项协变量缺失的细分人数见同名样本筛选CSV。
+
+Table 1 Participant characteristics by arthritis status
+
+注：连续量为加权均值（标准误），分类量为实际人数（加权百分比）；表内RA占比不代表全部美国成人RA患病率。两时期分别列示。
+
+Table 1 Participant characteristics by arthritis status
+
+注：连续量为加权均值（标准误），分类量为实际人数（加权百分比）；表内RA占比不代表全部美国成人RA患病率。两时期分别列示。
+
+Table 2 Weighted proportions of ever-diagnosed asthma
+
+注：采用复杂抽样logit区间，实际人数与加权比例分别报告。
+
+Table 3 Prespecified survey-weighted logistic models
+
+注：同一时期内四模型样本一致；M0至M3调整顺序见方法。合并四模型均为补充，周期调整见表5。
+
+Table 4 Prespecified age and sex subgroups
+
+注：年龄组内继续调整连续年龄；性别组内移除恒定性别。交互检验见正文。
+
+Figure 3 Age and sex subgroup estimates
+
+注：点及横线为OR与95%CI，横轴为对数刻度；虚线为OR=1。组内显著性不能代替交互检验。
+
+Figure 4 Age and sex subgroup estimates
+
+注：点及横线为OR与95%CI，横轴为对数刻度；虚线为OR=1。组内显著性不能代替交互检验。
+
+Table 5 Supplementary pooling and period interactions
+
+注：P1为M3加周期；P2再加年龄/PIR非线性。I1/I2在P1/P2中加入RA与时期交互。OR比为1表示模型中的关联相同；其置信区间用于评估不确定性。此表不检验缺失疫情时段，也不构成等效性证明。
+
+Table 6 Period-specific supplementary models
+
+注：B0—B4含义见方法；最新时期只有一个发布块，B3不适用。B4区间计入选择概率估计不确定性。
+
+Supplementary Table S1 Standardized proportions and absolute differences
+
+注：每个时期以其自身加权协变量分布为参考；绝对差为模型标准化的关联描述，不是干预效应。
+
+Supplementary Table S2 Covariates and disease distributions
+
+注：比例分母为该类别的研究样本；RA比例仅适用于RA与无关节炎的选定比较。
+
+Supplementary Table S2 Covariates and disease distributions
+
+注：比例分母为该类别的研究样本；RA比例仅适用于RA与无关节炎的选定比较。
+
+Supplementary Table S3 Design-adjusted categorical tests
+
+注：Rao–Scott F校正，未作多重性校正；各项为总体分类比较，不能解释为独立危险因素。
+
+Supplementary Table S4 Nonlinear-adjustment subgroups and tests
+
+年龄及PIR联合非线性：F=11.376，自由度2/163，P<0.001。
+
+年龄非线性：F=8.513，自由度1/163，P=0.004。
+
+PIR非线性：F=12.873，自由度1/163，P<0.001。
+
+BMI额外非线性：F=3.227，自由度1/163，P=0.074。
+
+年龄组交互：F=2.781，自由度2/163，P=0.065。
+
+性别交互：F=0.192，自由度1/163，P=0.662。
+
+疫情前内部时期交互：F=1.640，自由度1/163，P=0.202。
+
+年龄及PIR联合非线性：F=0.845，自由度2/15，P=0.449。
+
+年龄非线性：F=1.684，自由度1/15，P=0.214。
+
+PIR非线性：F=0.074，自由度1/15，P=0.789。
+
+BMI额外非线性：F=0.308，自由度1/15，P=0.587。
+
+年龄组交互：F=1.503，自由度2/15，P=0.254。
+
+性别交互：F=0.569，自由度1/15，P=0.462。
+
+Supplementary Table S5 Complete-case selection and missingness
+
+选择概率0.707—0.974，最大选择权重倍数1.414；协变量预测RA概率的共同支持范围外586人，加权占比2.01%。
+
+各缺失人数允许重叠；顺序排除见流程表。纳入/排除者可观察特征及完整缺失组合见附件selection_characteristics.csv和missing_patterns.csv，均保留各自分母。
+
+选择概率0.711—0.907，最大选择权重倍数1.407；协变量预测RA概率的共同支持范围外21人，加权占比0.75%。
+
+各缺失人数允许重叠；顺序排除见流程表。纳入/排除者可观察特征及完整缺失组合见附件selection_characteristics.csv和missing_patterns.csv，均保留各自分母。

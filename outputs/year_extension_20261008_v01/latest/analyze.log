@@ -1,0 +1,14 @@
+Warning messages:
+1: package ‘survey’ was built under R version 4.5.2 
+2: package ‘survival’ was built under R version 4.5.2 
+  model    n       OR    lower    upper            p
+1    M0 3563 1.600258 1.054519 2.428429 0.0296657912
+2    M1 3563 2.075807 1.405718 3.065320 0.0011745591
+3    M2 3563 2.085882 1.425654 3.051866 0.0009129757
+4    M3 3563 1.971010 1.328582 2.924081 0.0022899099
+  variable    n         F df1 df2         p
+1 agegroup 3563 1.5140325   2  15 0.2518060
+2      sex 3563 0.5871557   1  15 0.4554116
+                                             method
+1 joint design Wald F; denominator=domain design df
+2 joint design Wald F; denominator=domain design df
