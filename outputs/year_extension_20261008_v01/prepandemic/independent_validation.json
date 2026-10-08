@@ -1,0 +1,7 @@
+{
+  "max_leverage": 0.0086,
+  "n_leverage_over_2p_n": 3468,
+  "n": 37127,
+  "all_pass": true,
+  "variance_max_error": 3.0421e-11
+}

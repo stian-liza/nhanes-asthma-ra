@@ -1,0 +1,13 @@
+{
+  "original_delivery_zip_unchanged": true,
+  "redactions": [
+    {
+      "path": "docs/research_ideas/2026-09-28-original-proposal-asthma-ra-idea.md",
+      "reason": "remove private WeChat cache path only; analysis scope unchanged",
+      "source_sha256": "e0a27a1b625e92cd313f7b6b2003f4c17756f26dc16c2a344455780d97cc87a3",
+      "public_sha256": "9accc85e5090cf59af3695e77dbc94cc52f40cce2bd8be7fee268ef454b105f8"
+    }
+  ],
+  "analysis_code_changes": false,
+  "report_docx_pdf_changes": false
+}

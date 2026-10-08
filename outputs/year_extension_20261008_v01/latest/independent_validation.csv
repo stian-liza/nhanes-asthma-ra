@@ -1,0 +1,9 @@
+"check","max_absolute_error","pass"
+"M0_independent_Taylor_variance",6.2450045135165e-17,TRUE
+"M1_independent_Taylor_variance",5.99520433297585e-15,TRUE
+"M2_independent_Taylor_variance",6.7237881928861e-15,TRUE
+"M3_independent_Taylor_variance",2.36755060001315e-14,TRUE
+"M0_weighted_odds_identity",2.06501482580279e-13,TRUE
+"independent_complete_case_eligibility",0,TRUE
+"RA_0_domain_active_PSU_minus_strata_df_15",0,TRUE
+"RA_1_domain_active_PSU_minus_strata_df_15",0,TRUE

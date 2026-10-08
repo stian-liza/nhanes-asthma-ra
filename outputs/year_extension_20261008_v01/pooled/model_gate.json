@@ -1,0 +1,8 @@
+{
+  "G4": "pass",
+  "G5": "pass",
+  "G6": "pass",
+  "separation_method": "bounded linear program for signed nonnegative margins",
+  "solver": "lpSolve",
+  "threshold": 1e-07
+}

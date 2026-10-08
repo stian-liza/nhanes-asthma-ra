@@ -1,0 +1,19 @@
+{
+  "verdict": "pass",
+  "new_models_run": false,
+  "source_csv_identical": true,
+  "figure_titles": false,
+  "figure_numbers": false,
+  "png_dpi": 300,
+  "visual_review": "Both PNGs inspected: values, Chinese labels, confidence intervals, OR=1 reference, interaction text and margins; no clipping or overlap.",
+  "files": {
+    "outputs/figure_revision_20261008_v01/age_subgroups.pdf": "d48803cb4c3d924cafcec6232abcfc93ae09589f096c12233e07823eec28b24c",
+    "outputs/figure_revision_20261008_v01/source_subgroups.csv": "3175c4324ef4568e37fe1262f31aa6483d143c2f0691e70a63f41d0dbde8b34a",
+    "outputs/figure_revision_20261008_v01/age_subgroups.png": "02bf7dea7224ce3edb22f0ffb0ca54ab4303556871172caeb7baa25e194357b9",
+    "outputs/figure_revision_20261008_v01/README.md": "27fb4ae87be001744d88497169bbfe58a90b78fcf0616306fe8293faf6146962",
+    "outputs/figure_revision_20261008_v01/sex_subgroups.png": "3b3cf119c137f58dcd70b19dc151843f82a1f22e44ea16524eb08d5fad8057f0",
+    "outputs/figure_revision_20261008_v01/sex_subgroups.pdf": "97a87cf8260f2f02689dcc6b4fcc72b9a183d2a13b646ead0b675adf0b64bcf0",
+    "outputs/figure_revision_20261008_v01/source_interaction_tests.csv": "e6c00fff475ca6afe2873be0fef40a3b6f2ca64c3227afe016354afb6d63db68",
+    "scripts/review_delivery/split_subgroup_forest.R": "679dbbefa87e7c412a167cd28bdbe56c08a994cfe6891148eaa5672f22d199b6"
+  }
+}

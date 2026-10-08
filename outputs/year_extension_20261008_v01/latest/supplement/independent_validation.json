@@ -1,0 +1,6 @@
+{
+  "verdict": "pass",
+  "checks": 39,
+  "all_pass": true,
+  "scope": "source-derived fields; alternate spline basis; independent Wald tests; native prediction; effect intervals"
+}

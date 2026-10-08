@@ -1,0 +1,4708 @@
+
+## 1999 Medical Conditions MCQ.010 - MCQ.150 [PDF - 14 KB]
+https://wwwn.cdc.gov/nchs/data/nhanes/public/1999/questionnaires/spq-mc.pdf
+3/7/00 Questionnaire: SP (Year 2)
+Target Group: SPs 1+
+MEDICAL CONDITIONS - MCQ
+MCQ.010 Has a doctor or other health professional ever told {you/SP} that {you have/s/he/SP has} asthma?
+CAPI INSTRUCTION:
+IF SP AGE >= 12, DISPLAY SP NAME AND "S/HE":
+IF SP AGE < 12, DISPLAY "YOU" AND SP NAME.
+YES .............................. 1
+NO .............................. 2 (MCQ.053)
+REFUSED ......................... 7 (MCQ.053)
+DON'T KNOW ...................... 9 (MCQ.053)
+BOX 1
+CHECK ITEM MCQ.015:
+IF SP'S AGE <= 19, CONTINUE.
+OTHERWISE, GO TO MCQ.040.
+MCQ.020 How old {were you/was SP} when {you were/s/he was} first told {he/she} had asthma?
+IF LESS THAN 1 YEAR, ENTER 1
+CAPI INSTRUCTION:
+IF SP AGE >= 16, DISPLAY "WERE YOU" AND "YOU WERE".
+IF SP AGE = 12-15, DISPLAY "WAS {SP}" AND "S/HE WAS".
+IF SP AGE < 12, DISPLAY "WAS {SP}" AND "YOU WERE".
+|___|___|___|
+ENTER AGE IN YEARS
+REFUSED ......................... 777
+DON'T KNOW ...................... 999
+MCQ.030 {Do you/Does SP} still have asthma?
+YES .............................. 1
+NO .............................. 2 (MCQ.053)
+REFUSED ......................... 7 (MCQ.053)
+DON'T KNOW ...................... 9 (MCQ.053)
+MCQ.040 During the past 12 months, {have you/has SP} had an episode of asthma or an asthma attack?
+YES .............................. 1
+NO .............................. 2 (MCQ.053)
+REFUSED ......................... 7 (MCQ.053)
+DON'T KNOW ...................... 9 (MCQ.053)
+MCQ.050 [During  the past 12 months]
+.. 7
+DON'T KNOW ...................... 9
+BOX 7
+CHECK ITEM MCQ.145:
+IF SP'S AGE 6-19, CONTINUE.
+IF SP'S AGE >= 20, GO TO MCQ.160.
+OTHERWISE, GO TO END OF SECTION.
+BOX 7A
+CHECK ITEM MCQ.146:
+IF SP AGE 8-11 AND SP IS FEMALE, CONTINUE.
+OTHERWISE, GO TO MCQ.150.
+MCQ.147 Have {SP's} periods or menstrual cycles started yet?
+YES .............................. 1
+NO .............................. 2 (MCQ.150)
+REFUSED ......................... 7 (MCQ.150)
+DON'T KNOW ...................... 9 (MCQ.150)
+MCQ.148 How old was {SP} when her periods or menstrual cycles started?
+|___|___|
+ENTER AGE IN YEARS
+REFUSED ......................... 7
+DON'T KNOW ...................... 9
+MCQ.150 During the past 12 months, that is, since {DISPLAY CURRENT MONTH} of {DISPLAY LAST YEAR}, about
+how many days did {you/SP} miss school because of an illness or injury?
+IF NONE, ENTER 0
+|___|___|___|
+ENTER NUMBER OF DAYS
+DID NOT GO TO SCHOOL ............ 666
+REFUSED ......................... 777
+DON'T KNOW ...................... 999
+BOX 8
+CHECK ITEM MCQ.155:
+IF SP AGE >= 16, GO TO MCQ.245.
+OTHERWISE, GO TO END OF SECTION.
+
+## 1999 Medical Conditions MCQ.160 - MCQ.190 [PDF - 9 KB]
+https://wwwn.cdc.gov/nchs/data/nhanes/public/1999/questionnaires/spq-mc1.pdf
+MCQ.160 MCQ.170 MCQ.180 MCQ.190
+Has a doctor or other health {Do you/Does SP} still . . . ? How old {were you/was SP} when Which type of arthritis was it?
+professional ever told {you/SP} {you were/s/he was} first told 
+that {you/s/he} . . . {you/s/he} . . .
+CAPI INSTRUCTION:  
+TEXT OF QUESTION SHOULD BE
+OPTIONAL AFTER FIRST ITEM IS
+READ.
+a. had arthritis?
+YES .......... 1
+NO ........... 2 (b)
+REFUSED ..... 7 (b)
+DON'T KNOW .. 9 (b)
+had arthritis? RHEUMATOID ARTHRITIS ............ 1
+|___|___|___|
+ENTER AGE IN YEARS
+REFUSED ........................ 777
+DON'T KNOW ..................... 999
+OSTEOARTHRITIS ................... 2
+OTHER ............................. 3
+REFUSED .......................... 7
+DON'T KNOW ....................... 9
+b. had congestive heart failure?
+YES .......... 1
+NO ........... 2 (c)
+REFUSED ..... 7 (c)
+DON'T KNOW .. 9 (c)
+had congestive heart failure?
+|___|___|___|
+ENTER AGE IN YEARS
+REFUSED ........................ 777
+DON'T KNOW ..................... 999
+c. had coronary heart disease?
+YES .......... 1
+NO ........... 2 (d)
+REFUSED ..... 7 (d)
+DON'T KNOW .. 9 (d)
+had coronary heart disease?
+|___|___|___|
+ENTER AGE IN YEARS
+REFUSED ........................ 777
+DON'T KNOW ..................... 999
+d. had angina, also called angina had angina, also called agina pectoris?
+pectoris?
+YES .......... 1
+NO ........... 2 (e)
+REFUSED ..... 7 (e)
+DON'T KNOW .. 9 (e)
+|__
+MCQ.160 MCQ.170 MCQ.180 MCQ.190
+Has a doctor or other health {Do you/Does SP} still . . . ? How old {were you/was SP} when Which type of arthritis was it?
+professional ever told {you/SP} {you were/s/he was} first told 
+that {you/s/he} . . . {you/s/he} . . .
+CAPI INSTRUCTION:  
+TEXT OF QUESTION SHOULD BE
+OPTIONAL AFTER FIRST ITEM IS
+READ.
+a. had arthritis?
+YES .......... 1
+NO ........... 2 (b)
+REFUSED ..... 7 (b)
+DON'T KNOW .. 9 (b)
+had arthritis? RHEUMATOID ARTHRITIS ............ 1
+|___|___|___|
+ENTER AGE IN YEARS
+REFUSED ........................ 777
+DON'T KNOW ..................... 999
+OSTEOARTHRITIS ................... 2
+OTHER ............................. 3
+REFUSED .......................... 7
+DON'T KNOW ....................... 9
+b. had congestive heart failure?
+YES .......... 1
+NO ........... 2 (c)
+REFUSED ..... 7 (c)
+DON'T KNOW .. 9 (c)
+had congestive heart failure?
+|___|___|___|
+ENTER AGE IN YEARS
+REFUSED ........................ 777
+DON'T KNOW ..................... 999
+c. had coronary heart disease?
+YES .......... 1
+NO ........... 2 (d)
+REFUSED ..... 7 (d)
+DON'T KNOW .. 9 (d)
+had coronary heart disease?
+|___|___|___|
+ENTER AGE IN YEARS
+REFUSED ........................ 777
+DON'T KNOW ..................... 999
+d. had angina, also called angina had angina, also called agina pectoris?
+pectoris?
+YES .......... 1
+NO ........... 2 (e)
+REFUSED ..... 7 (e)
+DON'T KNOW .. 9 (e)
+|___|___|___|
+ENTER AGE IN 
+
+## 1999 Medical Conditions MCQ.200 - MCQ.290 [PDF - 14 KB]
+https://wwwn.cdc.gov/nchs/data/nhanes/public/1999/questionnaires/spq-mc2.pdf
+
+
+## 1999 Smoking and Tobacco Use [PDF - 21 KB]
+https://wwwn.cdc.gov/nchs/data/nhanes/public/1999/questionnaires/spq-sm.pdf
+et Group: SPs 20+
+SMOKING AND TOBACCO USE - SMQ
+These next questions are about cigarette smoking and other tobacco use.
+SMQ.020 {Have you/Has SP} smoked at least 100 cigarettes in {your/his/her} entire life?
+YES .............................. 1
+NO .............................. 2 (SMQ.120)
+REFUSED ......................... 7 (SMQ.120)
+DON'T KNOW ...................... 9 (SMQ.120)
+SMQ.030 How old {were you/was SP} when {you/s/he} first started to smoke cigarettes fairly regularly?
+|___|___|___|
+ENTER AGE IN YEARS
+NEVER SMOKED CIGARETTES 
+  REGULARLY ...................... 666
+REFUSED ......................... 777
+DON'T KNOW ...................... 999
+SMQ.040 {Do you/Does SP} now smoke cigarettes . . .
+every day, ......................... 1 (SMQ.070)
+some days, or ...................... 2 (SMQ.080)
+not at all? ......................... 3 (SMQ.050)
+REFUSED ......................... 7 (SMQ.120)
+DON'T KNOW ...................... 9 (SMQ.120)
+SMQ.050 How long has it been since {you/SP} quit smoking cigarettes?
+|___|___|___|
+ENTER NUMBER (OF DAYS, WEEKS, MONTHS OR YEARS)
+REFUSED ......................... 777
+DON'T KNOW ...................... 999
+ENTER UNIT
+DAYS ............................ 1
+WEEKS ........................... 2
+MONTHS .......................... 3
+YEARS ........................... 4
+REFUSED ......................... 7
+DON'T KNOW ...................... 9
+BOX 1
+CHECK ITEM SMQ.053:
+IF SMQ.050 >= 1 YEAR (365 DAYS, 52 WEEKS, 12 MONTHS, OR 1 YEAR),
+CONTINUE.
+OTHERWISE, GO TO SMQ.120.
+SMQ.055 Ho
+TES 
+  REGULARLY ...................... 666
+REFUSED ......................... 777
+DON'T KNOW ...................... 999
+SMQ.040 {Do you/Does SP} now smoke cigarettes . . .
+every day, ......................... 1 (SMQ.070)
+some days, or ...................... 2 (SMQ.080)
+not at all? ......................... 3 (SMQ.050)
+REFUSED ......................... 7 (SMQ.120)
+DON'T KNOW ...................... 9 (SMQ.120)
+SMQ.050 How long has it been since {you/SP} quit smoking cigarettes?
+|___|___|___|
+ENTER NUMBER (OF DAYS, WEEKS, MONTHS OR YEARS)
+REFUSED ......................... 777
+DON'T KNOW ...................... 999
+ENTER UNIT
+DAYS ............................ 1
+WEEKS ........................... 2
+MONTHS .......................... 3
+YEARS ........................... 4
+REFUSED ......................... 7
+DON'T KNOW ...................... 9
+BOX 1
+CHECK ITEM SMQ.053:
+IF SMQ.050 >= 1 YEAR (365 DAYS, 52 WEEKS, 12 MONTHS, OR 1 YEAR),
+CONTINUE.
+OTHERWISE, GO TO SMQ.120.
+SMQ.055 How old {were you/was SP} when {you/s/he} last smoked cigarettes {fairly regularly}?
+CAPI INSTRUCTION:
+DISPLAY  "FAIRLY REGULARLY" EXCEPT WHEN SMQ.030 = 666 (NEVER SMOKED CIGARETTE S
+REGULARLY).
+|___|___|___|
+ENTER AGE IN YEARS
+REFUSED ......................... 777
+DON'T KNOW ...................... 999
+SMQ.057 At that time, about how many cigarettes did {you/SP} usually smoke per day?
+1 PACK EQUALS 20 CIGARETTES
+IF LESS THAN 1 PER DAY, ENTER 1
+IF 95 OR MORE PER DAY, ENTER 95
+|___|___|___|
+ENTER NUMBER OF CIGARETTES
+REFUSED ...........
+
+## 2001 Medical Conditions MCQ.010 - MCQ.150 [PDF - 95 KB]
+https://wwwn.cdc.gov/nchs/data/nhanes/public/2001/questionnaires/sp_mcq.pdf
+Year 4 
+Questionnaire: SP 
+Target Group: SPs 1+ 
+MEDICAL CONDITIONS - MCQ 
+MCQ.010 Has a doctor or other health professional ever told {you/SP} that {you have/s/he/SP has} asthma? 
+CAPI INSTRUCTION: 
+IF SP AGE >= 12, DISPLAY SP NAME AND "S/HE": 
+IF SP AGE < 12, DISPLAY "YOU" AND SP NAME. 
+YES ...............................................................  1 
+NO .................................................................  2 (MCQ.053) 
+REFUSED ..................................................... 7 (MCQ.053) 
+DON'T KNOW ...............................................  9 (MCQ.053) 
+MCQ.025 How old {were you/was SP} when {you were/s/he was} first told {he/she} had asthma? 
+IF LESS THAN 1 YEAR, ENTER 1 
+CAPI INSTRUCTION: 
+IF SP AGE >= 16, DISPLAY "WERE YOU" AND "YOU WERE". 
+IF SP AGE = 12-15, DISPLAY "WAS {SP}" AND "S/HE WAS". 
+IF SP AGE < 12, DISPLAY "WAS {SP}" AND "YOU WERE". 
+|___|___|___| 
+ENTER AGE IN YEARS 
+REFUSED ..................................................... 777 
+DON'T KNOW ............................................... 999 
+MCQ.035 {Do you/Does SP} still have asthma? 
+YES ...............................................................  1 
+NO .................................................................  2 (MCQ.053) 
+REFUSED ..................................................... 7 (MCQ.053) 
+DON'T KNOW ...............................................  9 (MCQ.053) 
+MCQ.040 During the past 12 months, {have you/has SP} had an episode
+................................. 9 
+BOX 7 
+CHECK ITEM MCQ.145: 
+IF SP'S AGE 6-19, CONTINUE. 
+IF SP'S AGE >= 20, GO TO  MCQ.160. 
+OTHERWISE, GO TO END OF SECTION. 
+4 
+BOX 7A 
+CHECK ITEM MCQ.146: 
+IF SP AGE 8-11 AND SP IS FEMALE, CONTINUE. 
+OTHERWISE, GO TO MCQ.150. 
+MCQ.147 Have {SP's} periods or menstrual cycles started yet? 
+YES ...............................................................  1 
+NO .................................................................  2 
+REFUSED .....................................................  7 
+DON'T KNOW ............................................... 9 
+MCQ.150 	 During the past 12 months, that is, since {DISPLAY CURRENT MONTH} of {DISPLAY LAST YEAR}, about 
+how many days did {you/SP} miss school because of an illness or injury? 
+IF NONE, ENTER 0 
+|___|___|___| 
+ENTER NUMBER OF DAYS 
+DID NOT GO TO SCHOOL ........................... 666 
+REFUSED ..................................................... 777 
+DON'T KNOW ............................................... 999 
+BOX 8
+CHECK ITEM MCQ.155: 
+IF SP AGE >= 16, GO TO MCQ.245. 
+OTHERWISE, GO TO END OF SECTION. 
+5 
+6 
+MCQ.160 
+Has a doctor or other health 
+professional ever told {you/SP} 
+that {you/s/he} . . . 
+CAPI INSTRUCTION: 
+TEXT OF QUESTION SHOULD BE 
+OPTIONAL AFTER FIRST ITEM IS 
+READ. 
+MCQ.170 
+{Do you/Does SP} still . . . ? 
+MCQ.180 
+How old {were you/was SP} when 
+{you were/s/he was} first told 
+{you/s/he} . . . 
+MCQ.190 
+Which type of arthritis was it? a. had arthritis? 
+YES..................... 1 
+.............. 999 
+BOX 8
+CHECK ITEM MCQ.155: 
+IF SP AGE >= 16, GO TO MCQ.245. 
+OTHERWISE, GO TO END OF SECTION. 
+5 
+6 
+MCQ.160 
+Has a doctor or other health 
+professional ever told {you/SP} 
+that {you/s/he} . . . 
+CAPI INSTRUCTION: 
+TEXT OF QUESTION SHOULD BE 
+OPTIONAL AFTER FIRST ITEM IS 
+READ. 
+MCQ.170 
+{Do you/Does SP} still . . . ? 
+MCQ.180 
+How old {were you/was SP} when 
+{you were/s/he was} first told 
+{you/s/he} . . . 
+MCQ.190 
+Which type of arthritis was it? a. had arthritis? 
+YES..................... 1 
+NO....................... 2 (b) 
+REFUSED........... 7 (b) 
+DON'T KNOW ..... 9 (b) 
+had arthritis? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+REFUSED ................................................. 777 
+DON'T KNOW ........................................... 999 
+RHEUMATOID ARTHRITIS .......................... 1 
+OSTEOARTHRITIS ....................................... 2 
+OTHER..........................................................  3 
+REFUSED .....................................................  7 
+DON'T KNOW ............................................... 9 
+b. had congestive heart failure? 
+YES..................... 1 
+NO....................... 2 (c) 
+REFUSED........... 7 (c) 
+DON'T KNOW ..... 9 (c) 
+had congestive heart failure? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+REFUSED ................................................. 777 
+DON'T KNOW ........................................... 999 
+c. had coronary heart disease? 
+YES..................... 1 
+NO....................... 2 (d) 
+REFUSED.....
+ you/Does SP} still . . . ? 
+MCQ.180 
+How old {were you/was SP} when 
+{you were/s/he was} first told 
+{you/s/he} . . . 
+MCQ.190 
+Which type of arthritis was it? a. had arthritis? 
+YES..................... 1 
+NO....................... 2 (b) 
+REFUSED........... 7 (b) 
+DON'T KNOW ..... 9 (b) 
+had arthritis? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+REFUSED ................................................. 777 
+DON'T KNOW ........................................... 999 
+RHEUMATOID ARTHRITIS .......................... 1 
+OSTEOARTHRITIS ....................................... 2 
+OTHER..........................................................  3 
+REFUSED .....................................................  7 
+DON'T KNOW ............................................... 9 
+b. had congestive heart failure? 
+YES..................... 1 
+NO....................... 2 (c) 
+REFUSED........... 7 (c) 
+DON'T KNOW ..... 9 (c) 
+had congestive heart failure? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+REFUSED ................................................. 777 
+DON'T KNOW ........................................... 999 
+c. had coronary heart disease? 
+YES..................... 1 
+NO....................... 2 (d) 
+REFUSED........... 7 (d) 
+DON'T KNOW ..... 9 (d) 
+had coronary heart disease? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+REFUSED ................................................. 777 
+DON'T KNOW ........................................... 999 
+d. had angina, also called angina 
+pectoris? 
+YES..................... 1 
+NO..........
+
+## 2001 Medical Conditions MCQ.160 - MCQ.190 [PDF - 95 KB]
+https://wwwn.cdc.gov/nchs/data/nhanes/public/2001/questionnaires/sp_mcq.pdf
+Year 4 
+Questionnaire: SP 
+Target Group: SPs 1+ 
+MEDICAL CONDITIONS - MCQ 
+MCQ.010 Has a doctor or other health professional ever told {you/SP} that {you have/s/he/SP has} asthma? 
+CAPI INSTRUCTION: 
+IF SP AGE >= 12, DISPLAY SP NAME AND "S/HE": 
+IF SP AGE < 12, DISPLAY "YOU" AND SP NAME. 
+YES ...............................................................  1 
+NO .................................................................  2 (MCQ.053) 
+REFUSED ..................................................... 7 (MCQ.053) 
+DON'T KNOW ...............................................  9 (MCQ.053) 
+MCQ.025 How old {were you/was SP} when {you were/s/he was} first told {he/she} had asthma? 
+IF LESS THAN 1 YEAR, ENTER 1 
+CAPI INSTRUCTION: 
+IF SP AGE >= 16, DISPLAY "WERE YOU" AND "YOU WERE". 
+IF SP AGE = 12-15, DISPLAY "WAS {SP}" AND "S/HE WAS". 
+IF SP AGE < 12, DISPLAY "WAS {SP}" AND "YOU WERE". 
+|___|___|___| 
+ENTER AGE IN YEARS 
+REFUSED ..................................................... 777 
+DON'T KNOW ............................................... 999 
+MCQ.035 {Do you/Does SP} still have asthma? 
+YES ...............................................................  1 
+NO .................................................................  2 (MCQ.053) 
+REFUSED ..................................................... 7 (MCQ.053) 
+DON'T KNOW ...............................................  9 (MCQ.053) 
+MCQ.040 During the past 12 months, {have you/has SP} had an episode
+................................. 9 
+BOX 7 
+CHECK ITEM MCQ.145: 
+IF SP'S AGE 6-19, CONTINUE. 
+IF SP'S AGE >= 20, GO TO  MCQ.160. 
+OTHERWISE, GO TO END OF SECTION. 
+4 
+BOX 7A 
+CHECK ITEM MCQ.146: 
+IF SP AGE 8-11 AND SP IS FEMALE, CONTINUE. 
+OTHERWISE, GO TO MCQ.150. 
+MCQ.147 Have {SP's} periods or menstrual cycles started yet? 
+YES ...............................................................  1 
+NO .................................................................  2 
+REFUSED .....................................................  7 
+DON'T KNOW ............................................... 9 
+MCQ.150 	 During the past 12 months, that is, since {DISPLAY CURRENT MONTH} of {DISPLAY LAST YEAR}, about 
+how many days did {you/SP} miss school because of an illness or injury? 
+IF NONE, ENTER 0 
+|___|___|___| 
+ENTER NUMBER OF DAYS 
+DID NOT GO TO SCHOOL ........................... 666 
+REFUSED ..................................................... 777 
+DON'T KNOW ............................................... 999 
+BOX 8
+CHECK ITEM MCQ.155: 
+IF SP AGE >= 16, GO TO MCQ.245. 
+OTHERWISE, GO TO END OF SECTION. 
+5 
+6 
+MCQ.160 
+Has a doctor or other health 
+professional ever told {you/SP} 
+that {you/s/he} . . . 
+CAPI INSTRUCTION: 
+TEXT OF QUESTION SHOULD BE 
+OPTIONAL AFTER FIRST ITEM IS 
+READ. 
+MCQ.170 
+{Do you/Does SP} still . . . ? 
+MCQ.180 
+How old {were you/was SP} when 
+{you were/s/he was} first told 
+{you/s/he} . . . 
+MCQ.190 
+Which type of arthritis was it? a. had arthritis? 
+YES..................... 1 
+.............. 999 
+BOX 8
+CHECK ITEM MCQ.155: 
+IF SP AGE >= 16, GO TO MCQ.245. 
+OTHERWISE, GO TO END OF SECTION. 
+5 
+6 
+MCQ.160 
+Has a doctor or other health 
+professional ever told {you/SP} 
+that {you/s/he} . . . 
+CAPI INSTRUCTION: 
+TEXT OF QUESTION SHOULD BE 
+OPTIONAL AFTER FIRST ITEM IS 
+READ. 
+MCQ.170 
+{Do you/Does SP} still . . . ? 
+MCQ.180 
+How old {were you/was SP} when 
+{you were/s/he was} first told 
+{you/s/he} . . . 
+MCQ.190 
+Which type of arthritis was it? a. had arthritis? 
+YES..................... 1 
+NO....................... 2 (b) 
+REFUSED........... 7 (b) 
+DON'T KNOW ..... 9 (b) 
+had arthritis? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+REFUSED ................................................. 777 
+DON'T KNOW ........................................... 999 
+RHEUMATOID ARTHRITIS .......................... 1 
+OSTEOARTHRITIS ....................................... 2 
+OTHER..........................................................  3 
+REFUSED .....................................................  7 
+DON'T KNOW ............................................... 9 
+b. had congestive heart failure? 
+YES..................... 1 
+NO....................... 2 (c) 
+REFUSED........... 7 (c) 
+DON'T KNOW ..... 9 (c) 
+had congestive heart failure? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+REFUSED ................................................. 777 
+DON'T KNOW ........................................... 999 
+c. had coronary heart disease? 
+YES..................... 1 
+NO....................... 2 (d) 
+REFUSED.....
+ you/Does SP} still . . . ? 
+MCQ.180 
+How old {were you/was SP} when 
+{you were/s/he was} first told 
+{you/s/he} . . . 
+MCQ.190 
+Which type of arthritis was it? a. had arthritis? 
+YES..................... 1 
+NO....................... 2 (b) 
+REFUSED........... 7 (b) 
+DON'T KNOW ..... 9 (b) 
+had arthritis? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+REFUSED ................................................. 777 
+DON'T KNOW ........................................... 999 
+RHEUMATOID ARTHRITIS .......................... 1 
+OSTEOARTHRITIS ....................................... 2 
+OTHER..........................................................  3 
+REFUSED .....................................................  7 
+DON'T KNOW ............................................... 9 
+b. had congestive heart failure? 
+YES..................... 1 
+NO....................... 2 (c) 
+REFUSED........... 7 (c) 
+DON'T KNOW ..... 9 (c) 
+had congestive heart failure? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+REFUSED ................................................. 777 
+DON'T KNOW ........................................... 999 
+c. had coronary heart disease? 
+YES..................... 1 
+NO....................... 2 (d) 
+REFUSED........... 7 (d) 
+DON'T KNOW ..... 9 (d) 
+had coronary heart disease? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+REFUSED ................................................. 777 
+DON'T KNOW ........................................... 999 
+d. had angina, also called angina 
+pectoris? 
+YES..................... 1 
+NO..........
+
+## 2001 Medical Conditions MCQ.200 - MCQ.290 [PDF - 95 KB]
+https://wwwn.cdc.gov/nchs/data/nhanes/public/2001/questionnaires/sp_mcq.pdf
+Year 4 
+Questionnaire: SP 
+Target Group: SPs 1+ 
+MEDICAL CONDITIONS - MCQ 
+MCQ.010 Has a doctor or other health professional ever told {you/SP} that {you have/s/he/SP has} asthma? 
+CAPI INSTRUCTION: 
+IF SP AGE >= 12, DISPLAY SP NAME AND "S/HE": 
+IF SP AGE < 12, DISPLAY "YOU" AND SP NAME. 
+YES ...............................................................  1 
+NO .................................................................  2 (MCQ.053) 
+REFUSED ..................................................... 7 (MCQ.053) 
+DON'T KNOW ...............................................  9 (MCQ.053) 
+MCQ.025 How old {were you/was SP} when {you were/s/he was} first told {he/she} had asthma? 
+IF LESS THAN 1 YEAR, ENTER 1 
+CAPI INSTRUCTION: 
+IF SP AGE >= 16, DISPLAY "WERE YOU" AND "YOU WERE". 
+IF SP AGE = 12-15, DISPLAY "WAS {SP}" AND "S/HE WAS". 
+IF SP AGE < 12, DISPLAY "WAS {SP}" AND "YOU WERE". 
+|___|___|___| 
+ENTER AGE IN YEARS 
+REFUSED ..................................................... 777 
+DON'T KNOW ............................................... 999 
+MCQ.035 {Do you/Does SP} still have asthma? 
+YES ...............................................................  1 
+NO .................................................................  2 (MCQ.053) 
+REFUSED ..................................................... 7 (MCQ.053) 
+DON'T KNOW ...............................................  9 (MCQ.053) 
+MCQ.040 During the past 12 months, {have you/has SP} had an episode
+................................. 9 
+BOX 7 
+CHECK ITEM MCQ.145: 
+IF SP'S AGE 6-19, CONTINUE. 
+IF SP'S AGE >= 20, GO TO  MCQ.160. 
+OTHERWISE, GO TO END OF SECTION. 
+4 
+BOX 7A 
+CHECK ITEM MCQ.146: 
+IF SP AGE 8-11 AND SP IS FEMALE, CONTINUE. 
+OTHERWISE, GO TO MCQ.150. 
+MCQ.147 Have {SP's} periods or menstrual cycles started yet? 
+YES ...............................................................  1 
+NO .................................................................  2 
+REFUSED .....................................................  7 
+DON'T KNOW ............................................... 9 
+MCQ.150 	 During the past 12 months, that is, since {DISPLAY CURRENT MONTH} of {DISPLAY LAST YEAR}, about 
+how many days did {you/SP} miss school because of an illness or injury? 
+IF NONE, ENTER 0 
+|___|___|___| 
+ENTER NUMBER OF DAYS 
+DID NOT GO TO SCHOOL ........................... 666 
+REFUSED ..................................................... 777 
+DON'T KNOW ............................................... 999 
+BOX 8
+CHECK ITEM MCQ.155: 
+IF SP AGE >= 16, GO TO MCQ.245. 
+OTHERWISE, GO TO END OF SECTION. 
+5 
+6 
+MCQ.160 
+Has a doctor or other health 
+professional ever told {you/SP} 
+that {you/s/he} . . . 
+CAPI INSTRUCTION: 
+TEXT OF QUESTION SHOULD BE 
+OPTIONAL AFTER FIRST ITEM IS 
+READ. 
+MCQ.170 
+{Do you/Does SP} still . . . ? 
+MCQ.180 
+How old {were you/was SP} when 
+{you were/s/he was} first told 
+{you/s/he} . . . 
+MCQ.190 
+Which type of arthritis was it? a. had arthritis? 
+YES..................... 1 
+.............. 999 
+BOX 8
+CHECK ITEM MCQ.155: 
+IF SP AGE >= 16, GO TO MCQ.245. 
+OTHERWISE, GO TO END OF SECTION. 
+5 
+6 
+MCQ.160 
+Has a doctor or other health 
+professional ever told {you/SP} 
+that {you/s/he} . . . 
+CAPI INSTRUCTION: 
+TEXT OF QUESTION SHOULD BE 
+OPTIONAL AFTER FIRST ITEM IS 
+READ. 
+MCQ.170 
+{Do you/Does SP} still . . . ? 
+MCQ.180 
+How old {were you/was SP} when 
+{you were/s/he was} first told 
+{you/s/he} . . . 
+MCQ.190 
+Which type of arthritis was it? a. had arthritis? 
+YES..................... 1 
+NO....................... 2 (b) 
+REFUSED........... 7 (b) 
+DON'T KNOW ..... 9 (b) 
+had arthritis? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+REFUSED ................................................. 777 
+DON'T KNOW ........................................... 999 
+RHEUMATOID ARTHRITIS .......................... 1 
+OSTEOARTHRITIS ....................................... 2 
+OTHER..........................................................  3 
+REFUSED .....................................................  7 
+DON'T KNOW ............................................... 9 
+b. had congestive heart failure? 
+YES..................... 1 
+NO....................... 2 (c) 
+REFUSED........... 7 (c) 
+DON'T KNOW ..... 9 (c) 
+had congestive heart failure? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+REFUSED ................................................. 777 
+DON'T KNOW ........................................... 999 
+c. had coronary heart disease? 
+YES..................... 1 
+NO....................... 2 (d) 
+REFUSED.....
+ you/Does SP} still . . . ? 
+MCQ.180 
+How old {were you/was SP} when 
+{you were/s/he was} first told 
+{you/s/he} . . . 
+MCQ.190 
+Which type of arthritis was it? a. had arthritis? 
+YES..................... 1 
+NO....................... 2 (b) 
+REFUSED........... 7 (b) 
+DON'T KNOW ..... 9 (b) 
+had arthritis? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+REFUSED ................................................. 777 
+DON'T KNOW ........................................... 999 
+RHEUMATOID ARTHRITIS .......................... 1 
+OSTEOARTHRITIS ....................................... 2 
+OTHER..........................................................  3 
+REFUSED .....................................................  7 
+DON'T KNOW ............................................... 9 
+b. had congestive heart failure? 
+YES..................... 1 
+NO....................... 2 (c) 
+REFUSED........... 7 (c) 
+DON'T KNOW ..... 9 (c) 
+had congestive heart failure? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+REFUSED ................................................. 777 
+DON'T KNOW ........................................... 999 
+c. had coronary heart disease? 
+YES..................... 1 
+NO....................... 2 (d) 
+REFUSED........... 7 (d) 
+DON'T KNOW ..... 9 (d) 
+had coronary heart disease? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+REFUSED ................................................. 777 
+DON'T KNOW ........................................... 999 
+d. had angina, also called angina 
+pectoris? 
+YES..................... 1 
+NO..........
+
+## 2001 Smoking and Tobacco Use [PDF - 83 KB]
+https://wwwn.cdc.gov/nchs/data/nhanes/public/2001/questionnaires/sp_smq.pdf
+Group: SPs 20+ 
+SMOKING AND TOBACCO USE - SMQ 
+These next questions are about cigarette smoking and other tobacco use. 
+SMQ.020 {Have you/Has SP} smoked at least 100 cigarettes in {your/his/her} entire life? 
+YES ...............................................................  1 
+NO .................................................................  2 (SMQ.120) 
+REFUSED .....................................................  7 (SMQ.120) 
+DON'T KNOW ............................................... 9 (SMQ.120) 
+SMQ.030 How old {were you/was SP} when {you/s/he} first started to smoke cigarettes fairly regularly? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+NEVER SMOKED CIGARETTES 
+REGULARLY............................................... 666 
+REFUSED ..................................................... 777 
+DON'T KNOW ............................................... 999 
+SMQ.040 {Do you/Does SP} now smoke cigarettes . . . 
+every day, ......................................................  1 (SMQ.070) 
+some days, or ................................................ 2 (SMQ.640) 
+not at all?....................................................... 3 (SMQ.050) 
+REFUSED .....................................................  7 (SMQ.120) 
+DON'T KNOW ............................................... 9 (SMQ.120) 
+SMQ.050 How long has it been since {you/SP} quit smoking cigarettes? 
+|___|___|___|
+ENTER NUMBER (OF DAYS, WEEKS, MONTHS OR YEARS) 
+REFUSED ..................................................... 777 
+DON'T KNOW .....
+.................................................. 777 
+DON'T KNOW ............................................... 999 
+SMQ.040 {Do you/Does SP} now smoke cigarettes . . . 
+every day, ......................................................  1 (SMQ.070) 
+some days, or ................................................ 2 (SMQ.640) 
+not at all?....................................................... 3 (SMQ.050) 
+REFUSED .....................................................  7 (SMQ.120) 
+DON'T KNOW ............................................... 9 (SMQ.120) 
+SMQ.050 How long has it been since {you/SP} quit smoking cigarettes? 
+|___|___|___|
+ENTER NUMBER (OF DAYS, WEEKS, MONTHS OR YEARS) 
+REFUSED ..................................................... 777 
+DON'T KNOW ............................................... 999 
+ENTER UNIT 
+DAYS.............................................................  1 
+WEEKS .........................................................  2 
+MONTHS.......................................................  3 
+YEARS ..........................................................  4 
+REFUSED .....................................................  7 
+DON'T KNOW ............................................... 9 
+
+BOX 1
+CHECK ITEM SMQ.053: 
+IF SMQ.050 >= 1 YEAR (365 DAYS, 52 WEEKS, 12 MONTHS, OR 1 YEAR), 
+CONTINUE. 
+OTHERWISE, GO TO SMQ.120. 
+SMQ.055 How old {were you/was SP} when {you/s/he} last smoked cigarettes {fairly regularly}? 
+CAPI INSTRUCTION: 
+DISPLAY "FAIRLY REGULARLY" EX CEPT WH EN S
+
+## 2003 Medical Conditions [PDF - 90 KB]
+https://wwwn.cdc.gov/nchs/data/nhanes/public/2003/questionnaires/sp_mcq_c.pdf
+2003-04 Questionnaire: 
+ 
+Medical Conditions - MCQ_C 
+ 
+ 
+MCQ.010 Has a doctor or other health professional ever told {you/SP} that {you have/s/he/SP has} asthma? 
+ 
+ CAPI INSTRUCTION: 
+ IF SP AGE >= 12, DISPLAY SP NAME AND "S/HE": 
+ IF SP AGE < 12, DISPLAY "YOU" AND SP NAME. 
+ 
+YES ...............................................................  1 
+NO .................................................................  2 (MCQ.053) 
+REFUSED .....................................................  7 (MCQ.053) 
+DON'T KNOW ...............................................  9 (MCQ.053) 
+ 
+ 
+MCQ.025 How old {were you/was SP} when {you were/s/he was} first told {he/she} had asthma? 
+ 
+ IF LESS THAN 1 YEAR, ENTER 1 
+ 
+ CAPI INSTRUCTION: 
+ IF SP AGE >= 16, DISPLAY "WERE YOU" AND "YOU WERE". 
+ IF SP AGE = 12-15, DISPLAY "WAS {SP}" AND "S/HE WAS". 
+ IF SP AGE < 12, DISPLAY "WAS {SP}" AND "YOU WERE". 
+ 
+ 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ..................................................... 777 
+DON'T KNOW ............................................... 999 
+ 
+ 
+MCQ.035 {Do you/Does SP} still have asthma? 
+ 
+YES ...............................................................  1 
+NO .................................................................  2 (MCQ.053) 
+REFUSED .....................................................  7 (MCQ.053) 
+DON'T KNOW ...............................................  9 (MCQ.053) 
+ 
+ 
+MCQ.040 During the past 12 mo
+...........................  9 
+ 
+ 
+BOX 7 
+ 
+CHECK ITEM MCQ.145: 
+IF SP'S AGE 6-19, CONTINUE. 
+IF SP'S AGE >= 20, GO TO MCQ.160. 
+O
+ 
+THERWISE, GO TO END OF SECTION. 
+ 
+ 
+BOX 7A 
+ 
+CHECK ITEM MCQ.146: 
+IF SP AGE 8-11 AND SP IS FEMALE, CONTINUE. 
+O THERWISE, GO TO MCQ.150. 
+ 
+ 
+MCQ.149 Have {SP's} periods or menstrual cycles started yet? 
+ 
+YES ...............................................................  1 
+NO .................................................................  2 
+REFUSED .....................................................  7 
+DON'T KNOW ...............................................  9 
+ 
+ 
+MCQ.150 During the past 12 months, that is, since {DISPLAY CURRENT MONTH} of {DISPLAY LAST YEAR}, about 
+how many days did {you/SP} miss school because of an illness or injury? 
+ 
+ IF NONE, ENTER 0 
+ 
+|___|___|___| 
+ENTER NUMBER OF DAYS 
+ 
+DID NOT GO TO SCHOOL ........................... 666 
+REFUSED ..................................................... 777 
+DON'T KNOW ............................................... 999 
+ 
+ 
+BOX 8 
+ 
+CHECK ITEM MCQ.155: 
+IF SP AGE >= 16, GO TO MCQ.245. 
+O
+ 
+THERWISE, GO TO END OF SECTION. 
+ 
+ 
+MCQ.160 
+Has a doctor or other health 
+professional ever told {you/SP}  
+that {you/s/he} . . .  
+CAPI INSTRUCTION:   
+TEXT OF QUESTION SHOULD BE 
+OPTIONAL AFTER FIRST ITEM IS 
+READ. 
+MCQ.170 
+{Do you/Does SP} still . . . ? 
+MCQ.180 
+How old {were you/was SP} when  
+{you were/s/he was} first told  
+{you/s/he} . . . 
+MCQ.190 
+Which type of arthritis was it? 
+a. had a
+...... 999 
+ 
+ 
+BOX 8 
+ 
+CHECK ITEM MCQ.155: 
+IF SP AGE >= 16, GO TO MCQ.245. 
+O
+ 
+THERWISE, GO TO END OF SECTION. 
+ 
+ 
+MCQ.160 
+Has a doctor or other health 
+professional ever told {you/SP}  
+that {you/s/he} . . .  
+CAPI INSTRUCTION:   
+TEXT OF QUESTION SHOULD BE 
+OPTIONAL AFTER FIRST ITEM IS 
+READ. 
+MCQ.170 
+{Do you/Does SP} still . . . ? 
+MCQ.180 
+How old {were you/was SP} when  
+{you were/s/he was} first told  
+{you/s/he} . . . 
+MCQ.190 
+Which type of arthritis was it? 
+a. had arthritis? 
+ 
+ YES.....................  1 
+ NO.......................  2 (b) 
+ REFUSED...........  7 (b) 
+ DON'T KNOW.....  9 (b)  
+ 
+had arthritis? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ................................................. 777 
+DON'T KNOW ........................................... 999  
+RHEUMATOID ARTHRITIS .......................... 1 
+OSTEOARTHRITIS....................................... 2 
+OTHER.......................................................... 3 
+REFUSED ..................................................... 7 
+DON'T KNOW ............................................... 9 
+ 
+b. had congestive heart failure? 
+ 
+ YES.....................  1 
+ NO.......................  2 (c) 
+ REFUSED...........  7 (c) 
+ DON'T KNOW.....  9 (c)  
+ 
+had congestive heart failure? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ................................................. 777 
+DON'T KNOW ........................................... 999  
+ 
+c. had coronary heart disease? 
+ 
+ YES.....................  1 
+ NO
+ou/Does SP} still . . . ? 
+MCQ.180 
+How old {were you/was SP} when  
+{you were/s/he was} first told  
+{you/s/he} . . . 
+MCQ.190 
+Which type of arthritis was it? 
+a. had arthritis? 
+ 
+ YES.....................  1 
+ NO.......................  2 (b) 
+ REFUSED...........  7 (b) 
+ DON'T KNOW.....  9 (b)  
+ 
+had arthritis? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ................................................. 777 
+DON'T KNOW ........................................... 999  
+RHEUMATOID ARTHRITIS .......................... 1 
+OSTEOARTHRITIS....................................... 2 
+OTHER.......................................................... 3 
+REFUSED ..................................................... 7 
+DON'T KNOW ............................................... 9 
+ 
+b. had congestive heart failure? 
+ 
+ YES.....................  1 
+ NO.......................  2 (c) 
+ REFUSED...........  7 (c) 
+ DON'T KNOW.....  9 (c)  
+ 
+had congestive heart failure? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ................................................. 777 
+DON'T KNOW ........................................... 999  
+ 
+c. had coronary heart disease? 
+ 
+ YES.....................  1 
+ NO.......................  2 (d) 
+ REFUSED...........  7 (d) 
+ DON'T KNOW.....  9 (d)  
+ 
+had coronary heart disease? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ................................................. 777 
+DON'T KNOW ........................................... 999  
+ 
+d. had angina, also called 
+angina pe
+
+## 2003 Smoking and Tobacco Use [PDF - 57 KB]
+https://wwwn.cdc.gov/nchs/data/nhanes/public/2003/questionnaires/sp_smq_c.pdf
+: 
+ 
+SMOKING AND TOBACCO USE - SMQ _C 
+ 
+ 
+These next questions are about cigarette smoking and other tobacco use. 
+ 
+ 
+SMQ.020 {Have you/Has SP} smoked at least 100 cigarettes in {your/his/her} entire life? 
+ 
+YES ............................................................... 1 
+NO ................................................................. 2 (S MQ.120) 
+REFUSED .....................................................  7 (SMQ.120) 
+DON'T KNOW................................................ 9 (SMQ.120) 
+ 
+ 
+SMQ.030 How old {were you/was SP} when {you/s/he} fi rst started to smoke cigarettes fairly regularly? 
+ 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+NEVER SMOKED CIGARETTES  
+  REGULARLY...............................................666  
+REFUSED ..................................................... 777  
+DON'T KNOW................................................999  
+ 
+ 
+SMQ.040 {Do you/Does SP} now smoke cigarettes . . . 
+ 
+every day, ...................................................... 1 (SMQ.070) 
+some days, or ................................................ 2 (SMQ.641) 
+not at all? ....................................................... 3 (SMQ.050) 
+REFUSED .....................................................  7 (SMQ.120) 
+DON'T KNOW................................................ 9 (SMQ.120) 
+ 
+ 
+SMQ.050 How long has it been since {you/SP} quit smoking cigarettes? 
+ 
+|___|___|___| 
+ENTER NUMBER (OF DAYS, WEEKS, MONTHS OR YEARS) 
+ 
+REFUSED ..............................................
+............................................. 777  
+DON'T KNOW................................................999  
+ 
+ 
+SMQ.040 {Do you/Does SP} now smoke cigarettes . . . 
+ 
+every day, ...................................................... 1 (SMQ.070) 
+some days, or ................................................ 2 (SMQ.641) 
+not at all? ....................................................... 3 (SMQ.050) 
+REFUSED .....................................................  7 (SMQ.120) 
+DON'T KNOW................................................ 9 (SMQ.120) 
+ 
+ 
+SMQ.050 How long has it been since {you/SP} quit smoking cigarettes? 
+ 
+|___|___|___| 
+ENTER NUMBER (OF DAYS, WEEKS, MONTHS OR YEARS) 
+ 
+REFUSED ..................................................... 777 
+DON'T KNOW................................................999 
+ 
+ENTER UNIT 
+ 
+DAYS............................................................. 1 
+WEEKS.......................................................... 2 
+MONTHS ....................................................... 3 
+YEARS .......................................................... 4 
+REFUSED ..................................................... 7 
+DON'T KNOW................................................ 9 
+ 
+ 
+ 
+BOX 1 
+ 
+CHECK ITEM SMQ.053: 
+IF SMQ.050 >= 1 YEAR (365 DAYS, 52 WEEKS, 12 MONTHS, OR 1 YEAR), 
+CONTINUE. 
+O THERWISE, GO TO SMQ.120. 
+ 
+ 
+SMQ.055 How old {were you/was SP} when {you/s/he} last smoked cigarettes {fairly regularly}? 
+ 
+ CAPI INSTRUCTION: 
+ DISPLAY "FAIRLY
+
+## 2005 Medical Conditions [PDF - 72 KB]
+https://wwwn.cdc.gov/nchs/data/nhanes/public/2005/questionnaires/sp_mcq_d.pdf
+2005-06 Questionnaire  
+MEDICAL CONDITIONS – MCQ 
+Target Group:  SPs 1+ 
+ 
+ 
+MCQ.010 Has a doctor or other health professional ever told {you/SP} that {you have/s/he/SP has} asthma? 
+ 
+ CAPI INSTRUCTION: 
+ IF SP AGE >= 12, DISPLAY SP NAME AND "S/HE": 
+ IF SP AGE < 12, DISPLAY "YOU" AND SP NAME. 
+ 
+YES ...............................................................  1 
+NO .................................................................  2 (MCQ.053) 
+REFUSED .....................................................  7 (MCQ.053) 
+DON'T KNOW ...............................................  9 (MCQ.053) 
+ 
+ 
+MCQ.025 How old {were you/was SP} when {you were/s/he was} first told {he/she} had asthma? 
+ 
+ IF LESS THAN 1 YEAR, ENTER 1 
+ 
+ CAPI INSTRUCTION: 
+ IF SP AGE >= 16, DISPLAY "WERE YOU" AND "YOU WERE". 
+ IF SP AGE = 12-15, DISPLAY "WAS {SP}" AND "S/HE WAS". 
+ IF SP AGE < 12, DISPLAY "WAS {SP}" AND "YOU WERE". 
+ 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+CAPI INSTRUCTION: 
+HARD EDIT:  1-120 
+ 
+REFUSED ..................................................... 777 
+DON'T KNOW ............................................... 999 
+ 
+ 
+MCQ.035 {Do you/Does SP} still have asthma? 
+ 
+YES ...............................................................  1 
+NO .................................................................  2 (MCQ.053) 
+REFUSED .....................................................  7 (MCQ.053) 
+DON'T KNOW ...............................................  9 (MCQ.0
+...........................  9 
+ 
+ 
+BOX 7 
+ 
+CHECK ITEM MCQ.145: 
+IF SP'S AGE 6-19, CONTINUE. 
+IF SP'S AGE >= 20, GO TO MCQ.160. 
+O THERWISE, GO TO END OF SECTION. 
+ 
+ 
+BOX 7A 
+ 
+CHECK ITEM MCQ.146: 
+IF SP AGE 8-11 AND SP IS FEMALE, CONTINUE. 
+O
+ 
+THERWISE, GO TO MCQ.150. 
+ 
+ 
+MCQ.149 Have {SP's} periods or menstrual cycles started yet? 
+ 
+YES ...............................................................  1 
+NO .................................................................  2 
+REFUSED .....................................................  7 
+DON'T KNOW ...............................................  9 
+ 
+ 
+SP_ECQ  4 
+MCQ.150 
+G/Q 
+During the past 12 months, that is, since {DISPLAY CURRENT MONTH} of {DISPLAY LAST YEAR}, about 
+how many days did {you/SP} miss school because of an illness or injury? 
+ 
+ IF NONE, ENTER 0 
+ 
+|___|___|___| 
+ENTER NUMBER OF DAYS 
+ 
+DID NOT GO TO SCHOOL ........................... 666 
+REFUSED ..................................................... 777 
+DON'T KNOW ............................................... 999 
+ 
+ 
+BOX 8 
+ 
+CHECK ITEM MCQ.155: 
+IF SP AGE >= 16, GO TO MCQ.245. 
+O THERWISE, GO TO END OF SECTION. 
+ 
+ 
+MCQ.160 
+Has a doctor or other health 
+professional ever told {you/SP}  
+that {you/s/he} . . .  
+CAPI INSTRUCTION:   
+TEXT OF QUESTION SHOULD BE 
+OPTIONAL AFTER FIRST ITEM IS 
+READ. 
+MCQ.170 
+{Do you/Does SP} still . . . ? 
+MCQ.180 
+How old {were you/was SP} when  
+{you were/s/he was} first told  
+{you/s/he} . . . 
+MCQ.190 
+Which type of arthritis wa
+........ 999 
+ 
+ 
+BOX 8 
+ 
+CHECK ITEM MCQ.155: 
+IF SP AGE >= 16, GO TO MCQ.245. 
+O THERWISE, GO TO END OF SECTION. 
+ 
+ 
+MCQ.160 
+Has a doctor or other health 
+professional ever told {you/SP}  
+that {you/s/he} . . .  
+CAPI INSTRUCTION:   
+TEXT OF QUESTION SHOULD BE 
+OPTIONAL AFTER FIRST ITEM IS 
+READ. 
+MCQ.170 
+{Do you/Does SP} still . . . ? 
+MCQ.180 
+How old {were you/was SP} when  
+{you were/s/he was} first told  
+{you/s/he} . . . 
+MCQ.190 
+Which type of arthritis was it? 
+a. had arthritis? 
+ 
+ YES.....................  1 
+ NO.......................  2 (b) 
+ REFUSED...........  7 (b) 
+ DON'T KNOW.....  9 (b)  
+ 
+had arthritis? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ................................................. 777 
+DON'T KNOW ........................................... 999  
+RHEUMATOID ARTHRITIS .......................... 1 
+OSTEOARTHRITIS....................................... 2 
+OTHER.......................................................... 3 
+REFUSED ..................................................... 7 
+DON'T KNOW ............................................... 9 
+ 
+b. had congestive heart failure? 
+ 
+ YES.....................  1 
+ NO.......................  2 (c) 
+ REFUSED...........  7 (c) 
+ DON'T KNOW.....  9 (c)  
+ 
+had congestive heart failure? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ................................................. 777 
+DON'T KNOW ........................................... 999  
+ 
+c. had coronary heart disease? 
+ 
+ YES.....................  1 
+ NO
+ou/Does SP} still . . . ? 
+MCQ.180 
+How old {were you/was SP} when  
+{you were/s/he was} first told  
+{you/s/he} . . . 
+MCQ.190 
+Which type of arthritis was it? 
+a. had arthritis? 
+ 
+ YES.....................  1 
+ NO.......................  2 (b) 
+ REFUSED...........  7 (b) 
+ DON'T KNOW.....  9 (b)  
+ 
+had arthritis? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ................................................. 777 
+DON'T KNOW ........................................... 999  
+RHEUMATOID ARTHRITIS .......................... 1 
+OSTEOARTHRITIS....................................... 2 
+OTHER.......................................................... 3 
+REFUSED ..................................................... 7 
+DON'T KNOW ............................................... 9 
+ 
+b. had congestive heart failure? 
+ 
+ YES.....................  1 
+ NO.......................  2 (c) 
+ REFUSED...........  7 (c) 
+ DON'T KNOW.....  9 (c)  
+ 
+had congestive heart failure? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ................................................. 777 
+DON'T KNOW ........................................... 999  
+ 
+c. had coronary heart disease? 
+ 
+ YES.....................  1 
+ NO.......................  2 (d) 
+ REFUSED...........  7 (d) 
+ DON'T KNOW.....  9 (d)  
+ 
+had coronary heart disease? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ................................................. 777 
+DON'T KNOW ........................................... 999  
+ 
+d. had angina, also called angina 
+pe
+
+## 2005 Smoking and Tobacco Use [PDF - 43 KB]
+https://wwwn.cdc.gov/nchs/data/nhanes/public/2005/questionnaires/sp_smq_d.pdf
+ire  
+SMOKING AND TOBACCO USE – SMQ 
+Target Group:  SPs 20+ 
+ 
+ 
+These next questions are about cigarette smoking. 
+ 
+ 
+SMQ.020 {Have you/Has SP} smoked at least 100 cigarettes in {your/his/her} entire life? 
+ 
+YES ...............................................................  1 
+NO .................................................................  2 (END OF SECTION) 
+REFUSED .....................................................  7 (END OF SECTION) 
+DON'T KNOW ...............................................  9 (END OF SECTION) 
+ 
+ 
+SMQ.030 How old {were you/was SP} when {you/s/he} first started to smoke cigarettes fairly regularly? 
+G/Q 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+NEVER SMOKED CIGARETTES  
+  REGULARLY.........................................  666  
+REFUSED ...............................................  77777 
+DON'T KNOW .........................................  99999 
+ 
+ 
+SMQ.040 {Do you/Does SP} now  smoke cigarettes . . . 
+ 
+every day,......................................................  1 (S MQ.070) 
+some days, or ................................................  2 (SMQ.641) 
+not at all?.......................................................  3 (SMQ.050Q/U) 
+REFUSED .....................................................  7 (END OF SECTION) 
+DON'T KNOW ...............................................  9 (END OF SECTION) 
+ 
+ 
+SMQ.050 How long has it been since {you/SP} quit smoking cigarettes? 
+Q/U 
+|___|___|___| 
+ENTER NUMBER (OF DAYS, WEEKS, MONTHS OR YEARS) 
+ 
+REFUSED ........
+..............................................  77777 
+DON'T KNOW .........................................  99999 
+ 
+ 
+SMQ.040 {Do you/Does SP} now  smoke cigarettes . . . 
+ 
+every day,......................................................  1 (S MQ.070) 
+some days, or ................................................  2 (SMQ.641) 
+not at all?.......................................................  3 (SMQ.050Q/U) 
+REFUSED .....................................................  7 (END OF SECTION) 
+DON'T KNOW ...............................................  9 (END OF SECTION) 
+ 
+ 
+SMQ.050 How long has it been since {you/SP} quit smoking cigarettes? 
+Q/U 
+|___|___|___| 
+ENTER NUMBER (OF DAYS, WEEKS, MONTHS OR YEARS) 
+ 
+REFUSED ...............................................  77777 
+DON'T KNOW .........................................  99999 
+ 
+ENTER UNIT 
+ 
+DAYS.............................................................  1 
+WEEKS .........................................................  2 
+MONTHS.......................................................  3 
+YEARS ..........................................................  4 
+REFUSED .....................................................  7 
+DON'T KNOW ...............................................  9 
+ 
+ 
+SP_SMQ  1 
+BOX 1A 
+ 
+CHECK ITEM SMQ.053: 
+IF SMQ.050Q/U >= 1 YEAR (365 DAYS, 52 WEEKS, 12 MONTHS, OR 1 YEAR), 
+CONTINUE. 
+O THERWISE, GO TO END. 
+ 
+ 
+SMQ.055 How old {were you/was SP} when {you/s/he} last smoked cigarettes {fairly regularly}? 
+ 
+ CA
+
+## 2007 Medical Conditions [PDF - 237 KB]
+https://wwwn.cdc.gov/nchs/data/nhanes/public/2007/questionnaires/mcq07_08_eng.pdf.pdf
+NHANES 2007 
+11/21/06 Questionnaire: SP 
+MEDICAL CONDITIONS – MCQ 
+Target Group:  SPs 1+
+MCQ.010 Has a doctor or other health professional ever told {you/SP} that {you have/s/he/SP has} asthma (az-ma)? 
+ CAPI INSTRUCTION: 
+IF SP AGE >= 12, DISPLAY SP NAME AND "S/HE": 
+IF SP AGE < 12, DISPLAY "YOU" AND SP NAME. 
+ HELP SCREEN: 
+Asthma: Asthma is a condition that affects y our airways.that carry air in and out of y our lungs. It causes 
+symptoms like w heezing (a w histling sound w hen you breathe), coughing, c hest tightness, and trouble 
+breathing, 
+INTERVIEWER: DO NOT ACCEPT SELF-DIAGNOSED OR DIAGNOSED BY A PERSON WHO IS NOT A 
+DOCTOR OR OTHER HEALTH PROFESSIONAL.  
+YES ...............................................................  1 
+NO .................................................................  2 (MCQ.053) 
+REFUSED ..................................................... 7 (MCQ.053) 
+DON'T KNOW ...............................................  9 (MCQ.053) 
+MCQ.025 How old {were you/was SP} when {you were/s/he was} first told {you/he/she} had asthma (az-ma)? 
+IF LESS THAN 1 YEAR, ENTER 1 
+ CAPI INSTRUCTION: 
+IF SP AGE >= 16, DISPLAY "WERE YOU" AND "YOU WERE". 
+IF SP AGE = 12-15, DISPLAY "WAS {SP}" AND "S/HE WAS". 
+IF SP AGE < 12, DISPLAY "WAS {SP}" AND "YOU WERE". 
+|___|___|___| 
+ENTER AGE IN YEARS 
+CAPI INSTRUCTION: 
+HARD EDIT:  1-120 
+REFUSED ..................................................... 777 
+DON'T KNOW ..............................................
+.................................. 9 
+BOX 7 
+CHECK ITEM MCQ.145: 
+IF SP'S AGE 6-19, CONTINUE. 
+IF SP'S AGE >= 20, GO TO MCQ.160. 
+OTHERWISE, GO TO END OF SECTION. 
+BOX 7A 
+CHECK ITEM MCQ.146: 
+IF SP AGE 8-11 AND SP IS FEMALE, CONTINUE. 
+OTHERWISE, GO TO MCQ.150. 
+MCQ.149 Have {SP's} periods or menstrual (men-stral) cycles started yet? 
+YES ...............................................................
+NO .................................................................
+REFUSED .....................................................
+DON'T KNOW ............................................... 
+1 
+2 
+7 
+9 
+MCQ.150 
+G/Q 
+During the past 12 months, that is, since {DISPLAY CURRENT MONTH} of {DISPLAY LAST YEAR}, about 
+how many days did {you/SP} miss school because of an illness or injury? 
+IF NONE, ENTER 0 
+ HELP SCREEN: 
+Injury:  INTERVIEWER:  INJURY IS DEFINED BY THE RESPONDENT.  
+|___|___|___| 
+ENTER NUMBER OF DAYS 
+DID NOT GO TO SCHOOL ........................... 666 
+REFUSED ..................................................... 777 
+DON'T KNOW ............................................... 999 
+4 
+BOX 8 
+OMITTED 
+BOX 8A 
+CHECK ITEM MCQ.156: 
+IF SP AGE >= 16, GO TO MCQ.245. 
+OTHERWISE, GO TO MCQ.300b. 
+5 
+6 
+MCQ.160 
+Has a doctor or other health 
+professional ever told {you/SP}  
+that {you/s/he} . . . 
+CAPI INSTRUCTION: 
+TEXT OF QUESTION SHOULD BE 
+OPTIONAL AFTER FIRST ITEM IS 
+READ. 
+MCQ.170 
+{Do you/Does SP} still . . . ? 
+MCQ.180 
+How old {were you/was SP} when  
+{you were/s/he was} first told 
+
+999 
+4 
+BOX 8 
+OMITTED 
+BOX 8A 
+CHECK ITEM MCQ.156: 
+IF SP AGE >= 16, GO TO MCQ.245. 
+OTHERWISE, GO TO MCQ.300b. 
+5 
+6 
+MCQ.160 
+Has a doctor or other health 
+professional ever told {you/SP}  
+that {you/s/he} . . . 
+CAPI INSTRUCTION: 
+TEXT OF QUESTION SHOULD BE 
+OPTIONAL AFTER FIRST ITEM IS 
+READ. 
+MCQ.170 
+{Do you/Does SP} still . . . ? 
+MCQ.180 
+How old {were you/was SP} when  
+{you were/s/he was} first told 
+{you/s/he} . . . 
+MCQ.190 
+Which type of arthritis was it? 
+a. had arthritis (ar-thry-tis)?
+ Y ES..................... 1 
+ NO ....................... 2 (b) 
+ REFUSED ........... 7 (b) 
+ DON'T KNOW..... 9 (b) 
+had arthritis? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+REFUSED .................................................
+DON'T KNOW ........................................... 777 999 
+RHEUMATOID ARTHRITIS .......................... 
+OSTEOARTHRITIS.......................................
+OTHER..........................................................
+REFUSED .....................................................
+DON'T KNOW ............................................... 
+1 
+2 
+3 
+7 9 
+n. had gout? 
+ Y ES..................... 1 
+ NO ....................... 2 (N) 
+ REFUSED ........... 7 (N) 
+ DON'T KNOW..... 9 (N) 
+had gout? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+REFUSED .................................................
+DON'T KNOW ........................................... 777 999 
+b. had congestive heart failure?
+ Y ES..................... 1 
+ NO ....................... 2 (c) 
+ REFUSED ........... 7 
+......................................
+DON'T KNOW ........................................... 777 999 
+HELP SCREENS FOR MCQ.160 
+MCQ160a 
+Arthritis:  Is joint inflammation characterized by  stiffness, swelling, redness, heat, or pain in the joint.  Common types of 
+arthritis are rheumatoid arthritis and osteoarthritis 
+MCQ.190 
+Rheumatoid Arthritis:  A common ty pe of arthritis.  If one knee or hand has rheumatoid arthritis, usually the other does 
+too. This disease often occurs in mo re than one joint and can affect any  joint in the body .  People with this disease may 
+feel sick and tired, and they sometimes get fevers. 
+Osteoarthritis:  This is the most common type of arthritis.  Osteoarthritis primarily affects cartilage, which is the tissue that 
+cushions the ends of bones w ithin the joint. Frequently affects the spine and the w eight-bearing joints (the knees and 
+hips). 
+Arthritis:  A condition affecting the bone and muscle. The infla mmation of a joint.  Common types of arthritis are 
+rheumatoid arthritis and osteoarthritis. 
+MCQ160n 
+Gout:  Gout is one of the most painful forms of arthritis.  It occurs when too much uric acid builds up in the body.  For many 
+people, the first attack of gout occurs in the big toe.  Often, the attack wakes a person from sleep. 
+MCQ160b 
+Congestive Heart F ailure:  Heart failure is a condition where the heart cannot pump enough bl ood throughout the body . 
+Blood and fluid to "back up" into the lungs which causes shortness of breath.  The heart failure 
+you/Does SP} still . . . ? 
+MCQ.180 
+How old {were you/was SP} when  
+{you were/s/he was} first told 
+{you/s/he} . . . 
+MCQ.190 
+Which type of arthritis was it? 
+a. had arthritis (ar-thry-tis)?
+ Y ES..................... 1 
+ NO ....................... 2 (b) 
+ REFUSED ........... 7 (b) 
+ DON'T KNOW..... 9 (b) 
+had arthritis? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+REFUSED .................................................
+DON'T KNOW ........................................... 777 999 
+RHEUMATOID ARTHRITIS .......................... 
+OSTEOARTHRITIS.......................................
+OTHER..........................................................
+REFUSED .....................................................
+DON'T KNOW ............................................... 
+1 
+2 
+3 
+7 9 
+n. had gout? 
+ Y ES..................... 1 
+ NO ....................... 2 (N) 
+ REFUSED ........... 7 (N) 
+ DON'T KNOW..... 9 (N) 
+had gout? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+REFUSED .................................................
+DON'T KNOW ........................................... 777 999 
+b. had congestive heart failure?
+ Y ES..................... 1 
+ NO ....................... 2 (c) 
+ REFUSED ........... 7 (c) 
+ DON'T KNOW..... 9 (c) 
+had congestive heart failure? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+REFUSED .................................................
+DON'T KNOW ........................................... 777 999 
+c. had coronary (kor-o-nare-ee) 
+heart disease?
+ Y ES..................... 1 
+ NO ..............
+swelling, redness, heat, or pain in the joint.  Common types of 
+arthritis are rheumatoid arthritis and osteoarthritis 
+MCQ.190 
+Rheumatoid Arthritis:  A common ty pe of arthritis.  If one knee or hand has rheumatoid arthritis, usually the other does 
+too. This disease often occurs in mo re than one joint and can affect any  joint in the body .  People with this disease may 
+feel sick and tired, and they sometimes get fevers. 
+Osteoarthritis:  This is the most common type of arthritis.  Osteoarthritis primarily affects cartilage, which is the tissue that 
+cushions the ends of bones w ithin the joint. Frequently affects the spine and the w eight-bearing joints (the knees and 
+hips). 
+Arthritis:  A condition affecting the bone and muscle. The infla mmation of a joint.  Common types of arthritis are 
+rheumatoid arthritis and osteoarthritis. 
+MCQ160n 
+Gout:  Gout is one of the most painful forms of arthritis.  It occurs when too much uric acid builds up in the body.  For many 
+people, the first attack of gout occurs in the big toe.  Often, the attack wakes a person from sleep. 
+MCQ160b 
+Congestive Heart F ailure:  Heart failure is a condition where the heart cannot pump enough bl ood throughout the body . 
+Blood and fluid to "back up" into the lungs which causes shortness of breath.  The heart failure causes a buildup of fluid in 
+the feet, ankles, and legs.  Do not c ount he art murmurs , droppe d or s kipped he art be ats, c hest pa in or he art 
+attacks. 
+MCQ160c 
+Coronary Heart Disease:   Occurs
+
+## 2007 Smoking and Tobacco Use [PDF - 154 KB]
+https://wwwn.cdc.gov/nchs/data/nhanes/public/2007/questionnaires/smq07_08_eng.pdf
+tionnaire: SP 
+SMOKING AND TOBACCO USE – SMQ 
+Target Group:  SPs 20+
+These next questions are about cigarette smoking. 
+SMQ.020 {Have you/Has SP} smoked at least 100 cigarettes in {your/his/her} entire life? 
+YES ...............................................................  1 
+NO .................................................................  2 (END OF SECTION) 
+REFUSED ..................................................... 7 (END OF SECTION) 
+DON'T KNOW ............................................... 9 (END OF SECTION) 
+SMQ.030 How old {were you/was SP} when {you/s/he} first started to smoke cigarettes fairly regularly? 
+G/Q 
+|___|___|___| 
+ENTER AGE IN YEARS 
+NEVER SMOKED CIGARETTES  
+  REGULARLY.........................................  666 
+REFUSED ............................................... 77777 
+DON'T KNOW .........................................  99999 
+SMQ.040 {Do you/Does SP} now smoke cigarettes . . . 
+every day, ......................................................  1 (SMQ.077) 
+some days, or ................................................ 2 (SMQ.641) 
+not at all?....................................................... 3 (SMQ.050Q/U) 
+REFUSED ..................................................... 7 (END OF SECTION) 
+DON'T KNOW ............................................... 9 (END OF SECTION) 
+SMQ.050 How long has it been since {you/SP} quit smoking cigarettes? 
+Q/U 
+|___|___|___| 
+ENTER NUMBER (OF DAYS, WEEKS, MONTHS OR YEARS) 
+REFUSED .....................................
+SED ............................................... 77777 
+DON'T KNOW .........................................  99999 
+SMQ.040 {Do you/Does SP} now smoke cigarettes . . . 
+every day, ......................................................  1 (SMQ.077) 
+some days, or ................................................ 2 (SMQ.641) 
+not at all?....................................................... 3 (SMQ.050Q/U) 
+REFUSED ..................................................... 7 (END OF SECTION) 
+DON'T KNOW ............................................... 9 (END OF SECTION) 
+SMQ.050 How long has it been since {you/SP} quit smoking cigarettes? 
+Q/U 
+|___|___|___| 
+ENTER NUMBER (OF DAYS, WEEKS, MONTHS OR YEARS) 
+REFUSED ............................................... 77777 
+DON'T KNOW .........................................  99999 
+ENTER UNIT 
+DAYS.............................................................  1 
+WEEKS .........................................................  2 
+MONTHS.......................................................  3 
+YEARS ..........................................................  4 
+REFUSED .....................................................  7 
+DON'T KNOW ............................................... 9 
+
+BOX 1A 
+CHECK ITEM SMQ.053: 
+IF SMQ.050Q/U >= 1 YEAR (365 DAYS, 52 WEEKS, 12 MONTHS, OR 1 YEAR), 
+CONTINUE. 
+OTHERWISE, GO TO END. 
+SMQ.055 How old {were you/was SP} when {you/s/he} last smoked cigarettes {fairly regularly}? 
+ CAPI INSTRUCTION: 
+DISPLAY "FAIRLY REGULARLY
+
+## 2009 Medical Conditions [PDF - 89 KB]
+https://wwwn.cdc.gov/nchs/data/nhanes/public/2009/questionnaires/mcq_f.pdf
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+NHANES 2009 
+7/30/08 Questionnaire: SP 
+MEDICAL CONDITIONS – MCQ 
+Target Group: SPs 1+
+ 
+MCQ.010 The following questions are about  different medical conditions. 
+Has a doctor or other health professional ever told {you/SP} that {you have/s/he/SP has} asthma (az-ma)? 
+ CAPI INSTRUCTION: 
+IF SP AGE >= 16, DISPLAY “YOU” AND “YOU HAVE”. 
+IF SP AGE = 12-15, DISPLAY "SP" AND “S/HE HAS”. 
+IF SP AGE < 12, DISPLAY “YOU” AND “SP HAS”. 
+INTERVIEWER: DO NOT ACCEPT SELF-DIAGNOSED OR DIAGNOSED BY A PERSON WHO IS NOT A 
+DOCTOR OR OTHER HEALTH PROFESSIONAL.  
+YES ...............................................................  1 
+NO .................................................................  2 (MCQ.053) 
+REFUSED ..................................................... 7 (MCQ.053) 
+DON'T KNOW ...............................................  9 (MCQ.053) 
+ HELP SCREEN: 
+Asthma: Asthma is a condition that affects your airw ays that carry air in and out of your lungs. It causes 
+symptoms like wheezing (a whistling sound when you breathe), coughing, c hest tightness, and trouble 
+breathing. 
+MCQ.025 How old {were you/was SP} when {you were/s/he was} first told {you/he/she} had asthma (az-ma)? 
+IF LESS THAN 1 YEAR, ENTER 1 
+ CAPI INSTRUCTION: 
+IF SP AGE >= 16, DISPLAY "WERE YOU" AND "YOU WERE". 
+IF SP AGE = 12-15, DISPLAY "WAS {SP}" AND "S/HE WAS". 
+IF SP AGE < 12, DISPLAY "WAS {SP}" AND "YOU WERE". 
+|___|___|___| 
+ENTER AGE IN YEARS 
+CAPI INSTRUCTION: 
+HARD EDIT:  1-120 
+REFUSED ..
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+BOX 7 
+CHECK ITEM MCQ.145: 
+IF SP'S AGE 6-19, CONTINUE. 
+IF SP'S AGE >= 20, GO TO MCQ.160. 
+OTHERWISE, GO TO END OF SECTION. 
+BOX 7A 
+CHECK ITEM MCQ.146: 
+IF SP AGE 8-11 AND SP IS FEMALE, CONTINUE. 
+OTHERWISE, GO TO MCQ.300b. 
+MCQ.149 Have {SP's} periods or menstrual (men-stral) cycles started yet? 
+YES ...............................................................
+NO .................................................................
+REFUSED ..................................................... 
+DON'T KNOW ...............................................
+ 1 (MCQ.300b) 
+2 (MCQ.300b) 
+7 (MCQ.300b) 
+9 (MCQ.300b) 
+BOX 8 
+OMITTED 
+BOX 8A 
+OMITTED 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+  
+ 
+MCQ.160 
+Has a doctor or other health 
+professional ever told {you/SP}  
+that {you/s/he} . . . 
+CAPI INSTRUCTION: 
+TEXT OF QUESTION SHOULD BE 
+OPTIONAL AFTER FIRST ITEM IS 
+READ. 
+MCQ.170 
+{Do you/Does SP} still . . . ? 
+MCQ.180 
+How old {were you/was SP} when  
+{you were/s/he was} first told 
+{you/s/he} . . . 
+MCQ.191 
+Which type of arthritis was it? 
+a. had arthritis (ar-thry-tis)
+?
+ YES..................... 1 
+ NO....................... 2 (n) 
+ REFUSED........... 7 (n) 
+ DON'T KNOW..... 9 (n) 
+had arthritis? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+REFUSED .................................................
+DON'T KNOW ........................................... 777 999 
+RHEUMATOID ARTHRITIS ...............
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+  
+ 
+ 
+  
+ 
+MCQ.160 
+Has a doctor or other health 
+professional ever told {you/SP}  
+that {you/s/he} . . . 
+CAPI INSTRUCTION: 
+TEXT OF QUESTION SHOULD BE 
+OPTIONAL AFTER FIRST ITEM IS 
+READ. 
+MCQ.170 
+{Do you/Does SP} still . . . ? 
+MCQ.180 
+How old {were you/was SP} when  
+{you were/s/he was} first told 
+{you/s/he} . . . 
+MCQ.191 
+Which type of arthritis was it? 
+a. had arthritis (ar-thry-tis)
+?
+ YES..................... 1 
+ NO....................... 2 (n) 
+ REFUSED........... 7 (n) 
+ DON'T KNOW..... 9 (n) 
+had arthritis? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+REFUSED .................................................
+DON'T KNOW ........................................... 777 999 
+RHEUMATOID ARTHRITIS .......................... 
+OSTEOARTHRITIS.......................................
+PSORIATIC ARTHRITIS ............................... 
+OTHER..........................................................
+REFUSED .....................................................
+DON'T KNOW ............................................... 
+1 
+2 3 
+4 
+7 9 
+n. had gout? 
+ YES..................... 1 
+ NO....................... 2 (b) 
+ REFUSED........... 7 (b) 
+ DON'T KNOW..... 9 (b) 
+had gout? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+REFUSED .................................................
+DON'T KNOW ........................................... 777 999 
+b. had congestive heart failure
+?
+ YES..................... 1 
+ NO.....
+ KNOW ........................................... 999 
+ 
+ 
+ 
+ 
+  
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+   
+ 
+ 
+HELP SCREENS FOR MCQ.160 
+MCQ160a 
+Arthritis:  Is joint inflammation characterized by stiffness, swe lling, redness, heat, or pain in the joint.  Common types of 
+arthritis are rheumatoid arthritis and osteoarthritis. 
+MCQ.191 
+Rheumatoid Arthritis:  A common type of arthritis.  If one knee or hand has rheumatoid arthritis, usually the other does 
+too. This disease often occurs in mo re than one joint and can affect any joint in the body.  People with this disease may
+ 
+feel sick and tired, and they sometimes get fevers. 
+Osteoarthritis:  This is the most common type of arthritis.  Osteoarthritis primarily affects cartil age, which is the tissue that 
+cushions the ends of bones within the joint. Frequently a ffects the spine and the weight -bearing joints (the knees and 
+hips). 
+Arthritis:  A condition affecting the bone and muscle. The infla mmation of a joint.  Common types of arthritis are 
+rheumatoid arthritis and osteoarthritis. 
+MCQ160n 
+Gout:  Gout is one of the most painful forms of arthritis.  It occurs when too much uric acid builds up in the body.  For many
+ 
+people, the first attack of gout occurs in the big toe.  Often, the attack wakes a person from sleep. 
+MCQ160b 
+Congestive Heart Failure:  Heart failure is a condition where t he heart cannot pump enough bl ood throughout the body. 
+Blood and fluid "back up" into the lungs which causes shortness of breath.  The heart failure cau
+you/Does SP} still . . . ? 
+MCQ.180 
+How old {were you/was SP} when  
+{you were/s/he was} first told 
+{you/s/he} . . . 
+MCQ.191 
+Which type of arthritis was it? 
+a. had arthritis (ar-thry-tis)
+?
+ YES..................... 1 
+ NO....................... 2 (n) 
+ REFUSED........... 7 (n) 
+ DON'T KNOW..... 9 (n) 
+had arthritis? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+REFUSED .................................................
+DON'T KNOW ........................................... 777 999 
+RHEUMATOID ARTHRITIS .......................... 
+OSTEOARTHRITIS.......................................
+PSORIATIC ARTHRITIS ............................... 
+OTHER..........................................................
+REFUSED .....................................................
+DON'T KNOW ............................................... 
+1 
+2 3 
+4 
+7 9 
+n. had gout? 
+ YES..................... 1 
+ NO....................... 2 (b) 
+ REFUSED........... 7 (b) 
+ DON'T KNOW..... 9 (b) 
+had gout? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+REFUSED .................................................
+DON'T KNOW ........................................... 777 999 
+b. had congestive heart failure
+?
+ YES..................... 1 
+ NO....................... 2 (c) 
+ REFUSED........... 7 (c) 
+ DON'T KNOW..... 9 (c) 
+had congestive heart failure? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+REFUSED .................................................
+DON'T KNOW ........................................... 777 999 
+c. had coronary (kor-o-nare-ee) 
+heart disease
+?
+e lling, redness, heat, or pain in the joint.  Common types of 
+arthritis are rheumatoid arthritis and osteoarthritis. 
+MCQ.191 
+Rheumatoid Arthritis:  A common type of arthritis.  If one knee or hand has rheumatoid arthritis, usually the other does 
+too. This disease often occurs in mo re than one joint and can affect any joint in the body.  People with this disease may
+ 
+feel sick and tired, and they sometimes get fevers. 
+Osteoarthritis:  This is the most common type of arthritis.  Osteoarthritis primarily affects cartil age, which is the tissue that 
+cushions the ends of bones within the joint. Frequently a ffects the spine and the weight -bearing joints (the knees and 
+hips). 
+Arthritis:  A condition affecting the bone and muscle. The infla mmation of a joint.  Common types of arthritis are 
+rheumatoid arthritis and osteoarthritis. 
+MCQ160n 
+Gout:  Gout is one of the most painful forms of arthritis.  It occurs when too much uric acid builds up in the body.  For many
+ 
+people, the first attack of gout occurs in the big toe.  Often, the attack wakes a person from sleep. 
+MCQ160b 
+Congestive Heart Failure:  Heart failure is a condition where t he heart cannot pump enough bl ood throughout the body. 
+Blood and fluid "back up" into the lungs which causes shortness of breath.  The heart failure causes a buildup of fluid in the 
+feet, ankles, and legs. Do not count heart murmurs, dropped or skipped heart beats, chest pain or heart attacks.
+ 
+MCQ160c 
+Coronary Heart Disease:   Occurs when the arter
+
+## 2009 Smoking and Tobacco Use [PDF - 32 KB]
+https://wwwn.cdc.gov/nchs/data/nhanes/public/2009/questionnaires/smq_f.pdf
+onnaire: SP 
+SMOKING AND TOBACCO USE – SMQ 
+Target Group:  SPs 20+
+ 
+These next questions are about cigarette smoking. 
+SMQ.020 {Have you/Has SP} smoked at least 100 cigarettes in {your/his/her} entire life? 
+YES ...............................................................
+NO .................................................................
+REFUSED ..................................................... 
+DON'T KNOW ............................................... 
+1 
+2 
+7 
+9 
+(END OF SECTION) 
+(END OF SECTION) 
+(END OF SECTION) 
+ HELP SCREEN: 
+Cigarette: Respondent defined. Do not  include cigars or marijuana. 
+SMQ.030 How old {were you/was SP} when {you/s/he} first started to smoke cigarettes fairly regularly? 
+G/Q 
+|___|___|___| 
+ENTER AGE IN YEARS 
+NEVER SMOKED CIGARETTES  
+  REGULARLY.........................................  666 
+REFUSED ............................................... 77777 
+DON'T KNOW .........................................  99999 
+ HELP SCREEN: 
+Fairly Regularly (started smoking cigarettes, pipes, cigars, or using chewing tobacco, snuff):  On a routine 
+basis. When using tobacco became a routine or established habit as  opposed to when the person first 
+experimented with tobacco. 
+Cigarette: Respondent defined. Do not  include cigars or marijuana. 
+SMQ.040 {Do you/Does SP} now  smoke cigarettes . . . 
+every day, ......................................................  1 (S MQ.077) 
+some days, or ................................................ 2 (SMQ.641) 
+not at all?...
+when the person first 
+experimented with tobacco. 
+Cigarette: Respondent defined. Do not  include cigars or marijuana. 
+SMQ.040 {Do you/Does SP} now  smoke cigarettes . . . 
+every day, ......................................................  1 (S MQ.077) 
+some days, or ................................................ 2 (SMQ.641) 
+not at all?....................................................... 3 (SMQ.050Q/U) 
+REFUSED ..................................................... 7 (END OF SECTION) 
+DON'T KNOW ............................................... 9 (END OF SECTION) 
+ HELP SCREEN: 
+Cigarette: Respondent defined. Do not  include cigars or marijuana. 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+SMQ.050 How long has it been since {you/SP} quit smoking cigarettes? 
+Q/U 
+|___|___|___| 
+ENTER NUMBER (OF DAYS, WEEKS, MONTHS OR YEARS) 
+REFUSED ............................................... 77777 
+DON'T KNOW .........................................  99999 
+ENTER UNIT 
+DAYS.............................................................  1 
+WEEKS .........................................................  2 
+MONTHS.......................................................  3 
+YEARS ..........................................................  4 
+REFUSED .....................................................  7 
+DON'T KNOW ............................................... 9 
+ HELP SCREEN: 
+Cigarette: Respondent defined. Do not  include cigars or marijuana. 
+BOX 1A 
+CHECK ITEM SMQ.053: 
+IF SMQ.050
+
+## 2011 Medical Conditions [PDF - 86 KB]
+https://wwwn.cdc.gov/nchs/data/nhanes/public/2011/questionnaires/mcq.pdf
+12/23/11  Questionnaire: SP 
+ 
+MEDICAL CONDITIONS – MCQ 
+Target Group: SPs 1+ 
+ 
+ 
+MCQ.010 The following questions are about different medical conditions. 
+ 
+ Has a doctor or other health professional ever told {you/SP} that {you have/s/he/SP has} asthma (az-ma)? 
+ 
+ CAPI INSTRUCTION: 
+ IF SP AGE >= 16, DISPLAY “YOU” AND “YOU HAVE”. 
+ IF SP AGE = 12-15, DISPLAY "SP" AND “S/HE HAS”. 
+ IF SP AGE < 12, DISPLAY “YOU” AND “SP HAS”. 
+ 
+ INTERVIEWER: DO NOT ACCEPT SELF-DIAGNOSED OR DIAGNOSED BY A PERSON WHO IS NOT A 
+DOCTOR OR OTHER HEALTH PROFESSIONAL.  
+ 
+YES ...............................................................  1 
+NO .................................................................  2 (MCQ.053) 
+REFUSED .....................................................  7 (MCQ.053) 
+DON'T KNOW ...............................................  9 (MCQ.053) 
+ 
+ HELP SCREEN: 
+ Asthma: Is a disease of the airways that carry air in and out of your lungs. It causes wheezing or whistling 
+sounds when you breathe and can make you short of breath. 
+ 
+ 
+MCQ.025 How old {were you/was SP} when {you were/s/he was} first told {you/he/she} had asthma (az-ma)? 
+ 
+ IF LESS THAN 1 YEAR, ENTER 1 
+ 
+ CAPI INSTRUCTION: 
+ IF SP AGE >= 16, DISPLAY "WERE YOU" AND "YOU WERE". 
+ IF SP AGE = 12-15, DISPLAY "WAS {SP}" AND "S/HE WAS". 
+ IF SP AGE < 12, DISPLAY "WAS {SP}" AND "YOU WERE". 
+ 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+CAPI INSTRUCTION: 
+HARD EDIT:  1-120 
+ 
+REFUSED ......................
+s worn for cosmetic purposes.  
+ 
+ 
+BOX 7 
+ 
+CHECK ITEM MCQ.145: 
+IF SP'S AGE 6-19, CONTINUE. 
+IF SP'S AGE >= 20, GO TO MCQ.160. 
+OTHERWISE, GO TO END OF SECTION.  
+ 
+ 
+BOX 7A 
+ 
+CHECK ITEM MCQ.146: 
+IF SP AGE 8-11 AND SP IS FEMALE, CONTINUE. 
+OTHERWISE, GO TO MCQ.300b.  
+ 
+ 
+MCQ.149 Have {SP's} periods or menstrual (men-stral) cycles started yet? 
+ 
+YES ...............................................................  1 
+NO .................................................................  2 (MCQ.300b) 
+REFUSED .....................................................  7 (MCQ.300b) 
+DON'T KNOW ...............................................  9 (MCQ.300b) 
+ 
+ HELP TEXT: When a girl starts having periods or menstrual cycles is a very important milestone in growth 
+and development. Growth and development is very related to physical activity and body weight. 
+ 
+ 
+ 
+ 
+MCQ.151 How old was {SP} when she had {her} first menstrual period?  
+ 
+|___|___| YEARS   (MCQ.300b) 
+REFUSED .....................................................  77 (MCQ.300b) 
+DON'T KNOW ...............................................  99 (MCQ.300b) 
+ 
+ HARD EDITS:  MAXIMUM OF 11 AND AGE OF ONSET MUST BE LESS THAN OR EQUAL TO CURRENT 
+AGE. 
+ SOFT EDIT:  IF AGE LESS THAN 7. 
+ 
+ HELP TEXT: When a girl starts having periods or menstrual cycles is a very important milestone in growth 
+and development. Growth and development is very related to physical activity and body weight. 
+ 
+ 
+BOX 8 
+ 
+OMITTED  
+ 
+ 
+BOX 8A 
+ 
+OMITTED  
+ 
+ 
+ 
+ 
+ 
+MCQ.16
+lopment is very related to physical activity and body weight. 
+ 
+ 
+BOX 8 
+ 
+OMITTED  
+ 
+ 
+BOX 8A 
+ 
+OMITTED  
+ 
+ 
+ 
+ 
+ 
+MCQ.160 
+Has a doctor or other health 
+professional ever told {you/SP}  
+that {you/s/he} . . .  
+CAPI INSTRUCTION:   
+TEXT OF QUESTION SHOULD BE 
+OPTIONAL AFTER FIRST ITEM IS 
+READ. 
+MCQ.170 
+{Do you/Does SP} still . . . ? 
+MCQ.180 
+How old {were you/was SP} when  
+{you were/s/he was} first told  
+{you/s/he} . . . 
+MCQ.195 
+Which type of arthritis was it? 
+a. had arthritis (ar-thry-tis)? 
+ 
+ YES ....................  1 
+ NO ......................  2 (n) 
+ REFUSED ..........  7 (n) 
+ DON'T KNOW.....  9 (n)  
+ 
+had arthritis? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ...............................................  777 
+DON'T KNOW ................................ ..........  999  
+Osteoarthritis or degenerative arthritis ..........  1 
+Rheumatoid arthritis ................................ .....  2 
+Psoriatic arthritis ..........................................  3 
+Other................................ ............................  4 
+REFUSED....................................................  7 
+DON’T KNOW ................................ ..............  9  
+n. had gout? 
+ 
+ YES ....................  1 
+ NO ......................  2 (b) 
+ REFUSED ..........  7 (b) 
+ DON'T KNOW.....  9 (b)  
+ 
+had gout? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ...............................................  777 
+DON'T KNOW ................................ ..........  999  
+ 
+b. had cong
+..........................  777 
+DON'T KNOW ................................ ..........  999  
+ 
+ 
+ 
+ 
+HELP SCREENS FOR MCQ.160 
+ 
+MCQ160a 
+Arthritis: Is a disease that causes pain, swelling or stiffness in joints, for example the hand, the knee, or neck.  
+Common kinds of arthritis are osteoarthritis and rheumatoid arthritis. 
+ 
+ 
+MCQ.195 
+Osteoarthritis:  Is the most common kind of arthritis older persons. It is also called degenerative joint disease. 
+Most often, it affects the knees, the hips, the hands, the feet,  and the spine. There is usually bony joint 
+enlargement. There can be joint deformity or pain. 
+ 
+Rheumatoid Arthritis:   Causes inflammation, redness and swelling of both hands and knees, but it can affect 
+joints anywhere in the body.  You may feel sick and tired, and sometimes there are fevers. 
+ 
+Psoriatic Arthritis:  Is arthritis caused by the skin rash Psoriasis. Most often it causes redness and swelling of 
+joints such as the spine, knees, hips and hands. 
+ 
+Arthritis: Is a disease that causes pain, swelling or stiffness in joints, for example the hand, the knee, or neck.  
+Common kinds of arthritis are osteoarthritis and rheumatoid arthritis. 
+ 
+ 
+MCQ160n 
+Gout:  Gout attacks are the sudden onset of pain, redness and swelling in a joint. The big toe is the most common 
+joint attacked, but knee and wrist attacks are also common. Gout is caused by uric acid crystal build up in the body.   
+ 
+ 
+MCQ160b 
+Congestive Heart Failure:  Is when the heart can't pump enough blood to t
+ou/Does SP} still . . . ? 
+MCQ.180 
+How old {were you/was SP} when  
+{you were/s/he was} first told  
+{you/s/he} . . . 
+MCQ.195 
+Which type of arthritis was it? 
+a. had arthritis (ar-thry-tis)? 
+ 
+ YES ....................  1 
+ NO ......................  2 (n) 
+ REFUSED ..........  7 (n) 
+ DON'T KNOW.....  9 (n)  
+ 
+had arthritis? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ...............................................  777 
+DON'T KNOW ................................ ..........  999  
+Osteoarthritis or degenerative arthritis ..........  1 
+Rheumatoid arthritis ................................ .....  2 
+Psoriatic arthritis ..........................................  3 
+Other................................ ............................  4 
+REFUSED....................................................  7 
+DON’T KNOW ................................ ..............  9  
+n. had gout? 
+ 
+ YES ....................  1 
+ NO ......................  2 (b) 
+ REFUSED ..........  7 (b) 
+ DON'T KNOW.....  9 (b)  
+ 
+had gout? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ...............................................  777 
+DON'T KNOW ................................ ..........  999  
+ 
+b. had congestive heart failure? 
+ 
+ YES ....................  1 
+ NO ......................  2 (c) 
+ REFUSED ..........  7 (c) 
+ DON'T KNOW.....  9 (c)  
+ 
+had congestive heart failure? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ...............................................  777 
+DON'T KNOW ..............................
+ for example the hand, the knee, or neck.  
+Common kinds of arthritis are osteoarthritis and rheumatoid arthritis. 
+ 
+ 
+MCQ.195 
+Osteoarthritis:  Is the most common kind of arthritis older persons. It is also called degenerative joint disease. 
+Most often, it affects the knees, the hips, the hands, the feet,  and the spine. There is usually bony joint 
+enlargement. There can be joint deformity or pain. 
+ 
+Rheumatoid Arthritis:   Causes inflammation, redness and swelling of both hands and knees, but it can affect 
+joints anywhere in the body.  You may feel sick and tired, and sometimes there are fevers. 
+ 
+Psoriatic Arthritis:  Is arthritis caused by the skin rash Psoriasis. Most often it causes redness and swelling of 
+joints such as the spine, knees, hips and hands. 
+ 
+Arthritis: Is a disease that causes pain, swelling or stiffness in joints, for example the hand, the knee, or neck.  
+Common kinds of arthritis are osteoarthritis and rheumatoid arthritis. 
+ 
+ 
+MCQ160n 
+Gout:  Gout attacks are the sudden onset of pain, redness and swelling in a joint. The big toe is the most common 
+joint attacked, but knee and wrist attacks are also common. Gout is caused by uric acid crystal build up in the body.   
+ 
+ 
+MCQ160b 
+Congestive Heart Failure:  Is when the heart can't pump enough blood to the body.  Blood and fluid "back up" into 
+the lungs, which makes you short of breath.  Heart failure causes fluid buildup in and swelling of t he feet, legs and 
+ankles.  
+ 
+INTERVIEWER: DO NOT COUNT HEART MURMURS,
+
+## 2011 Smoking and Tobacco Use [PDF - 41 KB]
+https://wwwn.cdc.gov/nchs/data/nhanes/public/2011/questionnaires/smq.pdf
+ 
+ 
+ 
+SMOKING AND TOBACCO USE – SMQ 
+Target Group:  SPs 20+ 
+ 
+ 
+These next questions are about cigarette smoking. 
+ 
+ 
+SMQ.020 {Have you/Has SP} smoked at least 100 cigarettes in {your/his/her} entire life? 
+ 
+YES ...............................................................  1 
+NO .................................................................  2 (END OF SECTION) 
+REFUSED .....................................................  7 (END OF SECTION) 
+DON'T KNOW ...............................................  9 (END OF SECTION) 
+ 
+ HELP SCREEN: 
+ Cigarette:  Respondent defined. Do not include cigars or marijuana. 
+ 
+ 
+SMQ.030 How old {were you/was SP} when {you/s/he} first started to smoke cigarettes regularly? 
+G/Q 
+ENTER AGE ............................................  1 
+NEVER SMOKED CIGARETTES  
+REGULARLY ........................................  666 (SMQ.040) 
+REFUSED ...............................................  7 (SMQ.040) 
+DON’T KNOW .........................................  9 (SMQ.040) 
+ 
+ CAPI INSTRUCTION: 
+ SOFT EDIT: SP AGE <13 
+ DISPLAY “UNLIKELY RESPONSE. PLEASE VERIFY.” 
+ 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ...............................................  77777 
+DON'T KNOW .........................................  99999 
+ HELP SCREEN: 
+ Regularly (started smoking cigarettes, pipes, cigars, or using chewing tobacco, snuff): On a routine basis.  
+When using tobacco became a routine or established habit as opposed to when the person first 
+experimented with tobacco. 
+................................  1 
+NEVER SMOKED CIGARETTES  
+REGULARLY ........................................  666 (SMQ.040) 
+REFUSED ...............................................  7 (SMQ.040) 
+DON’T KNOW .........................................  9 (SMQ.040) 
+ 
+ CAPI INSTRUCTION: 
+ SOFT EDIT: SP AGE <13 
+ DISPLAY “UNLIKELY RESPONSE. PLEASE VERIFY.” 
+ 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ...............................................  77777 
+DON'T KNOW .........................................  99999 
+ HELP SCREEN: 
+ Regularly (started smoking cigarettes, pipes, cigars, or using chewing tobacco, snuff): On a routine basis.  
+When using tobacco became a routine or established habit as opposed to when the person first 
+experimented with tobacco. 
+ 
+ Cigarette:  Respondent defined. Do not include cigars or marijuana. 
+ 
+ 
+SMQ.040 {Do you/Does SP} now smoke cigarettes . . . 
+ 
+every day, ......................................................  1 (SMQ.077) 
+some days, or ................................................  2 (SMQ.641) 
+not at all? .......................................................  3 (SMQ.050Q/U) 
+REFUSED .....................................................  7 (END OF SECTION) 
+DON'T KNOW ...............................................  9 (END OF SECTION) 
+ 
+ HELP SCREEN: 
+ Cigarette:  Respondent defined. Do not include cigars or marijuana. 
+ 
+ 
+NHANES 2012 
+ 
+  
+SMQ.050 How long has it been since {you/SP} quit smoking cigarettes? 
+Q/U 
+|___|___|___| 
+ENTER NUMBER (
+LY ........................................  666 (SMQ.040) 
+REFUSED ...............................................  7 (SMQ.040) 
+DON’T KNOW .........................................  9 (SMQ.040) 
+ 
+ CAPI INSTRUCTION: 
+ SOFT EDIT: SP AGE <13 
+ DISPLAY “UNLIKELY RESPONSE. PLEASE VERIFY.” 
+ 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ...............................................  77777 
+DON'T KNOW .........................................  99999 
+ HELP SCREEN: 
+ Regularly (started smoking cigarettes, pipes, cigars, or using chewing tobacco, snuff): On a routine basis.  
+When using tobacco became a routine or established habit as opposed to when the person first 
+experimented with tobacco. 
+ 
+ Cigarette:  Respondent defined. Do not include cigars or marijuana. 
+ 
+ 
+SMQ.040 {Do you/Does SP} now smoke cigarettes . . . 
+ 
+every day, ......................................................  1 (SMQ.077) 
+some days, or ................................................  2 (SMQ.641) 
+not at all? .......................................................  3 (SMQ.050Q/U) 
+REFUSED .....................................................  7 (END OF SECTION) 
+DON'T KNOW ...............................................  9 (END OF SECTION) 
+ 
+ HELP SCREEN: 
+ Cigarette:  Respondent defined. Do not include cigars or marijuana. 
+ 
+ 
+NHANES 2012 
+ 
+  
+SMQ.050 How long has it been since {you/SP} quit smoking cigarettes? 
+Q/U 
+|___|___|___| 
+ENTER NUMBER (OF DAYS, WEEKS, MONTHS OR YEARS) 
+ 
+REFUSED ..........................
+ ...............................................  7 (SMQ.040) 
+DON’T KNOW .........................................  9 (SMQ.040) 
+ 
+ CAPI INSTRUCTION: 
+ SOFT EDIT: SP AGE <13 
+ DISPLAY “UNLIKELY RESPONSE. PLEASE VERIFY.” 
+ 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ...............................................  77777 
+DON'T KNOW .........................................  99999 
+ HELP SCREEN: 
+ Regularly (started smoking cigarettes, pipes, cigars, or using chewing tobacco, snuff): On a routine basis.  
+When using tobacco became a routine or established habit as opposed to when the person first 
+experimented with tobacco. 
+ 
+ Cigarette:  Respondent defined. Do not include cigars or marijuana. 
+ 
+ 
+SMQ.040 {Do you/Does SP} now smoke cigarettes . . . 
+ 
+every day, ......................................................  1 (SMQ.077) 
+some days, or ................................................  2 (SMQ.641) 
+not at all? .......................................................  3 (SMQ.050Q/U) 
+REFUSED .....................................................  7 (END OF SECTION) 
+DON'T KNOW ...............................................  9 (END OF SECTION) 
+ 
+ HELP SCREEN: 
+ Cigarette:  Respondent defined. Do not include cigars or marijuana. 
+ 
+ 
+NHANES 2012 
+ 
+  
+SMQ.050 How long has it been since {you/SP} quit smoking cigarettes? 
+Q/U 
+|___|___|___| 
+ENTER NUMBER (OF DAYS, WEEKS, MONTHS OR YEARS) 
+ 
+REFUSED ...............................................  77777 (BOX 1A) 
+DON'T KNOW .................
+
+## 2013 Medical Conditions [PDF - 106 KB]
+https://wwwn.cdc.gov/nchs/data/nhanes/public/2013/questionnaires/MCQ_H.pdf
+4/19/13  Questionnaire: SP 
+ 
+MEDICAL CONDITIONS – MCQ 
+Target Group: SPs 1+ 
+ 
+ 
+MCQ.010 The following questions are about different medical conditions. 
+ 
+ Has a doctor or other health professional ever told {you/SP} that {you have/s/he/SP has} asthma (az-ma)? 
+ 
+ CAPI INSTRUCTION: 
+ IF SP AGE >= 16, DISPLAY “YOU” AND “YOU HAVE”. 
+ IF SP AGE = 12-15, DISPLAY "SP" AND “S/HE HAS”. 
+ IF SP AGE < 12, DISPLAY “YOU” AND “SP HAS”. 
+ 
+ INTERVIEWER: DO NOT ACCEPT SELF-DIAGNOSED OR DIAGNOSED BY A PERSON WHO IS NOT A 
+DOCTOR OR OTHER HEALTH PROFESSIONAL.  
+ 
+YES ...............................................................  1 
+NO .................................................................  2 (MCQ.053) 
+REFUSED .....................................................  7 (MCQ.053) 
+DON'T KNOW ...............................................  9 (MCQ.053) 
+ 
+ HELP SCREEN: 
+ Asthma: Is a disease of the airways that carry air in and out of your lungs. It causes wheezing or whistling 
+sounds when you breathe and can make you short of breath. 
+ 
+ 
+MCQ.025 How old {were you/was SP} when {you were/s/he was} first told {you/he/she} had asthma (az-ma)? 
+ 
+ IF LESS THAN 1 YEAR, ENTER 1 
+ 
+ CAPI INSTRUCTION: 
+ IF SP AGE >= 16, DISPLAY "WERE YOU" AND "YOU WERE". 
+ IF SP AGE = 12-15, DISPLAY "WAS {SP}" AND "S/HE WAS". 
+ IF SP AGE < 12, DISPLAY "WAS {SP}" AND "YOU WERE". 
+ 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+CAPI INSTRUCTION: 
+HARD EDIT:  1-120 
+ 
+REFUSED ......................
+...  9999 
+ 
+ 
+BOX 4 
+ 
+OMITTED  
+ 
+ 
+ 
+ 
+BOX 6 
+ 
+OMITTED  
+ 
+ 
+BOX 7 
+ 
+CHECK ITEM MCQ.145: 
+IF SP'S AGE >= 20, GO TO MCQ.160. 
+OTHERWISE, CONTINUE.  
+ 
+ 
+BOX 7A 
+ 
+CHECK ITEM MCQ.146: 
+IF SP AGE 8-11 AND SP IS FEMALE, CONTINUE. 
+OTHERWISE, GO TO MCQ.203.  
+ 
+ 
+MCQ.149 Have {SP's} periods or menstrual (men-stral) cycles started yet? 
+ 
+YES ...............................................................  1 
+NO .................................................................  2 (MCQ.203) 
+REFUSED .....................................................  7 (MCQ.203) 
+DON'T KNOW ...............................................  9 (MCQ.203) 
+ 
+ HELP TEXT: When a girl starts having periods or menstrual cycles is a very important milestone in growth 
+and development. Growth and development is very related to physical activity and body weight. 
+ 
+ 
+MCQ.151 How old was {SP} when she had {her} first menstrual period?  
+ 
+|___|___| YEARS   (MCQ.203) 
+REFUSED .....................................................  77 (MCQ.203) 
+DON'T KNOW ...............................................  99 (MCQ.203) 
+ 
+ HARD EDITS:  MAXIMUM OF 11 AND AGE OF ONSET MUST BE LESS THAN OR EQUAL TO CURRENT 
+AGE. 
+ SOFT EDIT:  IF AGE LESS THAN 7. 
+ 
+ HELP TEXT: When a girl starts having periods or menstrual cycles is a very important milestone in growth 
+and development. Growth and development is very related to physical activity and body weight. 
+ 
+ 
+BOX 8 
+ 
+OMITTED  
+ 
+ 
+BOX 8A 
+ 
+OMITTED  
+ 
+ 
+ 
+ 
+ 
+MCQ.160 
+Has a doctor or othe
+lopment is very related to physical activity and body weight. 
+ 
+ 
+BOX 8 
+ 
+OMITTED  
+ 
+ 
+BOX 8A 
+ 
+OMITTED  
+ 
+ 
+ 
+ 
+ 
+MCQ.160 
+Has a doctor or other health 
+professional ever told {you/SP}  
+that {you/s/he} . . .  
+CAPI INSTRUCTION:   
+TEXT OF QUESTION SHOULD BE 
+OPTIONAL AFTER FIRST ITEM IS 
+READ. 
+MCQ.170 
+{Do you/Does SP} still . . . ? 
+MCQ.180 
+How old {were you/was SP} when  
+{you were/s/he was} first told  
+{you/s/he} . . . 
+MCQ.195 
+Which type of arthritis was it? 
+a. had arthritis (ar-thry-tis)? 
+ 
+ YES ....................  1 
+ NO ......................  2 (n) 
+ REFUSED ..........  7 (n) 
+ DON'T KNOW.....  9 (n)  
+ 
+had arthritis? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ...............................................  777 
+DON'T KNOW ................................ ..........  999  
+Osteoarthritis or degenerative arthritis ..........  1 
+Rheumatoid arthritis ................................ .....  2 
+Psoriatic arthritis ..........................................  3 
+Other................................ ............................  4 
+REFUSED....................................................  7 
+DON’T KNOW ..............................................  9  
+n. had gout? 
+ 
+ YES ....................  1 
+ NO ......................  2 (b) 
+ REFUSED ..........  7 (b) 
+ DON'T KNOW.....  9 (b)  
+ 
+had gout? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ...............................................  777 
+DON'T KNOW ................................ ..........  999  
+ 
+b. had conge
+...................  999  
+ 
+l. had any kind of liver 
+condition? 
+ 
+ YES ................ 1 
+ NO .................. 2 (MCQ.160o) 
+ REFUSED ...... 7 (MCQ.160o) 
+ DON'T KNOW . 9 (MCQ.160o)  
+have this liver condition? 
+ YES .....................  1 
+ NO .......................  2 
+ REFUSED ...........  7 
+ DON'T KNOW .....  9  
+had this liver condition? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ...............................................  777 
+DON'T KNOW ..........................................  999  
+ 
+ 
+ 
+MCQ.160o. had COPD? 
+ 
+ YES ...............  1 
+ NO .................  2 
+ REFUSED......  7 
+ DON'T KNOW  9  
+   
+ 
+ 
+ 
+HELP SCREENS FOR MCQ.160 
+ 
+MCQ160a 
+Arthritis: Is a disease that causes pain, swelling or stiffness in joints, for example the hand, the knee, or neck.  
+Common kinds of arthritis are osteoarthritis and rheumatoid arthritis. 
+ 
+ 
+MCQ.195 
+Osteoarthritis:  Is the most common kind of arthritis older persons. It is also called degenerative joint disease. 
+Most often, it affects the knees, the hips, the hands, the feet,  and the spine. There is usually bony joint 
+enlargement. There can be joint deformity or pain. 
+ 
+Rheumatoid Arthritis:   Causes inflammation, redness and swelling of both hands and knees, but it can affect 
+joints anywhere in the body.  You may feel sick and tired, and sometimes there are fevers. 
+ 
+Psoriatic Arthritis:  Is arthritis caused by the skin rash Psoriasis. Most often it causes redness and swelling of 
+joints such as the spine, knees, hips 
+ou/Does SP} still . . . ? 
+MCQ.180 
+How old {were you/was SP} when  
+{you were/s/he was} first told  
+{you/s/he} . . . 
+MCQ.195 
+Which type of arthritis was it? 
+a. had arthritis (ar-thry-tis)? 
+ 
+ YES ....................  1 
+ NO ......................  2 (n) 
+ REFUSED ..........  7 (n) 
+ DON'T KNOW.....  9 (n)  
+ 
+had arthritis? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ...............................................  777 
+DON'T KNOW ................................ ..........  999  
+Osteoarthritis or degenerative arthritis ..........  1 
+Rheumatoid arthritis ................................ .....  2 
+Psoriatic arthritis ..........................................  3 
+Other................................ ............................  4 
+REFUSED....................................................  7 
+DON’T KNOW ..............................................  9  
+n. had gout? 
+ 
+ YES ....................  1 
+ NO ......................  2 (b) 
+ REFUSED ..........  7 (b) 
+ DON'T KNOW.....  9 (b)  
+ 
+had gout? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ...............................................  777 
+DON'T KNOW ................................ ..........  999  
+ 
+b. had congestive heart failure? 
+ 
+ YES ....................  1 
+ NO ......................  2 (c) 
+ REFUSED ..........  7 (c) 
+ DON'T KNOW.....  9 (c)  
+ 
+had congestive heart failure? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ...............................................  777 
+DON'T KNOW ...............................
+ for example the hand, the knee, or neck.  
+Common kinds of arthritis are osteoarthritis and rheumatoid arthritis. 
+ 
+ 
+MCQ.195 
+Osteoarthritis:  Is the most common kind of arthritis older persons. It is also called degenerative joint disease. 
+Most often, it affects the knees, the hips, the hands, the feet,  and the spine. There is usually bony joint 
+enlargement. There can be joint deformity or pain. 
+ 
+Rheumatoid Arthritis:   Causes inflammation, redness and swelling of both hands and knees, but it can affect 
+joints anywhere in the body.  You may feel sick and tired, and sometimes there are fevers. 
+ 
+Psoriatic Arthritis:  Is arthritis caused by the skin rash Psoriasis. Most often it causes redness and swelling of 
+joints such as the spine, knees, hips and hands. 
+ 
+Arthritis: Is a disease that causes pain, swelling or stiffness in joints, for example the hand, the knee, or neck.  
+Common kinds of arthritis are osteoarthritis and rheumatoid arthritis. 
+ 
+ 
+MCQ160n 
+Gout:  Gout attacks are the sudden onset of pain, redness and swelling in a joint. The big toe is the most common 
+joint attacked, but knee and wrist attacks are also common. Gout is caused by uric acid crystal build up in the body.   
+ 
+ 
+MCQ160b 
+Congestive Heart Failure:  Is when the heart can't pump enough blood to the body.  Blood and fluid "back up" into 
+the lungs, which makes you short of breath.  Heart failure causes fluid buildup in and swelling of t he feet, legs and 
+ankles.  
+ 
+INTERVIEWER: DO NOT COUNT HEART MURMURS,
+
+## 2013 Smoking and Tobacco Use [PDF - 43 KB]
+https://wwwn.cdc.gov/nchs/data/nhanes/public/2013/questionnaires/SMQ_H.pdf
+............................  1 
+NEVER SMOKED CIGARETTES  
+REGULARLY ..............................................  2 (SMQ.040) 
+REFUSED .....................................................  7 (SMQ.040) 
+DON’T KNOW ...............................................  9 (SMQ.040) 
+ 
+ CAPI INSTRUCTION: 
+ SOFT EDIT: SP AGE <13 
+ DISPLAY “UNLIKELY RESPONSE. PLEASE VERIFY.” 
+ 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ...............................................  77777 
+DON'T KNOW .........................................  99999 
+ HELP SCREEN: 
+ “regularly” refers to age when started smoking cigarettes on a routine basis as opposed to age when tried 
+first cigarette. 
+ 
+ 
+SMQ.040 {Do you/Does SP} now smoke cigarettes . . . 
+ 
+every day, ......................................................  1 (SMQ.078) 
+some days, or ................................................  2 (SMQ.641) 
+not at all? .......................................................  3 (SMQ.050Q/U) 
+REFUSED .....................................................  7 (BOX 5) 
+DON'T KNOW ...............................................  9 (BOX 5) 
+NHANES 2013 
+ 
+  
+ 
+ HAND CARD SMQ1 
+ 
+ 
+SMQ.050 How long has it been since {you/SP} quit smoking cigarettes? 
+Q/U 
+|___|___|___| 
+ENTER NUMBER (OF DAYS, WEEKS, MONTHS OR YEARS) 
+ 
+REFUSED ...............................................  77777 (BOX 1A) 
+DON'T KNOW .........................................  99999 (BOX 1A) 
+ 
+|___| 
+ENTER UNIT 
+ 
+DAYS ..............................................
+.......................................  2 (SMQ.040) 
+REFUSED .....................................................  7 (SMQ.040) 
+DON’T KNOW ...............................................  9 (SMQ.040) 
+ 
+ CAPI INSTRUCTION: 
+ SOFT EDIT: SP AGE <13 
+ DISPLAY “UNLIKELY RESPONSE. PLEASE VERIFY.” 
+ 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ...............................................  77777 
+DON'T KNOW .........................................  99999 
+ HELP SCREEN: 
+ “regularly” refers to age when started smoking cigarettes on a routine basis as opposed to age when tried 
+first cigarette. 
+ 
+ 
+SMQ.040 {Do you/Does SP} now smoke cigarettes . . . 
+ 
+every day, ......................................................  1 (SMQ.078) 
+some days, or ................................................  2 (SMQ.641) 
+not at all? .......................................................  3 (SMQ.050Q/U) 
+REFUSED .....................................................  7 (BOX 5) 
+DON'T KNOW ...............................................  9 (BOX 5) 
+NHANES 2013 
+ 
+  
+ 
+ HAND CARD SMQ1 
+ 
+ 
+SMQ.050 How long has it been since {you/SP} quit smoking cigarettes? 
+Q/U 
+|___|___|___| 
+ENTER NUMBER (OF DAYS, WEEKS, MONTHS OR YEARS) 
+ 
+REFUSED ...............................................  77777 (BOX 1A) 
+DON'T KNOW .........................................  99999 (BOX 1A) 
+ 
+|___| 
+ENTER UNIT 
+ 
+DAYS .............................................................  1 
+WEEKS ..................................................
+..........................................  7 (SMQ.040) 
+DON’T KNOW ...............................................  9 (SMQ.040) 
+ 
+ CAPI INSTRUCTION: 
+ SOFT EDIT: SP AGE <13 
+ DISPLAY “UNLIKELY RESPONSE. PLEASE VERIFY.” 
+ 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ...............................................  77777 
+DON'T KNOW .........................................  99999 
+ HELP SCREEN: 
+ “regularly” refers to age when started smoking cigarettes on a routine basis as opposed to age when tried 
+first cigarette. 
+ 
+ 
+SMQ.040 {Do you/Does SP} now smoke cigarettes . . . 
+ 
+every day, ......................................................  1 (SMQ.078) 
+some days, or ................................................  2 (SMQ.641) 
+not at all? .......................................................  3 (SMQ.050Q/U) 
+REFUSED .....................................................  7 (BOX 5) 
+DON'T KNOW ...............................................  9 (BOX 5) 
+NHANES 2013 
+ 
+  
+ 
+ HAND CARD SMQ1 
+ 
+ 
+SMQ.050 How long has it been since {you/SP} quit smoking cigarettes? 
+Q/U 
+|___|___|___| 
+ENTER NUMBER (OF DAYS, WEEKS, MONTHS OR YEARS) 
+ 
+REFUSED ...............................................  77777 (BOX 1A) 
+DON'T KNOW .........................................  99999 (BOX 1A) 
+ 
+|___| 
+ENTER UNIT 
+ 
+DAYS .............................................................  1 
+WEEKS .........................................................  2 
+MONTHS ......................................................
+
+## 2015 Medical Conditions [PDF - 124 KB]
+https://wwwn.cdc.gov/nchs/data/nhanes/public/2015/questionnaires/MCQ_I.pdf
+8/17/15  Questionnaire: SP 
+MEDICAL CONDITIONS – MCQ 
+Target Group: SPs 1+ 
+ 
+ 
+MCQ.010 The following questions are about different medical conditions. 
+ 
+ Has a doctor or other health professional ever told {you/SP} that {you have/s/he/SP has} asthma (az-ma)? 
+ 
+ CAPI INSTRUCTION: 
+ IF SP AGE >= 16, DISPLAY “YOU” AND “YOU HAVE”. 
+ IF SP AGE = 12-15, DISPLAY "SP" AND “S/HE HAS”. 
+ IF SP AGE < 12, DISPLAY “YOU” AND “SP HAS”. 
+  
+ INTERVIEWER: DO NOT ACCEPT SELF-DIAGNOSED OR DIAGNOSED BY A PERSON WHO IS NOT A 
+DOCTOR OR OTHER HEALTH PROFESSIONAL.  
+ 
+YES ...............................................................  1 
+NO .................................................................  2 (MCQ.053) 
+REFUSED .....................................................  7 (MCQ.053) 
+DON'T KNOW ...............................................  9 (MCQ.053) 
+ 
+ HELP SCREEN: 
+ Asthma: Is a disease of the airways that carry air in and out of your lungs. It causes wheezing or whistling 
+sounds when you breathe and can make you short of breath. 
+ 
+ 
+MCQ.025 How old {were you/was SP} when {you were/s/he was} first told {you/he/she} had asthma (az-ma)? 
+ 
+ IF LESS THAN 1 YEAR, ENTER 1 
+ 
+ CAPI INSTRUCTION: 
+ IF SP AGE >= 16, DISPLAY "WERE YOU" AND "YOU WERE". 
+ IF SP AGE = 12-15, DISPLAY "WAS {SP}" AND "S/HE WAS". 
+ IF SP AGE < 12, DISPLAY "WAS {SP}" AND "YOU WERE". 
+ 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+CAPI INSTRUCTION: 
+HARD EDIT:  1-120 
+ 
+REFUSED .....................
+DON’T KNOW ........................................  999999 
+ 
+ 
+BOX 7 
+ 
+CHECK ITEM MCQ.145: 
+IF SP'S AGE >= 20, GO TO MCQ.160. 
+O THERWISE, CONTINUE. 
+BOX 7A 
+ 
+CHECK ITEM MCQ.146: 
+IF SP AGE 8-11 AND SP IS FEMALE, CONTINUE. 
+O
+ THERWISE, GO TO MCQ.203. 
+ 
+ 
+ 
+ 
+MCQ.149 Have {SP's} periods or menstrual (men-stral) cycles started yet? 
+ 
+  
+ 
+YES ...............................................................  1 
+NO .................................................................  2 (MCQ.203) 
+REFUSED .....................................................  7 (MCQ.203) 
+DON'T KNOW ...............................................  9 (MCQ.203) 
+ 
+ HELP TEXT: When a girl starts having periods or menstrual cycles is a very important milestone in growth 
+and development. Growth and development is very related to physical activity and body weight. 
+ 
+ 
+MCQ.151 How old was {SP} when she had {her} first menstrual period?  
+ 
+|___|___| YEARS   (MCQ.203) 
+REFUSED .....................................................  77 (MCQ.203) 
+DON'T KNOW ...............................................  99 (MCQ.203) 
+ 
+ HARD EDITS:  MAXIMUM OF 11 AND AGE OF ONSET MUST BE LESS THAN OR EQUAL TO CURRENT 
+AGE. 
+ SOFT EDIT:  IF AGE LESS THAN 7. 
+ 
+ HELP TEXT: When a girl starts having periods or menstrual cycles is a very important milestone in growth 
+and development. Growth and development is very related to physical activity and body weight. 
+ 
+ 
+ 
+ 
+ 
+  
+MCQ.160 MCQ.170 MCQ.180 MCQ.195 
+Has a doctor or other health {Do y
+ in growth 
+and development. Growth and development is very related to physical activity and body weight. 
+ 
+ 
+ 
+ 
+ 
+  
+MCQ.160 MCQ.170 MCQ.180 MCQ.195 
+Has a doctor or other health {Do you/Does SP} still . . . ? How old {were you/was SP} when  Which type of arthritis was it? 
+professional ever told {you/SP}  {you were/s/he was} first told  
+that {you/s/he} . . . {you/s/he} . . .  
+CAPI INSTRUCTION:   
+TEXT OF QUESTION SHOULD BE 
+OPTIONAL AFTER FIRST ITEM IS 
+READ. 
+ 
+a. had arthritis (ar-thry-tis)? 
+ 
+had arthritis? Osteoarthritis or degenerative arthritis ..........  1 
+ SOFT EDIT: SP AGE 0-10. “PLEASE VERIFY Rheumatoid arthritis .....................................  2 
+ YES ....................  1 AGE WHEN SP WAS FIRST TOLD ABOUT Psoriatic arthritis ...........................................  3 
+ NO ......................  2 (n) CONDITION.” Other ............................................................  4 
+ REFUSED...........  7 (n) |___|___|___| REFUSED ....................................................  7 
+ DON'T KNOW .....  9 (n)  DO N’T KNOW ..............................................  9 ENTER AGE IN YEARS 
+ 
+REFUSED ................................................  77777 
+ DON'T KNOW ..........................................  99999 
+n. had gout? 
+ 
+had gout?  
+ 
+|___|___|___|  YES ....................  1 
+ENTER AGE IN YEARS  NO ......................  2 (b)  
+ REFUSED...........  7 (b) REFUSED ................................................  77777 
+ DON'T KNOW .....  9 (b)  
+..  1 |___|___|___| 
+ENTER AGE IN YEARS  YES ............... 1  NO ......................  2 
+  NO ................. 2 (MCQ.160o)  REFUSED ..........  7 
+REFUSED ................................................  77777  REFUSED...... 7 (MCQ.160o)  DON'T KNOW .....  9  DON'T KNOW ..........................................  99999 
+  DON'T KNOW . 9 (MCQ.160o)  
+MCQ.160o. had COPD?    
+ 
+ YES ................  1 
+ NO .................  2 
+ REFUSED ......  7 
+  DON'T KNOW  9  
+ 
+ 
+ 
+HELP SCREENS FOR MCQ.160 
+ 
+MCQ160a 
+Arthritis: Is a disease that causes pain, swelling or stiffness in joints, for example the hand, the knee, or neck.  Common 
+kinds of arthritis are osteoarthritis and rheumatoid arthritis. 
+ 
+ 
+MCQ.195 
+Osteoarthritis:  Is the most common kind of arthritis in older persons. It is also called degenerative joint disease. Most 
+often, it affects the knees, the hips, the hands, the feet,  and the spine. There is usually bony joint enlargement. There 
+can be joint deformity or pain. 
+ 
+Rheumatoid Arthritis:  Causes inflammation, redness and swelling of both hands and knees, but it can affect joints 
+anywhere in the body.  You may feel sick and tired, and sometimes there are fevers. 
+ 
+Psoriatic Arthritis: Is arthritis caused by the s kin rash Psoriasis. Most often it causes redness and swelling of joints 
+such as the spine, knees, hips and hands. 
+ 
+Arthritis: Is a disease that causes pain, swelling or stiffness in joints, for example the hand, the knee, or neck.  Common 
+kinds of arthritis 
+ent. Growth and development is very related to physical activity and body weight. 
+ 
+ 
+ 
+ 
+ 
+  
+MCQ.160 MCQ.170 MCQ.180 MCQ.195 
+Has a doctor or other health {Do you/Does SP} still . . . ? How old {were you/was SP} when  Which type of arthritis was it? 
+professional ever told {you/SP}  {you were/s/he was} first told  
+that {you/s/he} . . . {you/s/he} . . .  
+CAPI INSTRUCTION:   
+TEXT OF QUESTION SHOULD BE 
+OPTIONAL AFTER FIRST ITEM IS 
+READ. 
+ 
+a. had arthritis (ar-thry-tis)? 
+ 
+had arthritis? Osteoarthritis or degenerative arthritis ..........  1 
+ SOFT EDIT: SP AGE 0-10. “PLEASE VERIFY Rheumatoid arthritis .....................................  2 
+ YES ....................  1 AGE WHEN SP WAS FIRST TOLD ABOUT Psoriatic arthritis ...........................................  3 
+ NO ......................  2 (n) CONDITION.” Other ............................................................  4 
+ REFUSED...........  7 (n) |___|___|___| REFUSED ....................................................  7 
+ DON'T KNOW .....  9 (n)  DO N’T KNOW ..............................................  9 ENTER AGE IN YEARS 
+ 
+REFUSED ................................................  77777 
+ DON'T KNOW ..........................................  99999 
+n. had gout? 
+ 
+had gout?  
+ 
+|___|___|___|  YES ....................  1 
+ENTER AGE IN YEARS  NO ......................  2 (b)  
+ REFUSED...........  7 (b) REFUSED ................................................  77777 
+ DON'T KNOW .....  9 (b)   DON'T KNOW ............
+ for example the hand, the knee, or neck.  Common 
+kinds of arthritis are osteoarthritis and rheumatoid arthritis. 
+ 
+ 
+MCQ.195 
+Osteoarthritis:  Is the most common kind of arthritis in older persons. It is also called degenerative joint disease. Most 
+often, it affects the knees, the hips, the hands, the feet,  and the spine. There is usually bony joint enlargement. There 
+can be joint deformity or pain. 
+ 
+Rheumatoid Arthritis:  Causes inflammation, redness and swelling of both hands and knees, but it can affect joints 
+anywhere in the body.  You may feel sick and tired, and sometimes there are fevers. 
+ 
+Psoriatic Arthritis: Is arthritis caused by the s kin rash Psoriasis. Most often it causes redness and swelling of joints 
+such as the spine, knees, hips and hands. 
+ 
+Arthritis: Is a disease that causes pain, swelling or stiffness in joints, for example the hand, the knee, or neck.  Common 
+kinds of arthritis are osteoarthritis and rheumatoid arthritis. 
+ 
+ 
+MCQ160n 
+Gout:  Gout attacks are the sudden onset of pain, redness and swelling in a joint. The big toe is the most common joint 
+attacked, but knee and wrist attacks are also common. Gout is caused by uric acid crystal build up in the body.   
+ 
+ 
+MCQ160b 
+Congestive Heart Failure:  Is when the heart can't pump enough blood to the body.  Blood and fluid "back up" into the 
+lungs, which makes you short of breath.  Heart failure causes fluid buildup in and swelling of the feet, legs and ankles.  
+ 
+INTERVIEWER: DO NOT COUNT HEART MURMURS,
+
+## 2015 Smoking and Tobacco Use [PDF - 54 KB]
+https://wwwn.cdc.gov/nchs/data/nhanes/public/2015/questionnaires/SMQ_I.pdf
+............................  1 
+NEVER SMOKED CIGARETTES  
+REGULARLY ..............................................  2 (SMQ.040) 
+REFUSED ......................................................  7 (SMQ.040) 
+DON’T KNOW ................................................  9 (SMQ.040)  
+ 
+ CAPI INSTRUCTION: 
+ SOFT EDIT: SP AGE <13 
+ DISPLAY “UNLIKELY RESPONSE. PLEASE VERIFY.” 
+ 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ................................................  77777 
+DON'T KNOW ..........................................  99999 
+ HELP SCREEN: 
+ “regularly” refers to age when started smoking cigarettes on a routine basis as opposed to age when tried first 
+cigarette. 
+ 
+ 
+SMQ.040 {Do you/Does SP} now smoke cigarettes . . . 
+ 
+every day, ......................................................  1 (SMQ.078) 
+some days, or ................................................  2 (SMQ.641) 
+not at all? .......................................................  3 
+REFUSED ......................................................  7 (SMQ.890) 
+DON'T KNOW ................................................  9 (SMQ.890) 
+ 
+ 
+NHANES 2015 
+SMQ.050 How long has it been since {you/SP} quit smoking cigarettes? 
+Q/U 
+|___|___|___| 
+ENTER NUMBER (OF DAYS, WEEKS, MONTHS OR YEARS) 
+ 
+REFUSED ................................................  77777 (BOX 1A) 
+DON'T KNOW ..........................................  99999 (BOX 1A) 
+ 
+|___| 
+ENTER UNIT 
+ 
+DAYS .............................................................  1 
+WEEK
+......................................  2 (SMQ.040) 
+REFUSED ......................................................  7 (SMQ.040) 
+DON’T KNOW ................................................  9 (SMQ.040)  
+ 
+ CAPI INSTRUCTION: 
+ SOFT EDIT: SP AGE <13 
+ DISPLAY “UNLIKELY RESPONSE. PLEASE VERIFY.” 
+ 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ................................................  77777 
+DON'T KNOW ..........................................  99999 
+ HELP SCREEN: 
+ “regularly” refers to age when started smoking cigarettes on a routine basis as opposed to age when tried first 
+cigarette. 
+ 
+ 
+SMQ.040 {Do you/Does SP} now smoke cigarettes . . . 
+ 
+every day, ......................................................  1 (SMQ.078) 
+some days, or ................................................  2 (SMQ.641) 
+not at all? .......................................................  3 
+REFUSED ......................................................  7 (SMQ.890) 
+DON'T KNOW ................................................  9 (SMQ.890) 
+ 
+ 
+NHANES 2015 
+SMQ.050 How long has it been since {you/SP} quit smoking cigarettes? 
+Q/U 
+|___|___|___| 
+ENTER NUMBER (OF DAYS, WEEKS, MONTHS OR YEARS) 
+ 
+REFUSED ................................................  77777 (BOX 1A) 
+DON'T KNOW ..........................................  99999 (BOX 1A) 
+ 
+|___| 
+ENTER UNIT 
+ 
+DAYS .............................................................  1 
+WEEKS ..........................................................  2 
+MONTHS .....
+.........................................  7 (SMQ.040) 
+DON’T KNOW ................................................  9 (SMQ.040)  
+ 
+ CAPI INSTRUCTION: 
+ SOFT EDIT: SP AGE <13 
+ DISPLAY “UNLIKELY RESPONSE. PLEASE VERIFY.” 
+ 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ................................................  77777 
+DON'T KNOW ..........................................  99999 
+ HELP SCREEN: 
+ “regularly” refers to age when started smoking cigarettes on a routine basis as opposed to age when tried first 
+cigarette. 
+ 
+ 
+SMQ.040 {Do you/Does SP} now smoke cigarettes . . . 
+ 
+every day, ......................................................  1 (SMQ.078) 
+some days, or ................................................  2 (SMQ.641) 
+not at all? .......................................................  3 
+REFUSED ......................................................  7 (SMQ.890) 
+DON'T KNOW ................................................  9 (SMQ.890) 
+ 
+ 
+NHANES 2015 
+SMQ.050 How long has it been since {you/SP} quit smoking cigarettes? 
+Q/U 
+|___|___|___| 
+ENTER NUMBER (OF DAYS, WEEKS, MONTHS OR YEARS) 
+ 
+REFUSED ................................................  77777 (BOX 1A) 
+DON'T KNOW ..........................................  99999 (BOX 1A) 
+ 
+|___| 
+ENTER UNIT 
+ 
+DAYS .............................................................  1 
+WEEKS ..........................................................  2 
+MONTHS .......................................................  3 
+YEARS .............
+
+## 2017 Medical Conditions [PDF - 137 KB]
+https://wwwn.cdc.gov/nchs/data/nhanes/public/2017/questionnaires/MCQ_J.pdf
+2/6/17  Questionnaire: SP 
+1 
+ 
+MEDICAL CONDITIONS – MCQ 
+Target Group: SPs 1+ 
+ 
+ 
+MCQ.010 The following questions are about different medical conditions. 
+ 
+ Has a doctor or other health professional ever told {you/SP} that {you have/s/he/SP has} asthma (az-ma)? 
+ 
+ CAPI INSTRUCTION: 
+ IF SP AGE >= 16, DISPLAY “YOU” AND “YOU HAVE”. 
+ IF SP AGE = 12-15, DISPLAY "SP" AND “S/HE HAS”. 
+ IF SP AGE < 12, DISPLAY “YOU” AND “SP HAS”. 
+ IF THIS ITEM CHANGES, CHECK MEC COMPONENT. 
+ 
+ INTERVIEWER: DO NOT ACCEPT SELF-DIAGNOSED OR DIAGNOSED BY A PERSON WHO IS NOT A 
+DOCTOR OR OTHER HEALTH PROFESSIONAL.  
+ 
+YES ...............................................................  1 
+NO .................................................................  2 (MCQ.053) 
+REFUSED .....................................................  7 (MCQ.053) 
+DON'T KNOW ...............................................  9 (MCQ.053) 
+ 
+ HELP SCREEN: 
+ Asthma: Is a disease of the airways that  carry air in and out of your lungs. It causes wheezing or whistling 
+sounds when you breathe and can make you short of breath. 
+ 
+ 
+MCQ.025 How old {were you/was SP} when {you were/s/he was} first told {you/he/she} had asthma (az-ma)? 
+ 
+ IF LESS THAN 1 YEAR, ENTER 1 
+ 
+ CAPI INSTRUCTION: 
+ IF SP AGE >= 16, DISPLAY "WERE YOU" AND "YOU WERE". 
+ IF SP AGE = 12-15, DISPLAY "WAS {SP}" AND "S/HE WAS". 
+ IF SP AGE < 12, DISPLAY "WAS {SP}" AND "YOU WERE". 
+ 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+CAPI INSTRUCTION: 
+HARD 
+.....  999999 
+ 
+ 
+BOX 4 
+ 
+OMITTED  
+ 
+ 
+BOX 6 
+ 
+OMITTED  
+ 
+ 
+BOX 7 
+ 
+CHECK ITEM MCQ.145: 
+IF SP'S AGE >= 20, GO TO MCQ.160. 
+OTHERWISE, CONTINUE.  
+ 
+ 
+BOX 7A 
+ 
+CHECK ITEM MCQ.146: 
+IF SP AGE 8-11 AND SP IS FEMALE, CONTINUE. 
+OTHERWISE, GO TO BOX 8B.  
+ 
+ 
+MCQ.149 Have {SP's} periods or menstrual (men-stral) cycles started yet? 
+ 
+ CAPI INSTRUCTION: 
+ IF THIS ITEM CHANGES, CHECK MEC COMPONENT. 
+ 
+YES ...............................................................  1 
+NO .................................................................  2 (BOX 8B ) 
+REFUSED .....................................................  7 (BOX 8B ) 
+DON'T KNOW ...............................................  9 (BOX 8B ) 
+ 
+ HELP TEXT: When a girl starts having periods or menstrual cycles is a very important milestone in growth 
+and development. Growth and development is very related to physical activity and body weight. 
+ 
+ 
+MCQ.151 How old was {SP} when she had {her} first menstrual period?  
+ 
+|___|___| YEARS   (RHQ.018) 
+ 
+REFUSED .....................................................  77 (BOX 8B ) 
+DON'T KNOW ...............................................  99 (BOX 8B ) 
+ 
+ HARD EDITS:  MAXIMUM OF 11 AND AGE OF ONSET MUST BE LESS THAN OR EQUAL TO CURRENT 
+AGE. 
+ SOFT EDIT:  IF AGE LESS THAN 7. 
+ 
+ HELP TEXT: When a girl starts having periods or menstrual cycles is a very important milestone in growth 
+and development. Growth and development is very related to physical activity and body weight. 
+ 
+ 
+RHQ.018 In wha
+CHECK ITEM MCQ.157: 
+IF SP’s AGE = 6-11, GO TO MCQ.203. 
+IF SP’s AGE = 12-19, GO TO MCQ.500.  
+ 
+ 
+ 
+Page 6 of 268 
+ 
+ 
+MCQ.160 
+Has a doctor or other health 
+professional ever told {you/SP}  
+that {you/s/he} . . .  
+CAPI INSTRUCTION:   
+TEXT OF QUESTION SHOULD BE 
+OPTIONAL AFTER FIRST ITEM IS 
+READ. 
+*IF ITEMS 160B, C, D, E, OR F 
+CHANGED, CHECK MEC 
+COMPONENT. 
+MCQ.170 
+{Do you/Does SP} still . . . ? 
+MCQ.180 
+How old {were you/was SP} when  
+{you were/s/he was} first told  
+{you/s/he} . . . 
+MCQ.195 
+Which type of arthritis was it? 
+a. had arthritis (ar-thry-tis)? 
+ 
+ YES ....................  1 
+ NO ......................  2 (n) 
+ REFUSED...........  7 (n) 
+ DON'T KNOW .....  9 (n)  
+ 
+had arthritis? 
+SOFT EDIT: SP AGE 0-10. “PLEASE VERIFY 
+AGE WHEN SP WAS FIRST TOLD ABOUT 
+CONDITION.” 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ................................................  77777 
+DON'T KNOW ..........................................  99999  
+Osteoarthritis or degenerative arthritis ..........  1 
+Rheumatoid arthritis .....................................  2 
+Psoriatic arthritis ...........................................  3 
+Other ............................................................  4 
+REFUSED ....................................................  7 
+DON’T KNOW ..............................................  9  
+n. had gout? 
+ 
+ YES ....................  1 
+ NO ......................  2 (b) 
+ REFUSED...........  7 (b) 
+ DON'T KNOW .....  9 (b) 
+ 
+ 
+had gout? 
+|___|___|___| 
+EN
+.....................  77777 (MCQ.510) 
+DON'T KNOW ........................  99999 (MCQ.510)  
+ 
+ 
+ 
+ 
+HELP SCREENS FOR MCQ.160 
+ 
+MCQ160a 
+Arthritis: Is a disease that causes pain, swelling or stiffness in joints, for example the hand, the knee, or neck.  Common 
+kinds of arthritis are osteoarthritis and rheumatoid arthritis. 
+ 
+ 
+MCQ.195 
+Osteoarthritis:  Is the most common kind of arthritis in older persons. It is also called degenerative joint disease. Most 
+often, it affects the knees, the hips, the hands, the feet,  and the spine. There is usually bony joint enlargement. There 
+can be joint deformity or pain. 
+ 
+Rheumatoid Arthritis:  Causes inflammation, redness and swelling of both hands and knees, but it can affect joints 
+anywhere in the body.  You may feel sick and tired, and sometimes there are fevers. 
+ 
+Psoriatic Arthritis: Is arthritis caused by the skin rash Psoriasis. Most often it causes redness and swelling of joints 
+such as the spine, knees, hips and hands. 
+ 
+Arthritis: Is a disease that causes pain, swelling or stiffness in joints, for example the hand, the knee, or neck.  Common 
+kinds of arthritis are osteoarthritis and rheumatoid arthritis. 
+ 
+ 
+MCQ160n 
+Gout:  Gout attacks are the sudden onset of pain, redness and swelling in a joint. The big toe is the most common joint 
+attacked, but knee and wrist attacks are also common. Gout is caused by uric acid crystal build up in the body.   
+ 
+ 
+MCQ160b 
+Congestive Heart Failure:  Is when the heart can't pump enough blood to 
+ou/Does SP} still . . . ? 
+MCQ.180 
+How old {were you/was SP} when  
+{you were/s/he was} first told  
+{you/s/he} . . . 
+MCQ.195 
+Which type of arthritis was it? 
+a. had arthritis (ar-thry-tis)? 
+ 
+ YES ....................  1 
+ NO ......................  2 (n) 
+ REFUSED...........  7 (n) 
+ DON'T KNOW .....  9 (n)  
+ 
+had arthritis? 
+SOFT EDIT: SP AGE 0-10. “PLEASE VERIFY 
+AGE WHEN SP WAS FIRST TOLD ABOUT 
+CONDITION.” 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ................................................  77777 
+DON'T KNOW ..........................................  99999  
+Osteoarthritis or degenerative arthritis ..........  1 
+Rheumatoid arthritis .....................................  2 
+Psoriatic arthritis ...........................................  3 
+Other ............................................................  4 
+REFUSED ....................................................  7 
+DON’T KNOW ..............................................  9  
+n. had gout? 
+ 
+ YES ....................  1 
+ NO ......................  2 (b) 
+ REFUSED...........  7 (b) 
+ DON'T KNOW .....  9 (b) 
+ 
+ 
+had gout? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ................................................  77777 
+DON'T KNOW ..........................................  99999  
+ 
+*b. had congestive heart failure? 
+ 
+ YES ....................  1 
+ NO ......................  2 (c) 
+ REFUSED...........  7 (c) 
+ DON'T KNOW .....  9 (c)  
+ 
+had congestive heart failure? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REF
+ for example the hand, the knee, or neck.  Common 
+kinds of arthritis are osteoarthritis and rheumatoid arthritis. 
+ 
+ 
+MCQ.195 
+Osteoarthritis:  Is the most common kind of arthritis in older persons. It is also called degenerative joint disease. Most 
+often, it affects the knees, the hips, the hands, the feet,  and the spine. There is usually bony joint enlargement. There 
+can be joint deformity or pain. 
+ 
+Rheumatoid Arthritis:  Causes inflammation, redness and swelling of both hands and knees, but it can affect joints 
+anywhere in the body.  You may feel sick and tired, and sometimes there are fevers. 
+ 
+Psoriatic Arthritis: Is arthritis caused by the skin rash Psoriasis. Most often it causes redness and swelling of joints 
+such as the spine, knees, hips and hands. 
+ 
+Arthritis: Is a disease that causes pain, swelling or stiffness in joints, for example the hand, the knee, or neck.  Common 
+kinds of arthritis are osteoarthritis and rheumatoid arthritis. 
+ 
+ 
+MCQ160n 
+Gout:  Gout attacks are the sudden onset of pain, redness and swelling in a joint. The big toe is the most common joint 
+attacked, but knee and wrist attacks are also common. Gout is caused by uric acid crystal build up in the body.   
+ 
+ 
+MCQ160b 
+Congestive Heart Failure:  Is when the heart can't pump enough blood to the body.  Blood and fluid "back up" into the 
+lungs, which makes you short of breath.  Heart failure causes fluid buildup in and swelling of the feet, legs and ankles.  
+ 
+INTERVIEWER: DO NO T COUNT HEART MURMURS,
+
+## 2017 Smoking and Tobacco Use [PDF - 103 KB]
+https://wwwn.cdc.gov/nchs/data/nhanes/public/2017/questionnaires/SMQ_J.pdf
+............................  1 
+NEVER SMOKED CIGARETTES  
+REGULARLY ..............................................  2 (SMQ.040) 
+REFUSED .....................................................  7 (SMQ.040) 
+DON’T KNOW ...............................................  9 (SMQ.040)  
+ 
+ CAPI INSTRUCTION: 
+ SOFT EDIT: SP AGE <13 
+ DISPLAY “UNLIKELY RESPONSE. PLEASE VERIFY.” 
+ 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ...............................................  77777 
+DON'T KNOW .........................................  99999 
+ HELP SCREEN: 
+ “regularly” refers to age when started smoking cigarettes on a routine basis as opposed to age when tried first 
+cigarette. 
+ 
+ 
+SMQ.040 {Do you/Does SP} now smoke cigarettes . . . 
+ 
+every day, ......................................................  1 (SMQ.078) 
+some days, or ................................................  2 (SMQ.641) 
+not at all? .......................................................  3 
+REFUSED .....................................................  7 (SMQ.890) 
+DON'T KNOW ...............................................  9 (SMQ.890) 
+NHANES 2017 
+ 
+ 
+SMQ.050 How long has it been since {you/SP} quit smoking cigarettes? 
+Q/U 
+|___|___|___| 
+ENTER NUMBER (OF DAYS, WEEKS, MONTHS OR YEARS) 
+ 
+REFUSED ...............................................  77777 
+DON'T KNOW .........................................  99999 
+ 
+|___| 
+ENTER UNIT 
+ 
+DAYS .............................................................  1 
+WEEKS ........................
+.......................................  2 (SMQ.040) 
+REFUSED .....................................................  7 (SMQ.040) 
+DON’T KNOW ...............................................  9 (SMQ.040)  
+ 
+ CAPI INSTRUCTION: 
+ SOFT EDIT: SP AGE <13 
+ DISPLAY “UNLIKELY RESPONSE. PLEASE VERIFY.” 
+ 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ...............................................  77777 
+DON'T KNOW .........................................  99999 
+ HELP SCREEN: 
+ “regularly” refers to age when started smoking cigarettes on a routine basis as opposed to age when tried first 
+cigarette. 
+ 
+ 
+SMQ.040 {Do you/Does SP} now smoke cigarettes . . . 
+ 
+every day, ......................................................  1 (SMQ.078) 
+some days, or ................................................  2 (SMQ.641) 
+not at all? .......................................................  3 
+REFUSED .....................................................  7 (SMQ.890) 
+DON'T KNOW ...............................................  9 (SMQ.890) 
+NHANES 2017 
+ 
+ 
+SMQ.050 How long has it been since {you/SP} quit smoking cigarettes? 
+Q/U 
+|___|___|___| 
+ENTER NUMBER (OF DAYS, WEEKS, MONTHS OR YEARS) 
+ 
+REFUSED ...............................................  77777 
+DON'T KNOW .........................................  99999 
+ 
+|___| 
+ENTER UNIT 
+ 
+DAYS .............................................................  1 
+WEEKS .........................................................  2 
+MONTHS ...............................
+..........................................  7 (SMQ.040) 
+DON’T KNOW ...............................................  9 (SMQ.040)  
+ 
+ CAPI INSTRUCTION: 
+ SOFT EDIT: SP AGE <13 
+ DISPLAY “UNLIKELY RESPONSE. PLEASE VERIFY.” 
+ 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ...............................................  77777 
+DON'T KNOW .........................................  99999 
+ HELP SCREEN: 
+ “regularly” refers to age when started smoking cigarettes on a routine basis as opposed to age when tried first 
+cigarette. 
+ 
+ 
+SMQ.040 {Do you/Does SP} now smoke cigarettes . . . 
+ 
+every day, ......................................................  1 (SMQ.078) 
+some days, or ................................................  2 (SMQ.641) 
+not at all? .......................................................  3 
+REFUSED .....................................................  7 (SMQ.890) 
+DON'T KNOW ...............................................  9 (SMQ.890) 
+NHANES 2017 
+ 
+ 
+SMQ.050 How long has it been since {you/SP} quit smoking cigarettes? 
+Q/U 
+|___|___|___| 
+ENTER NUMBER (OF DAYS, WEEKS, MONTHS OR YEARS) 
+ 
+REFUSED ...............................................  77777 
+DON'T KNOW .........................................  99999 
+ 
+|___| 
+ENTER UNIT 
+ 
+DAYS .............................................................  1 
+WEEKS .........................................................  2 
+MONTHS .......................................................  3 
+YEARS ......................................
+
+## 2019 Medical Conditions [PDF - 108 KB]
+https://wwwn.cdc.gov/nchs/data/nhanes/public/2019/questionnaires/MCQ_K.pdf
+12/6/2018  Questionnaire: SP 
+MEDICAL CONDITIONS – MCQ 
+Target Group: SPs 1+ 
+ 
+ 
+MCQ.010 The following questions are about different medical conditions. 
+ 
+ {Have you/Has SP} ever been told by a doctor or other health professional that {you/he/she} had asthma (az-
+ma)? 
+ 
+ CAPI INSTRUCTION: 
+ 
+ IF THIS ITEM CHANGES, CHECK MEC COMPONENT. 
+ 
+YES ...............................................................  1 
+NO .................................................................  2 (AGQ.030) 
+REFUSED .....................................................  7 (AGQ.030) 
+DON'T KNOW ...............................................  9 (AGQ.030) 
+ 
+ HELP SCREEN: 
+ Asthma: Is a disease of the airways that carry air in and out of your lungs. It causes wheezing or whistling 
+sounds when you breathe and can make you short of breath. 
+ 
+ 
+MCQ.025 How old {were you/was SP} when {you were/s/he was} first told {you/he/she} had asthma (az-ma)? 
+ 
+ IF LESS THAN 1 YEAR, ENTER 1 
+ 
+ CAPI INSTRUCTION: 
+ IF SP AGE >= 16, DISPLAY "WERE YOU" AND "YOU WERE". 
+ IF SP AGE = 12-15 OR >=16 AND PROXY INTERVIEW, DISPLAY "WAS {SP}" AND "S/HE WAS". 
+ IF SP AGE < 12, DISPLAY "WAS {SP}" AND "YOU WERE". 
+ 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+CAPI INSTRUCTION: 
+HARD EDIT:  1-120 
+ 
+REFUSED ...............................................  77777 
+DON'T KNOW .........................................  99999 
+ 
+ 
+MCQ.035 {Do you/Does SP} still have asthma (az-ma)? 
+ 
+YES ...........................
+OW ........................................  999999 
+ 
+ 
+ 
+ 
+ 
+ 
+BOX 7 
+ 
+CHECK ITEM MCQ.145: 
+IF SP'S AGE >= 20, GO TO MCQ.160. 
+IF SP’s AGE = 12-19, GO TO MCQ.500. 
+IF SP AGE 8-11 AND SP IS FEMALE, CONTINUE. 
+OTHERWISE, GO TO MCQ.300b.  
+ 
+ 
+MCQ.149 Have {SP's} periods or menstrual (men-stral) cycles started yet? 
+ 
+ CAPI INSTRUCTION: 
+ IF THIS ITEM CHANGES, CHECK MEC COMPONENT. 
+ 
+YES ...............................................................  1 
+NO .................................................................  2 (BOX 8B) 
+REFUSED .....................................................  7 (BOX 8B) 
+DON'T KNOW ...............................................  9 (BOX 8B) 
+ 
+ HELP TEXT: When a girl starts having periods or menstrual cycles is a very important milestone in growth 
+and development. Growth and development is very related to physical activity and body weight. 
+ 
+ 
+MCQ.151 How old was {SP} when she had {her} first menstrual period?  
+ 
+|___|___| YEARS   (RHQ.018) 
+ 
+REFUSED .....................................................  77 (BOX 8B) 
+DON'T KNOW ...............................................  99 (BOX 8B) 
+ 
+ HARD EDITS:  MAXIMUM OF 11 AND AGE OF ONSET MUST BE LESS THAN OR EQUAL TO CURRENT 
+AGE. 
+ SOFT EDIT:  IF AGE LESS THAN 7. 
+ 
+ HELP TEXT: When a girl starts having periods or menstrual cycles is a very important milestone in growth 
+and development. Growth and development is very related to physical activity and body weight. 
+ 
+ 
+RHQ.018 In what month did {SP} have he
+ CHANGES, CHECK MEC COMPONENT 
+ 
+ 
+ 
+ 
+ 
+ 
+BOX 8B 
+ 
+CHECK ITEM MCQ.157: 
+IF SP’s AGE = 6-11, GO TO MCQ.300b. 
+  
+ 
+ 
+ 
+MCQ.160 
+{Have you/Has SP} ever been told by 
+a doctor or other health professional 
+that {you/he/she} . . . 
+CA
+PI INSTRUCTION:  
+TEXT OF QUESTION SHOULD BE 
+OPTIONAL AFTER FIRST ITEM IS 
+READ. 
+*IF ITEMS 160B, C, D, E, OR F
+CHANGED, CHECK MEC
+COMPONENT.
+MCQ.170 
+{Do you/Does SP} still . . . ? 
+MCQ.180 
+How old {were you/was SP} when 
+{you were/s/he was} first told  
+{you/s/he} . . . 
+MCQ.195 
+Which type of arthritis was it? 
+a. had some form of arthritis?
+Y
+ES ....................  1 
+NO ......................  2 (b) 
+REFUSED...........  7 (b) 
+DON'T KNOW .....  9 (b) 
+O steoarthritis or degenerative arthritis ..........  1 
+Rheumatoid arthritis .....................................  2 
+Psoriatic arthritis ...........................................  3 
+Other ............................................................  4 
+REFUSED ....................................................   7 
+DON’T KNOW ................................ ..............  9  
+*b. had congestive heart failure?
+Y
+ES ....................  1 
+NO ......................  2 (c) 
+REFUSED...........  7 (c) 
+DON'T KNOW .....  9 (c) 
+had congestive heart failure? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+RE
+FUSED ................................................  77777 
+DON'T KNOW ..........................................  99999  
+*c. had coronary (kor-o-nare-ee)
+h
+eart disease? 
+Y
+ES ....................  1 
+NO .....
+.............................  77777 (MCQ.510) 
+DON'T KNOW ........................  99999 (MCQ.510)  
+HELP SCREENS FOR MCQ.160 
+M
+CQ160a 
+Arthritis: Is a disease that causes pain, swelling or stiffness in joints, for example the hand, the knee, or neck.  Common 
+kinds of arthritis are osteoarthritis and rheumatoid arthritis. 
+M
+CQ.195 
+Osteoarthritis:  Is the most common kind of arthritis in older persons. It is also called degenerative joint disease. Most 
+often, it affects the knees, the hips, the hands, the feet,  and the spine. There is usually bony joint enlargement. There 
+can be joint deformity or pain. 
+R
+heumatoid Arthritis:  Causes inflammation, redness and swelling of both hands and knees, but it can affect joints 
+anywhere in the body.  You may feel sick and tired, and sometimes there are fevers. 
+Ps
+oriatic Arthritis: Is arthritis caused by the skin rash Psoriasis. Most often it causes redness and swelling of joints 
+such as the spine, knees, hips and hands. 
+A
+rthritis: Is a disease that causes pain, swelling or stiffness in joints, for example the hand, the knee, or neck.  Common 
+kinds of arthritis are osteoarthritis and rheumatoid arthritis. 
+MC
+Q160b 
+Congestive Heart Failure:  Is when the heart can't pump enough blood to the body.  Blood and fluid "back up" into the 
+lungs, which makes you short of breath.  Heart failure causes fluid buildup in and swelling of the feet, legs and ankles.  
+I
+NTERVIEWER: DO NOT COUNT HEART MURMURS, IRREGULAR HEART BEATS, CHEST PAIN OR HEART 
+AT
+you/Does SP} still . . . ? 
+MCQ.180 
+How old {were you/was SP} when 
+{you were/s/he was} first told  
+{you/s/he} . . . 
+MCQ.195 
+Which type of arthritis was it? 
+a. had some form of arthritis?
+Y
+ES ....................  1 
+NO ......................  2 (b) 
+REFUSED...........  7 (b) 
+DON'T KNOW .....  9 (b) 
+O steoarthritis or degenerative arthritis ..........  1 
+Rheumatoid arthritis .....................................  2 
+Psoriatic arthritis ...........................................  3 
+Other ............................................................  4 
+REFUSED ....................................................   7 
+DON’T KNOW ................................ ..............  9  
+*b. had congestive heart failure?
+Y
+ES ....................  1 
+NO ......................  2 (c) 
+REFUSED...........  7 (c) 
+DON'T KNOW .....  9 (c) 
+had congestive heart failure? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+RE
+FUSED ................................................  77777 
+DON'T KNOW ..........................................  99999  
+*c. had coronary (kor-o-nare-ee)
+h
+eart disease? 
+Y
+ES ....................  1 
+NO ......................  2 (d) 
+REFUSED...........  7 (d) 
+DON'T KNOW .....  9 (d) 
+had coronary heart disease? 
+|___|___|___| 
+ENTER AGE IN YEARS 
+RE
+FUSED ................................................  77777 
+DON'T KNOW ..........................................  99999  
+*d. had angina (an-gī-na), also
+called angina pectoris? 
+Y
+ES ....................  1 
+NO ......................  2 (e
+
+## 2019 Smoking and Tobacco Use [PDF - 32.4 KB]
+https://wwwn.cdc.gov/nchs/data/nhanes/public/2019/questionnaires/SMQ_K.pdf
+............................  1 
+NEVER SMOKED CIGARETTES  
+REGULARLY ..............................................  2 (SMQ.040) 
+REFUSED .....................................................  7 (SMQ.040) 
+DON’T KNOW................................................  9 (SMQ.040)  
+ 
+ CAPI INSTRUCTION: 
+ SOFT EDIT: SP AGE <13 
+ DISPLAY “UNLIKELY RESPONSE. PLEASE VERIFY.” 
+ 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ...............................................  77777 
+DON'T KNOW ..........................................  99999 
+ HELP SCREEN: 
+ “fairly regularly” refers to age when started smoking cigarettes on a routine basis as opposed to age 
+when tried first cigarette. 
+ 
+ 
+NHANES 2019 
+SMQ.040 {Do you/Does SP} now smoke cigarettes . . . 
+ 
+every day, ......................................................  1 (SMQ.078) 
+some days, or ................................................  2 (SMQ.641) 
+not at all? .......................................................  3 
+REFUSED .....................................................  7 (BOX 5) 
+DON'T KNOW ................................................  9 (BOX 5) 
+ 
+ 
+SMQ.050 How long has it been since {you/SP} quit smoking cigarettes? 
+Q/U 
+|___|___|___| 
+ENTER NUMBER (OF DAYS, WEEKS, MONTHS OR YEARS) 
+ 
+REFUSED ...............................................  77777 
+DON'T KNOW ..........................................  99999 
+ 
+|___| 
+ENTER UNIT 
+ 
+DAYS .............................................................  1 
+WEEKS ..................
+.......................................  2 (SMQ.040) 
+REFUSED .....................................................  7 (SMQ.040) 
+DON’T KNOW................................................  9 (SMQ.040)  
+ 
+ CAPI INSTRUCTION: 
+ SOFT EDIT: SP AGE <13 
+ DISPLAY “UNLIKELY RESPONSE. PLEASE VERIFY.” 
+ 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ...............................................  77777 
+DON'T KNOW ..........................................  99999 
+ HELP SCREEN: 
+ “fairly regularly” refers to age when started smoking cigarettes on a routine basis as opposed to age 
+when tried first cigarette. 
+ 
+ 
+NHANES 2019 
+SMQ.040 {Do you/Does SP} now smoke cigarettes . . . 
+ 
+every day, ......................................................  1 (SMQ.078) 
+some days, or ................................................  2 (SMQ.641) 
+not at all? .......................................................  3 
+REFUSED .....................................................  7 (BOX 5) 
+DON'T KNOW ................................................  9 (BOX 5) 
+ 
+ 
+SMQ.050 How long has it been since {you/SP} quit smoking cigarettes? 
+Q/U 
+|___|___|___| 
+ENTER NUMBER (OF DAYS, WEEKS, MONTHS OR YEARS) 
+ 
+REFUSED ...............................................  77777 
+DON'T KNOW ..........................................  99999 
+ 
+|___| 
+ENTER UNIT 
+ 
+DAYS .............................................................  1 
+WEEKS ..........................................................  2 
+MONTHS ........................
+..........................................  7 (SMQ.040) 
+DON’T KNOW................................................  9 (SMQ.040)  
+ 
+ CAPI INSTRUCTION: 
+ SOFT EDIT: SP AGE <13 
+ DISPLAY “UNLIKELY RESPONSE. PLEASE VERIFY.” 
+ 
+|___|___|___| 
+ENTER AGE IN YEARS 
+ 
+REFUSED ...............................................  77777 
+DON'T KNOW ..........................................  99999 
+ HELP SCREEN: 
+ “fairly regularly” refers to age when started smoking cigarettes on a routine basis as opposed to age 
+when tried first cigarette. 
+ 
+ 
+NHANES 2019 
+SMQ.040 {Do you/Does SP} now smoke cigarettes . . . 
+ 
+every day, ......................................................  1 (SMQ.078) 
+some days, or ................................................  2 (SMQ.641) 
+not at all? .......................................................  3 
+REFUSED .....................................................  7 (BOX 5) 
+DON'T KNOW ................................................  9 (BOX 5) 
+ 
+ 
+SMQ.050 How long has it been since {you/SP} quit smoking cigarettes? 
+Q/U 
+|___|___|___| 
+ENTER NUMBER (OF DAYS, WEEKS, MONTHS OR YEARS) 
+ 
+REFUSED ...............................................  77777 
+DON'T KNOW ..........................................  99999 
+ 
+|___| 
+ENTER UNIT 
+ 
+DAYS .............................................................  1 
+WEEKS ..........................................................  2 
+MONTHS .......................................................  3 
+YEARS ...............................
+
+## 2021 2021-2023 Medical Conditions [PDF - 130 KB]
+https://wwwn.cdc.gov/nchs/data/nhanes/public/2021/questionnaires/MCQ-L-508.pdf
+  Questionnaire: SP 
+MEDICAL CONDITIONS – MCQ 
+Target Group: SPs 1+ 
+ 
+ 
+MCQ.010 The following questions are about different medical conditions. 
+ 
+ {Have you/Has SP} ever been told by a doctor or other health professional that {you/he/she/SP} had asthma 
+(az-ma)? 
+ 
+ CAPI INSTRUCTION: 
+ 
+ IF THIS ITEM CHANGES, CHECK MEC COMPONENT. 
+ 
+YES ...............................................................  1 
+NO .................................................................  2 (AGQ.030) 
+REFUSED .....................................................  7 (AGQ.030) 
+DON'T KNOW ...............................................  9 (AGQ.030) 
+ 
+ HELP SCREEN: 
+ Asthma: A disease of the airways that carry air in and out of your lungs. It causes wheezing or whistling 
+sounds when you breathe and can make you short of breath. 
+ 
+ Doctor: The term refers to both doctors of medicine (M.D.s) and doctors of osteopathic medicine (D.O.s). It 
+includes general practitioners as well as specialists. It does not include persons who do not have an M.D. or 
+D.O. degree, but other doctoral degrees such as dentists, oral surgeons, chiropractors, podiatrists, Christian 
+Science healers, opticians, optometrists, psychologists, etc. 
+ 
+ Health Care Professionals (Health Professional): A person entitled by training and experience and possibly 
+licensure to assist a doctor and who works with one or more medical doctors. Examples include: doctor’ s 
+assistants, nurse practitioners, 
+
+IF SP AGE < 6, GO TO END OF SECTION.OTHERWISE, CONTINUE. 
+ 
+ 
+ 
+BOX 7 
+ 
+CHECK ITEM MCQ.145: 
+IF SP'S AGE >= 20, GO TO MCQ.160. 
+IF SP’s AGE = 12-19, GO TO MCQ.500. 
+IF SP AGE 8-11 AND SP IS FEMALE, CONTINUE. 
+OTHERWISE, GO TO END OF SECTION.  
+ 
+ 
+MCQ.149 Have {SP's} periods or menstrual (men-stral) cycles started yet? 
+ 
+ CAPI INSTRUCTION: 
+ IF THIS ITEM CHANGES, CHECK MEC COMPONENT. 
+ 
+YES ...............................................................  1 
+NO .................................................................  2  
+REFUSED .....................................................  7  
+DON'T KNOW ...............................................  9  
+ 
+ HELP TEXT: When a girl starts having periods or menstrual cycles is a very important milestone in growth 
+and development. Growth and development is very related to physical activity and body weight. 
+ 
+ 
+BOX 8B 
+ 
+CHECK ITEM MCQ.157: 
+IF SP’s AGE = 6-11, GO TO END OF SECTION. 
+  
+ 
+ 
+ 
+  
+MCQ.160 
+{Have you/Has SP} ever been told by 
+a doctor or other health professional 
+that {you/he/she/SP} . . .  
+CAPI INSTRUCTION:   
+TEXT OF QUESTION SHOULD BE 
+OPTIONAL AFTER FIRST ITEM IS 
+READ. 
+*IF ITEMS 160B, C, D, E, OR F 
+CHANGED, CHECK MEC 
+COMPONENT. 
+MCQ.170 
+{Do you/Does SP} still . . . ? 
+MCQ.195 
+Which type of arthritis was it? 
+a. had some form of arthritis? 
+ 
+ YES .....................  1 
+ NO .......................  2 (b) 
+ REFUSED ...........  7 (b) 
+ DON'T KNOW......  9 (b)  
+ 
+Osteoarthritis or degenerative arthritis ..........
+al activity and body weight. 
+ 
+ 
+BOX 8B 
+ 
+CHECK ITEM MCQ.157: 
+IF SP’s AGE = 6-11, GO TO END OF SECTION. 
+  
+ 
+ 
+ 
+  
+MCQ.160 
+{Have you/Has SP} ever been told by 
+a doctor or other health professional 
+that {you/he/she/SP} . . .  
+CAPI INSTRUCTION:   
+TEXT OF QUESTION SHOULD BE 
+OPTIONAL AFTER FIRST ITEM IS 
+READ. 
+*IF ITEMS 160B, C, D, E, OR F 
+CHANGED, CHECK MEC 
+COMPONENT. 
+MCQ.170 
+{Do you/Does SP} still . . . ? 
+MCQ.195 
+Which type of arthritis was it? 
+a. had some form of arthritis? 
+ 
+ YES .....................  1 
+ NO .......................  2 (b) 
+ REFUSED ...........  7 (b) 
+ DON'T KNOW......  9 (b)  
+ 
+Osteoarthritis or degenerative arthritis ..........  1 
+Rheumatoid arthritis ......................................  2 
+Psoriatic arthritis ............................................  3 
+Other .............................................................  4 
+REFUSED .....................................................  7 
+DON’T KNOW ...............................................  9  
+*b. had congestive heart failure? 
+ 
+ YES ..................... 1 (c) 
+ NO .......................  2 (c) 
+ REFUSED ...........  7 (c) 
+ DON'T KNOW......  9 (c)  
+ 
+ 
+*c. had coronary (kor-o-nare-ee) 
+heart disease? 
+ 
+ YES ..................... 1 (d) 
+ NO .......................  2 (d) 
+ REFUSED ...........  7 (d) 
+ DON'T KNOW......  9 (d)  
+ 
+ 
+*d. had angina (an-jina), also 
+called angina pectoris? 
+ 
+ YES ..................... 1 (e) 
+ NO .......................  2 (e) 
+ REFUSED ...........  7 (e
+..................... 2 (MCQ.510) 
+ REFUSED ........... 7 (MCQ.510) 
+ DON'T KNOW ..... 9 (MCQ.510)  
+ 
+HELP SCREENS FOR MCQ.160 
+ 
+MCQ160a 
+Arthritis: A disease that causes pain, swelling or stiffness in joints, for example the hand, the knee, or neck.  
+Common kinds of arthritis are osteoarthritis and rheumatoid arthritis. 
+ 
+ 
+MCQ.195 
+Osteoarthritis:  The most common form of arthritis. Some people call it degenerative joint disease or “wear and 
+tear” arthritis. It occurs most frequently in the hands, hips, and knees.  
+Rheumatoid Arthritis:  Causes inflammation, redness and swelling of joints such as hands, wrists, and knees, 
+but it can affect joints anywhere in the body.  You may feel sick and tired, and sometimes there are fevers. 
+ 
+Psoriatic Arthritis: Is arthritis caused by the skin rash Psoriasis. Most often it causes redness and swelling of 
+joints such as the spine, knees, hips and hands. 
+ 
+Arthritis: A disease that causes pain, swelling or stiffness in joints, for example the hand, the knee, or neck.  
+Common kinds of arthritis are osteoarthritis and rheumatoid arthritis. 
+ 
+ 
+MCQ160b 
+Congestive Heart Failure:  Is when the heart can't pump enough blood to the body.  Blood and fluid "back up" 
+into the lungs, which makes you short of breath.  Heart failure can cause fluid buildup in and swelling of the feet, 
+legs and ankles.  
+ 
+INTERVIEWER INSTRUCTION: DO NOT COUNT HEART MURMURS, IRREGULAR HEART BEATS, CHEST 
+PAIN OR HEART ATTACKS. 
+ 
+ 
+MCQ160c 
+Coronary Heart Disease:  Is when 
+ITEM IS 
+READ. 
+*IF ITEMS 160B, C, D, E, OR F 
+CHANGED, CHECK MEC 
+COMPONENT. 
+MCQ.170 
+{Do you/Does SP} still . . . ? 
+MCQ.195 
+Which type of arthritis was it? 
+a. had some form of arthritis? 
+ 
+ YES .....................  1 
+ NO .......................  2 (b) 
+ REFUSED ...........  7 (b) 
+ DON'T KNOW......  9 (b)  
+ 
+Osteoarthritis or degenerative arthritis ..........  1 
+Rheumatoid arthritis ......................................  2 
+Psoriatic arthritis ............................................  3 
+Other .............................................................  4 
+REFUSED .....................................................  7 
+DON’T KNOW ...............................................  9  
+*b. had congestive heart failure? 
+ 
+ YES ..................... 1 (c) 
+ NO .......................  2 (c) 
+ REFUSED ...........  7 (c) 
+ DON'T KNOW......  9 (c)  
+ 
+ 
+*c. had coronary (kor-o-nare-ee) 
+heart disease? 
+ 
+ YES ..................... 1 (d) 
+ NO .......................  2 (d) 
+ REFUSED ...........  7 (d) 
+ DON'T KNOW......  9 (d)  
+ 
+ 
+*d. had angina (an-jina), also 
+called angina pectoris? 
+ 
+ YES ..................... 1 (e) 
+ NO .......................  2 (e) 
+ REFUSED ...........  7 (e) 
+ DON'T KNOW......  9 (e)  
+ 
+ 
+  
+*e. had a heart attack (also called 
+myocardial infarction (my-O-
+car-dee-al in-fark-shun))? 
+ 
+ YES ..................... 1 (f) 
+ NO .......................  2 (f) 
+ REFUSED ...........  7 (f) 
+ DON'T KNOW......  9 (f)  
+ 
+ 
+*f. had a stroke, slight stroke, 
+transie
+ for example the hand, the knee, or neck.  
+Common kinds of arthritis are osteoarthritis and rheumatoid arthritis. 
+ 
+ 
+MCQ.195 
+Osteoarthritis:  The most common form of arthritis. Some people call it degenerative joint disease or “wear and 
+tear” arthritis. It occurs most frequently in the hands, hips, and knees.  
+Rheumatoid Arthritis:  Causes inflammation, redness and swelling of joints such as hands, wrists, and knees, 
+but it can affect joints anywhere in the body.  You may feel sick and tired, and sometimes there are fevers. 
+ 
+Psoriatic Arthritis: Is arthritis caused by the skin rash Psoriasis. Most often it causes redness and swelling of 
+joints such as the spine, knees, hips and hands. 
+ 
+Arthritis: A disease that causes pain, swelling or stiffness in joints, for example the hand, the knee, or neck.  
+Common kinds of arthritis are osteoarthritis and rheumatoid arthritis. 
+ 
+ 
+MCQ160b 
+Congestive Heart Failure:  Is when the heart can't pump enough blood to the body.  Blood and fluid "back up" 
+into the lungs, which makes you short of breath.  Heart failure can cause fluid buildup in and swelling of the feet, 
+legs and ankles.  
+ 
+INTERVIEWER INSTRUCTION: DO NOT COUNT HEART MURMURS, IRREGULAR HEART BEATS, CHEST 
+PAIN OR HEART ATTACKS. 
+ 
+ 
+MCQ160c 
+Coronary Heart Disease:  Is when the blood vessels that bring blood to the heart muscle become narrow and 
+hardened due to plaque ( “plak”).  Plaque buildup is called atherosclerosis ( “ATH-er-o-skler-O-sis”). Blocked 
+blood vessels to the hear
+
+## 2021 2021-2023 Smoking and Tobacco Use [PDF - 110 KB]
+https://wwwn.cdc.gov/nchs/data/nhanes/public/2021/questionnaires/SMQ-L-508.pdf
+.............  7 (END OF SECTION) 
+DON'T KNOW ................................................  9 (END OF SECTION) 
+ 
+ 
+SMQ.040 {Do you/Does SP} now smoke cigarettes . . . 
+ 
+every day, ......................................................  1 (SMQ.650) 
+some days, or ................................................  2  
+not at all? .......................................................  3 (END OF SECTION) 
+REFUSED .....................................................  7 (END OF SECTION) 
+DON’T KNOW ...............................................  9 (END OF SECTION) 
+ 
+ 
+SMQ.641 On how many of the past 30 days did {you/SP} smoke cigarettes? 
+ 
+|___|___| 
+ENTER NUMBER OF DAYS 
+ 
+REFUSED .................................................  7777 
+DON'T KNOW ............................................  9999 
+ 
+ CAPI INSTRUCTION: 
+ ALLOW '0' AS AN ENTRY.  IF '0' DK OR RF ENTERED, SKIP TO END OF SECTION. 
+ SOFT EDIT: IF SMQ.040 IS 2 AND SMQ.641 IS GREATER THAN OR EQUAL TO 26 DAYS, THEN 
+SHOW EDIT MESSAGE: “Earlier you reported that you smoked someda ys; I would like to clarify that 
+response.” 
+ 
+ 
+SMQ.650 On average, when {you/SP} smoked during the past 30 days, how many cigarettes did {you/s/he/SP } 
+smoke a day? 
+ 
+ 1 PACK EQUALS 20 CIGARETTES 
+ IF LESS THAN 1 PER DAY, ENTER 1 
+ IF 95 OR MORE PER DAY, ENTER 95 
+ 
+|___|___|___| 
+ENTER NUMBER OF CIGARETTES (PER DAY) 
+ 
+REFUSED .................................................  7777 
+DON'T KNOW ............................................  9999 
+ 
+ 
+S
+  9999 
+ 
+ CAPI INSTRUCTION: 
+ ALLOW '0' AS AN ENTRY.  IF '0' DK OR RF ENTERED, SKIP TO END OF SECTION. 
+ SOFT EDIT: IF SMQ.040 IS 2 AND SMQ.641 IS GREATER THAN OR EQUAL TO 26 DAYS, THEN 
+SHOW EDIT MESSAGE: “Earlier you reported that you smoked someda ys; I would like to clarify that 
+response.” 
+ 
+ 
+SMQ.650 On average, when {you/SP} smoked during the past 30 days, how many cigarettes did {you/s/he/SP } 
+smoke a day? 
+ 
+ 1 PACK EQUALS 20 CIGARETTES 
+ IF LESS THAN 1 PER DAY, ENTER 1 
+ IF 95 OR MORE PER DAY, ENTER 95 
+ 
+|___|___|___| 
+ENTER NUMBER OF CIGARETTES (PER DAY) 
+ 
+REFUSED .................................................  7777 
+DON'T KNOW ............................................  9999 
+ 
+ 
+SMQ.657 {Do you/Does SP} usually smoke menthol or non-menthol cigarettes? 
+ 
+ ENTER '1' FOR MENTHOL 
+ ENTER '0' FOR NON-MENTHOL 
+ 
+ CAPI INSTRUCTION: 
+ '1' AND '0' SHOULD BE THE ONLY CODES ACCEPTED BY CAPI. 
+ 
+MENTHOL .....................................................  1 
+NON-MENTHOL ............................................  0 
+REFUSED .................................................  7 
+DON'T KNOW ............................................  9 
+ 
+ 

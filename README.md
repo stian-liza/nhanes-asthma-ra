@@ -1,3 +1,23 @@
+# NHANES 哮喘与类风湿关节炎
+
+## 当前评阅版：数据更新至2023年
+
+**[从这里开始检查：数据、代码、统计学解释、结果和图表](docs/review_20261008/README.md)**
+
+- [在线结果和图表](docs/review_20261008/results.zh.md)
+- [中文统计学解释](docs/review_20261008/statistics.zh.md)
+- [实际使用数据及整包下载](https://github.com/stian-liza/nhanes-asthma-ra/releases/tag/review-2023-v03-20261008)
+- [字段与复现说明](docs/review_20261008/data-and-reproduction.zh.md)
+- [分析代码](scripts/year_extension_v1/)
+- [可编辑Word](outputs/year_extension_20261008_v01/哮喘与类风湿关节炎_更新至2023年_研究稿_v03.docx) · [PDF](outputs/year_extension_20261008_v01/哮喘与类风湿关节炎_更新至2023年_研究稿_v03.pdf)
+
+本版按原项目书定义曾患哮喘、RA及明确无关节炎对照，年龄20—79岁，采用R复杂抽样完整病例分析。疫情前与2021—2023年分别报告，跨期合并仅为预设补充。实际公开数据以本仓库Release附件提供，Git历史存放代码、说明与汇总产物。
+
+**下方是旧版历史记录，疾病定义、样本范围和结果与当前版不同；检查本版请使用以上入口。**
+
+<details>
+<summary>展开旧版README（保留历史内容）</summary>
+
 # nhanes-asthma-ra
 
 核查 NHANES 1999–2018 数据，研究自报医生诊断的类风湿关节炎与哮喘的患病关联；具体可分析周期由官方问卷资格决定。
@@ -40,3 +60,5 @@
 确认计划后，分析代码、非敏感配置、运行说明、数据来源清单、汇总表和图均写入本仓库。尚不存在的结果不使用占位数值或模拟数值冒充。
 
 项目不以显著性或发表承诺作为验收标准；数据、方法、结果和局限必须可追溯。
+
+</details>

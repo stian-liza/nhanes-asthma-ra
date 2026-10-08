@@ -1,0 +1,14 @@
+Warning messages:
+1: package ‘survey’ was built under R version 4.5.2 
+2: package ‘survival’ was built under R version 4.5.2 
+agegroup_20_39 LP 0 objective 0 
+agegroup_40_59 LP 0 objective 0 
+agegroup_60_79 LP 0 objective 0 
+interaction_agegroup LP 0 objective 0 
+interaction_sex LP 0 objective 0 
+M0 LP 0 objective 0 
+M1 LP 0 objective 0 
+M2 LP 0 objective 0 
+M3 LP 0 objective 0 
+sex_Female LP 0 objective 0 
+sex_Male LP 0 objective 0 

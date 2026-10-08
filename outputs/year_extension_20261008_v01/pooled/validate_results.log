@@ -1,0 +1,16 @@
+Warning messages:
+1: package ‘survey’ was built under R version 4.5.2 
+2: package ‘survival’ was built under R version 4.5.2 
+M0 variance max error 1.118897e-16 diagonal ratio 1 1 
+M1 variance max error 3.495468e-16 diagonal ratio 1 1 1 1 1 1 1 1 
+M2 variance max error 4.77049e-16 diagonal ratio 1 1 1 1 1 1 1 1 1 1 1 1 1 
+M3 variance max error 2.63678e-15 diagonal ratio 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 1 
+                                          check max_absolute_error pass
+...1             M0_independent_Taylor_variance       1.118897e-16 TRUE
+...2             M1_independent_Taylor_variance       3.495468e-16 TRUE
+...3             M2_independent_Taylor_variance       4.770490e-16 TRUE
+...4             M3_independent_Taylor_variance       2.636780e-15 TRUE
+ra                    M0_weighted_odds_identity       2.141487e-11 TRUE
+...6      independent_complete_case_eligibility       0.000000e+00 TRUE
+...7 RA_0_domain_active_PSU_minus_strata_df_178       0.000000e+00 TRUE
+...8 RA_1_domain_active_PSU_minus_strata_df_174       0.000000e+00 TRUE

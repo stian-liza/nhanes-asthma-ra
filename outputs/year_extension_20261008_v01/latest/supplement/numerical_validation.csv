@@ -1,0 +1,14 @@
+"check","error","tolerance","pass"
+"baseline_beta",1.11022302462516e-16,1e-10,TRUE
+"baseline_se",4.71844785465692e-16,1e-10,TRUE
+"B0_beta_covariance",7.03866987935463e-10,2e-05,TRUE
+"B0 marginal_gradient 0",0,1e-08,TRUE
+"B0 marginal_gradient 1",1.52650114770836e-12,1e-08,TRUE
+"B0_marginal_PSU_covariance",2.16840434497101e-19,1e-10,TRUE
+"B1_beta_covariance",1.1284850219972e-09,2e-05,TRUE
+"B1 marginal_gradient 0",0,1e-08,TRUE
+"B1 marginal_gradient 1",1.43268730212753e-12,1e-08,TRUE
+"B1_marginal_PSU_covariance",4.33680868994202e-19,1e-10,TRUE
+"selection_stacked_inverse",2.24176233132312e-12,1e-07,TRUE
+"selection_cross_derivative",1.97096783338679e-11,1e-07,TRUE
+"selection_joint_PSU_covariance",4.16333634234434e-17,1e-09,TRUE

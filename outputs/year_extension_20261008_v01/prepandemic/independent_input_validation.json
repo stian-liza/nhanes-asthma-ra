@@ -1,0 +1,6 @@
+{
+  "verdict": "pass",
+  "cycles": 10,
+  "n": 37127,
+  "scope": "independent raw reread; eligibility and weighting reconstruction"
+}

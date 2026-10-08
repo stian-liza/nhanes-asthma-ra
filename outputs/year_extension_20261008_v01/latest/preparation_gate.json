@@ -1,0 +1,8 @@
+{
+  "gate": "G3",
+  "verdict": "pass",
+  "n_demo": 11933,
+  "n_eligible": 3563,
+  "official_frequency_rows": 667,
+  "all_frequency_checks": true
+}

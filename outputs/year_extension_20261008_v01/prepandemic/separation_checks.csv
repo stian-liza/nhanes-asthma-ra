@@ -1,0 +1,12 @@
+"model","solver_status","objective","separated"
+"agegroup_20_39",0,0,FALSE
+"agegroup_40_59",0,0,FALSE
+"agegroup_60_79",0,0,FALSE
+"interaction_agegroup",0,0,FALSE
+"interaction_sex",0,0,FALSE
+"M0",0,0,FALSE
+"M1",0,0,FALSE
+"M2",0,0,FALSE
+"M3",0,0,FALSE
+"sex_Female",0,0,FALSE
+"sex_Male",0,0,FALSE

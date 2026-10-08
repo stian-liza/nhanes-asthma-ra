@@ -1,0 +1,35 @@
+Warning messages:
+1: package ‘survey’ was built under R version 4.5.2 
+2: package ‘survival’ was built under R version 4.5.2 
+Pooled P1 valid TRUE 
+Pooled P2 valid TRUE 
+Pooled I1 valid TRUE 
+Pooled I2 valid TRUE 
+                model         term                            estimand     n
+P1 ra              P1           ra                    pooled_common_OR 40690
+P2 ra              P2           ra                    pooled_common_OR 40690
+I1 ra              I1           ra prepandemic_OR_in_interaction_model 40690
+I1 ra:eralatest    I1 ra:eralatest    OR_ratio_latest_over_prepandemic 40690
+I2 ra              I2           ra prepandemic_OR_in_interaction_model 40690
+I2 ra:eralatest    I2 ra:eralatest    OR_ratio_latest_over_prepandemic 40690
+                      beta         se  estimate     lower    upper            p
+P1 ra            0.8121999 0.08103419 2.2528586 1.9199298 2.643520 4.976714e-19
+P2 ra            0.7983137 0.08116827 2.2217912 1.8929525 2.607755 1.670225e-18
+I1 ra            0.8296016 0.08688644 2.2924052 1.9311999 2.721169 1.052292e-17
+I1 ra:eralatest -0.1662275 0.21032141 0.8468535 0.5591867 1.282507 4.303750e-01
+I2 ra            0.8165163 0.08660778 2.2626039 1.9071428 2.684317 2.264994e-17
+I2 ra:eralatest -0.1739368 0.21583164 0.8403500 0.5488913 1.286572 4.213811e-01
+                 df    status
+P1 ra           178 estimable
+P2 ra           178 estimable
+I1 ra           178 estimable
+I1 ra:eralatest 178 estimable
+I2 ra           178 estimable
+I2 ra:eralatest 178 estimable
+                                                                                                                 formula
+P1 ra                                      asthma ~ ra + age + sex + race + education + pir + bmi + smoking +      cycle
+P2 ra                    asthma ~ ra + age + age_nl + sex + race + education + pir + pir_nl +      bmi + smoking + cycle
+I1 ra                             asthma ~ ra + age + sex + race + education + pir + bmi + smoking +      cycle + ra:era
+I1 ra:eralatest                   asthma ~ ra + age + sex + race + education + pir + bmi + smoking +      cycle + ra:era
+I2 ra           asthma ~ ra + age + age_nl + sex + race + education + pir + pir_nl +      bmi + smoking + cycle + ra:era
+I2 ra:eralatest asthma ~ ra + age + age_nl + sex + race + education + pir + pir_nl +      bmi + smoking + cycle + ra:era
