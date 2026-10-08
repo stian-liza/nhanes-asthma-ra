@@ -3,14 +3,19 @@ Run after redraw_figures_v03.R. Requires pypdf and fonttools.
 """
 from pathlib import Path
 import re
+import argparse
 import unicodedata
 from fontTools.ttLib import TTFont
 from pypdf import PdfReader, PdfWriter
 from pypdf.generic import DecodedStreamObject, NameObject, BooleanObject
 root=Path(__file__).resolve().parents[2]
+parser=argparse.ArgumentParser()
+parser.add_argument('--figure-dir',default='outputs/figure_revision_20261008_v03')
+args=parser.parse_args()
+figure_dir=root/args.figure_dir
 fonts={w:TTFont(root/f'assets/fonts/source-han-sans-cn/SourceHanSansCN-{w}.otf') for w in ('Regular','Medium')}
 fixed=0
-for path in sorted((root/'outputs/figure_revision_20261008_v03').rglob('*.pdf')):
+for path in sorted(figure_dir.rglob('*.pdf')):
     reader=PdfReader(path);writer=PdfWriter();writer.clone_document_from_reader(reader)
     changed=False
     for page in writer.pages:
