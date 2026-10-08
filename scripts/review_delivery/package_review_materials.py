@@ -10,6 +10,9 @@ files={root/x['path'] for x in source}
 files.update([root/'README.md',root/'docs/research_runs/2026-10-08-github-review-delivery.md'])
 for directory in [r,root/'scripts/review_delivery']:
  files.update(p for p in directory.rglob('*') if p.is_file() and p.name!='publication_manifest.csv' and '__pycache__' not in p.parts and not p.name.startswith('.'))
+# Include standalone plot revisions in future review bundles.
+for directory in sorted((root/'outputs').glob('figure_revision_*')):
+ if directory.is_dir():files.update(p for p in directory.rglob('*') if p.is_file() and not p.name.startswith('.'))
 files=sorted(files);manifest=r/'publication_manifest.csv'
 with manifest.open('w',newline='',encoding='utf-8') as f:
  w=csv.DictWriter(f,fieldnames=['path','bytes','sha256']);w.writeheader()
