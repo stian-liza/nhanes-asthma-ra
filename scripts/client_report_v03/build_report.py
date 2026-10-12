@@ -6,6 +6,7 @@ Dependencies: python-docx, reportlab, Poppler; pass --font-path for a CJK TTF.
 import argparse
 import hashlib
 import json
+import subprocess
 from pathlib import Path
 from docx import Document
 from docx.shared import Pt, Cm, RGBColor
@@ -14,7 +15,7 @@ from docx.enum.table import WD_TABLE_ALIGNMENT, WD_CELL_VERTICAL_ALIGNMENT
 from docx.oxml import OxmlElement
 from docx.oxml.ns import qn
 from docx.opc.constants import RELATIONSHIP_TYPE as RT
-from figures import draw_figures, rows
+from figures import rows
 
 REPO = "https://github.com/stian-liza/nhanes-asthma-ra"
 FONT = "Arial Unicode MS"
@@ -37,7 +38,10 @@ def main():
     review = json.loads((source / "review/review_gate.json").read_text())
     char = {(r["group"], r["variable"], r["level"]): r for r in rows(source / "characteristics.csv")}
     m3 = reg[-1]
-    draw_figures(source, out / "figures", args.font_path)
+    subprocess.run([
+        "Rscript", "scripts/client_report_v03/figures.R",
+        str(source), str(out / "figures")
+    ], check=True)
     links = []
     doc = Document(); sec = doc.sections[0]
     sec.page_width, sec.page_height = Cm(21), Cm(29.7)
@@ -145,7 +149,7 @@ def main():
     p("比较类风湿关节炎者与明确无关节炎者的曾患哮喘比例及调整后关联。合并1999—2016常规数据、2017—2020年3月特殊发布数据及2021年8月—2023年8月数据，共11个发布块；统一分析，不做分时期比较或周期调整。调查中断时段没有观测。")
     step("2 疾病定义与样本筛选", [("疾病定义代码", "scripts/year_extension_v1/prepare.R", 62, 79),
                                 ("筛选复核代码", "scripts/pooled_only_v3/review_results.R", 29, 75),
-                                ("流程图代码", "scripts/client_report_v03/figures.py", 24, 53)])
+                                ("流程图代码", "scripts/client_report_v03/figures.R", 30, 76)])
     p("曾患哮喘依据问卷自报曾被医生或其他卫生专业人员告知患哮喘；类风湿关节炎依据自报关节炎及其类型。对照须明确无关节炎，其他类型及状态不明者不纳入。分析限20至79岁、抽样设计有效且协变量完整者。")
     figure("sample_flow", "图1　样本筛选流程　人数为实际样本数，排除按图示顺序进行。")
     p(f"最终包括类风湿关节炎{review['cases']:,}人和明确无关节炎{review['controls']:,}人。协变量不完整排除{review['excluded_incomplete']:,}人，占疾病资格人群的{100*review['excluded_incomplete']/review['pre_covariate_n']:.2f}%；本次未进行多重插补。", small=True)
@@ -178,7 +182,7 @@ def main():
     # PAGE THREE — prespecified subgroups and scientific limits.
     doc.add_page_break()
     step("5 年龄与性别亚组", [("亚组与交互检验代码", "scripts/pooled_only_v3/analyze.R", 384, 436),
-                            ("森林图代码", "scripts/client_report_v03/figures.py", 52, 78)])
+                            ("森林图代码", "scripts/client_report_v03/figures.R", 78, 112)])
     figure("subgroup_forest", "图2　年龄和性别亚组的调整后关联　方块为比值比，横线为95%置信区间；虚线为1，横轴为对数刻度。")
     p(f"年龄交互P={float(interaction['agegroup']['p']):.4f}；性别交互P={float(interaction['sex']['p']):.4f}。各亚组内均观察到正向关联，但尚无充分证据认定关联强度随年龄组或性别改变。")
     p("年龄亚组仍调整组内具体年龄及其余因素；性别亚组调整其余六项因素。交互检验比较关联强度，不是比较各组P值是否显著。", small=True)
