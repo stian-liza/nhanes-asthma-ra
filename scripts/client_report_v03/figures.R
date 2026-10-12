@@ -75,40 +75,81 @@ flow_plot <- ggplot() +
   theme(plot.margin = margin(4, 4, 4, 4))
 save_figure(flow_plot, "sample_flow", 6.73, 3.40)
 
-# Subgroup forest: labels, estimates and intervals come directly from the CSV.
-subgroups <- read.csv(file.path(source_dir, "subgroups.csv"),
-                      stringsAsFactors = FALSE, check.names = FALSE)
-subgroups$display <- c("20至39岁", "40至59岁", "60至79岁", "男性", "女性")
-subgroups$y <- c(6, 5, 4, 2.5, 1.5)
-subgroups$value <- sprintf("%.2f（%.2f—%.2f）",
-                           subgroups$OR, subgroups$lower, subgroups$upper)
-forest_plot <- ggplot(subgroups, aes(OR, y)) +
+# Main models: replace the dense regression table with a publication-style forest plot.
+models <- read.csv(file.path(source_dir, "regression.csv"),
+                   stringsAsFactors = FALSE, check.names = FALSE)
+models$display <- c("模型0  未调整", "模型1  年龄、性别、种族或族裔",
+                    "模型2  再加教育、贫困收入比", "模型3  再加体质指数、吸烟")
+models$y <- 4:1
+models$value <- sprintf("%.2f（%.2f—%.2f）", models$OR, models$lower, models$upper)
+models$p_display <- ifelse(models$p < .001, "<0.001", sprintf("%.3f", models$p))
+model_plot <- ggplot(models, aes(OR, y)) +
   geom_vline(xintercept = 1, linetype = 2, color = "#858585", linewidth = .5) +
   geom_segment(aes(x = lower, xend = upper, yend = y), color = blue, linewidth = .65) +
   geom_point(shape = 15, size = 2.8, color = blue) +
   geom_text(aes(x = .34, label = display), family = font, hjust = 0,
-            size = 3.05, color = ink) +
-  geom_text(aes(x = .69, label = format(n, big.mark = ",", trim = TRUE)),
-            family = font, hjust = 1, size = 3.05, color = ink) +
-  geom_text(aes(x = 8.5, label = value), family = font, hjust = 1,
-            size = 3.05, color = ink) +
-  annotate("text", x = .34, y = 6.85, label = "亚组", family = font,
-           hjust = 0, size = 3.15, fontface = "bold") +
-  annotate("text", x = .69, y = 6.85, label = "实际人数", family = font,
-           hjust = 1, size = 3.15, fontface = "bold") +
-  annotate("text", x = 8.5, y = 6.85, label = "比值比（95%置信区间）",
-           family = font, hjust = 1, size = 3.15, fontface = "bold") +
-  scale_x_log10(limits = c(.33, 9), breaks = c(1, 1.5, 2, 3, 4),
+            size = 2.95, color = ink) +
+  geom_text(aes(x = 7.2, label = value), family = font, hjust = 1,
+            size = 2.95, color = ink) +
+  geom_text(aes(x = 8.8, label = p_display), family = font, hjust = 1,
+            size = 2.95, color = ink) +
+  annotate("text", x = .34, y = 4.75, label = "模型及调整因素", family = font,
+           hjust = 0, size = 3.1, fontface = "bold") +
+  annotate("text", x = 7.2, y = 4.75, label = "比值比（95%置信区间）", family = font,
+           hjust = 1, size = 3.1, fontface = "bold") +
+  annotate("text", x = 8.8, y = 4.75, label = "P值", family = font,
+           hjust = 1, size = 3.1, fontface = "bold") +
+  scale_x_log10(limits = c(.33, 9.2), breaks = c(1, 1.5, 2, 3, 4),
                 labels = c("1", "1.5", "2", "3", "4")) +
-  scale_y_continuous(limits = c(.75, 7.1), breaks = NULL) +
+  scale_y_continuous(limits = c(.45, 5.0), breaks = NULL) +
   labs(x = NULL, y = NULL) +
   theme_minimal(base_family = font, base_size = 10.5) +
-  theme(
-    panel.grid = element_blank(), axis.text.x = element_text(size = 9, color = muted),
-    axis.ticks.x = element_line(color = "#999999"),
-    axis.line.x = element_line(color = "#999999", linewidth = .35),
-    plot.margin = margin(4, 4, 2, 4)
-  )
-save_figure(forest_plot, "subgroup_forest", 6.73, 3.18)
+  theme(panel.grid = element_blank(), axis.text.x = element_text(size = 9, color = muted),
+        axis.ticks.x = element_line(color = "#999999"),
+        axis.line.x = element_line(color = "#999999", linewidth = .35),
+        plot.margin = margin(4, 4, 2, 4))
+save_figure(model_plot, "model_forest", 6.73, 2.35)
 
-cat("PASS: report figures generated with ggplot2 and Heiti SC\n")
+# Age and sex are deliberately drawn as separate figures.
+subgroups <- read.csv(file.path(source_dir, "subgroups.csv"),
+                      stringsAsFactors = FALSE, check.names = FALSE)
+
+subgroup_plot <- function(data, labels, stem, height) {
+  data$display <- labels
+  data$y <- rev(seq_len(nrow(data)))
+  data$value <- sprintf("%.2f（%.2f—%.2f）", data$OR, data$lower, data$upper)
+  header_y <- max(data$y) + .68
+  plot <- ggplot(data, aes(OR, y)) +
+    geom_vline(xintercept = 1, linetype = 2, color = "#858585", linewidth = .5) +
+    geom_segment(aes(x = lower, xend = upper, yend = y), color = blue, linewidth = .65) +
+    geom_point(shape = 15, size = 2.8, color = blue) +
+    geom_text(aes(x = .34, label = display), family = font, hjust = 0,
+              size = 3.0, color = ink) +
+    geom_text(aes(x = .70, label = format(n, big.mark = ",", trim = TRUE)),
+              family = font, hjust = 1, size = 3.0, color = ink) +
+    geom_text(aes(x = 8.6, label = value), family = font, hjust = 1,
+              size = 3.0, color = ink) +
+    annotate("text", x = .34, y = header_y, label = "亚组", family = font,
+             hjust = 0, size = 3.1, fontface = "bold") +
+    annotate("text", x = .70, y = header_y, label = "实际人数", family = font,
+             hjust = 1, size = 3.1, fontface = "bold") +
+    annotate("text", x = 8.6, y = header_y, label = "比值比（95%置信区间）",
+             family = font, hjust = 1, size = 3.1, fontface = "bold") +
+    scale_x_log10(limits = c(.33, 9), breaks = c(1, 1.5, 2, 3, 4),
+                  labels = c("1", "1.5", "2", "3", "4")) +
+    scale_y_continuous(limits = c(.45, header_y + .2), breaks = NULL) +
+    labs(x = NULL, y = NULL) +
+    theme_minimal(base_family = font, base_size = 10.5) +
+    theme(panel.grid = element_blank(), axis.text.x = element_text(size = 9, color = muted),
+          axis.ticks.x = element_line(color = "#999999"),
+          axis.line.x = element_line(color = "#999999", linewidth = .35),
+          plot.margin = margin(4, 4, 2, 4))
+  save_figure(plot, stem, 6.73, height)
+}
+
+subgroup_plot(subgroups[subgroups$subgroup_variable == "agegroup", ],
+              c("20至39岁", "40至59岁", "60至79岁"), "age_forest", 1.90)
+subgroup_plot(subgroups[subgroups$subgroup_variable == "sex", ],
+              c("男性", "女性"), "sex_forest", 1.55)
+
+cat("PASS: model, age and sex figures generated separately with ggplot2 and Heiti SC\n")

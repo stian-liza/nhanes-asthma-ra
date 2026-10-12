@@ -171,20 +171,19 @@ def main():
     p("完整一般特征及协变量分类比较结果另见随附补充表。", small=True)
     p("分类比较采用Rao–Scott校正，考察类别间疾病比例的总体差异；这些检验不能证明独立作用，也不用于选择调整变量。", small=True)
     step("4 调整其他因素后的关联", [("四模型设定代码", "scripts/pooled_only_v3/config.R", 15, 20),
-                                   ("加权回归代码", "scripts/pooled_only_v3/analyze.R", 229, 382)])
+                                   ("加权回归代码", "scripts/pooled_only_v3/analyze.R", 229, 382),
+                                   ("四模型森林图代码", "scripts/client_report_v03/figures.R", 78, 111)])
     p(f"采用复杂抽样加权Logistic回归，报告比值比（OR）及95%置信区间。四个模型均使用同一批{review['n']:,}人；方差采用Taylor线性化，推断使用方案指定的设计自由度。")
-    labels = ["未调整", "调整年龄、性别、种族或族裔", "再加教育、贫困收入比", "再加体质指数、吸烟"]
-    body = [[f"模型{i}　{label}", f"{float(rr['OR']):.2f}（{float(rr['lower']):.2f}—{float(rr['upper']):.2f}）", "<0.001"] for i, (rr, label) in enumerate(zip(reg, labels))]
-    p("表2　类风湿关节炎与曾患哮喘的关联", small=True)
-    table(["模型及调整因素", "比值比（95%置信区间）", "P值"], body, [8.0, 6.5, 2.5])
+    figure("model_forest", "图2　四个模型中类风湿关节炎与曾患哮喘的关联　方块为比值比，横线为95%置信区间；虚线为1，横轴为对数刻度。")
     p("完全调整后仍观察到正向关联。比值比反映曾患哮喘的优势之比，不能直接解释为新发哮喘风险的倍数，也不能据此确定因果方向。")
 
     # PAGE THREE — prespecified subgroups and scientific limits.
     doc.add_page_break()
     step("5 年龄与性别亚组", [("亚组与交互检验代码", "scripts/pooled_only_v3/analyze.R", 384, 436),
-                            ("森林图代码", "scripts/client_report_v03/figures.R", 78, 112)])
-    figure("subgroup_forest", "图2　年龄和性别亚组的调整后关联　方块为比值比，横线为95%置信区间；虚线为1，横轴为对数刻度。")
-    p(f"年龄交互P={float(interaction['agegroup']['p']):.4f}；性别交互P={float(interaction['sex']['p']):.4f}。各亚组内均观察到正向关联，但尚无充分证据认定关联强度随年龄组或性别改变。")
+                            ("分开绘制森林图代码", "scripts/client_report_v03/figures.R", 113, 153)])
+    figure("age_forest", "图3　年龄亚组的调整后关联　年龄交互P=" + f"{float(interaction['agegroup']['p']):.4f}。")
+    figure("sex_forest", "图4　性别亚组的调整后关联　性别交互P=" + f"{float(interaction['sex']['p']):.4f}。")
+    p("各亚组内均观察到正向关联，但尚无充分证据认定关联强度随年龄组或性别改变。")
     p("年龄亚组仍调整组内具体年龄及其余因素；性别亚组调整其余六项因素。交互检验比较关联强度，不是比较各组P值是否显著。", small=True)
     step("6 结论与解释边界", [("模型诊断代码", "scripts/pooled_only_v3/diagnose.R", 52, 146),
                               ("独立数值复核代码", "scripts/pooled_only_v3/review_results.R", 87, 176)])

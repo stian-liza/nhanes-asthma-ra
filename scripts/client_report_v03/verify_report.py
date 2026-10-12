@@ -23,7 +23,7 @@ a = ap.parse_args()
 docx = a.output / 'NHANES_类风湿关节炎与曾患哮喘_分析报告.docx'
 pdf = a.output / 'render/NHANES_类风湿关节炎与曾患哮喘_分析报告.pdf'
 d = Document(docx); r = PdfReader(pdf)
-assert len(r.pages) == 3 and len(d.tables) == 2
+assert len(r.pages) == 3 and len(d.tables) == 1
 bindings = json.loads((a.output / 'report_source_bindings.json').read_text())
 assert all(hashlib.sha256(Path(p).read_bytes()).hexdigest() == h for p, h in bindings.items())
 comparisons = 0
@@ -34,15 +34,18 @@ for i, key in enumerate(['No_arthritis', 'RA'], 1):
                 f"{100*float(x['estimate']):.2f}%\n（{100*float(x['lower']):.2f}%—{100*float(x['upper']):.2f}%）"]
     assert [cell.text for cell in d.tables[0].rows[i].cells][1:] == expected
     comparisons += 3
-for i, x in enumerate(rows(a.source / 'regression.csv'), 1):
-    assert d.tables[1].rows[i].cells[1].text == f"{float(x['OR']):.2f}（{float(x['lower']):.2f}—{float(x['upper']):.2f}）"
-    assert float(x['p']) < .001 and d.tables[1].rows[i].cells[2].text == '<0.001'
-    comparisons += 2
-forest = ''.join(p.extract_text() for p in PdfReader(a.output / 'figures/subgroup_forest.pdf').pages)
-for x in rows(a.source / 'subgroups.csv'):
-    for value in [f"{int(x['n']):,}"] + [f"{float(x[k]):.2f}" for k in ['OR','lower','upper']]:
-        assert value in forest, value
+model_forest = ''.join(p.extract_text() for p in PdfReader(a.output / 'figures/model_forest.pdf').pages)
+for x in rows(a.source / 'regression.csv'):
+    for value in [f"{float(x[k]):.2f}" for k in ['OR','lower','upper']] + ['<0.001']:
+        assert value in model_forest, value
         comparisons += 1
+subgroups = rows(a.source / 'subgroups.csv')
+for variable, filename in [('agegroup','age_forest.pdf'), ('sex','sex_forest.pdf')]:
+    forest = ''.join(p.extract_text() for p in PdfReader(a.output / 'figures' / filename).pages)
+    for x in [z for z in subgroups if z['subgroup_variable'] == variable]:
+        for value in [f"{int(x['n']):,}"] + [f"{float(x[k]):.2f}" for k in ['OR','lower','upper']]:
+            assert value in forest, value
+            comparisons += 1
 flow = ''.join(p.extract_text() for p in PdfReader(a.output / 'figures/sample_flow.pdf').pages)
 for x in rows(a.source / 'review/sample_flow.csv')[:5]:
     assert f"{int(x['remaining']):,}" in flow
